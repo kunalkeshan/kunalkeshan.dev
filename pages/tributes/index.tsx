@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const TributesPage = () => {
-	return <div>TributesPage</div>;
+  return <div>TributesPage</div>;
 };
 
 export default TributesPage;

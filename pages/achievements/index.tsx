@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const AchievementsPage = () => {
-	return <div>AchievementsPage</div>;
+  return <div>AchievementsPage</div>;
 };
 
 export default AchievementsPage;

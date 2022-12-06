@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const TalksPage = () => {
-	return <div>TalksPage</div>;
+  return <div>TalksPage</div>;
 };
 
 export default TalksPage;

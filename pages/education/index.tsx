@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const EducationPage = () => {
-	return <div>EducationPage</div>;
+  return <div>EducationPage</div>;
 };
 
 export default EducationPage;
