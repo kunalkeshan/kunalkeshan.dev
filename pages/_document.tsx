@@ -31,7 +31,7 @@ export default function Document() {
           </>
         )}
       </Head>
-      <body className="bg-primary text-white">
+      <body className="bg-secondary p-5 text-white">
         <Main />
         <NextScript />
       </body>

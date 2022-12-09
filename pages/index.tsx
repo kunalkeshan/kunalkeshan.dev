@@ -3,9 +3,11 @@ import Lottie from "react-lottie-player";
 import WorkInProgressAnimationData from "../assets/lottie/work-in-progress.json";
 import socials from "../data/socials";
 
+import SocialLinks from "../components/reusable/SocialLinks";
+
 export default function Home() {
   return (
-    <div className="flex h-full w-full items-center p-4">
+    <main className="flex h-full w-full flex-col gap-8 rounded-lg bg-primary p-4">
       <Head>
         <title>Kunal Keshan</title>
         <meta name="title" content="Kunal Keshan" />
@@ -15,26 +17,40 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex-[0.6]">
-        <div>
-          <p className="text-5xl">Hey there 👋</p>
-          <h1 className="text-7xl">I&apos;m Kunal Keshan;</h1>
-          <p className="text-3xl">
-            This is only a temporary holding page while I finish up my
-            portfolio.
+      <nav className="container mx-auto">
+        <h1 className="text-3xl">Kunal Keshan</h1>
+      </nav>
+      <div className="container mx-auto flex flex-1">
+        <div className="flex h-full flex-1 flex-col justify-center gap-4 md:flex-[0.6]">
+          <p className="text-5xl">
+            My <span className="text-main">Portfolio</span> is a work in
+            progress.
           </p>
+          <p className="max-w-xl text-2xl">
+            Interested in the <span className="text-main">outcome</span>? Give
+            me your email and I&apos;ll notify you when it&apos;s done.
+          </p>
+          <form className="flex w-full max-w-xl gap-2">
+            <input
+              type="email"
+              placeholder="enter your email"
+              className="w-full rounded p-2 text-black"
+            />
+            <button
+              type="submit"
+              className="min-w-fit rounded bg-main p-2 text-xs uppercase transition-all hover:-translate-y-1 hover:shadow-[0_2px_0_0_rgba(255,255,255,1)]"
+            >
+              Get Notified
+            </button>
+          </form>
         </div>
-        <div></div>
-        <ul></ul>
+        <div className="hidden h-full items-center justify-center md:flex md:flex-[0.4]">
+          <Lottie loop play animationData={WorkInProgressAnimationData} />
+        </div>
       </div>
-      <div className="hidden h-full flex-[0.4] items-center justify-center sm:flex">
-        <Lottie
-          loop
-          animationData={WorkInProgressAnimationData}
-          play
-          className="h-auto w-full"
-        />
-      </div>
-    </div>
+      <footer className="container mx-auto">
+        &copy; {new Date().getFullYear()}. All Rights Reserved.
+      </footer>
+    </main>
   );
 }
