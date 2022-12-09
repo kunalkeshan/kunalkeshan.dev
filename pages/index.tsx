@@ -30,15 +30,22 @@ export default function Home() {
             Interested in the <span className="text-main">outcome</span>? Give
             me your email and I&apos;ll notify you when it&apos;s done.
           </p>
-          <form className="flex w-full max-w-xl gap-2">
+          <form className="flex w-full max-w-xl flex-col gap-2">
+            <input
+              type="text"
+              placeholder="enter your first name"
+              className="w-full rounded p-2 text-black"
+              required
+            />
             <input
               type="email"
               placeholder="enter your email"
               className="w-full rounded p-2 text-black"
+              required
             />
             <button
               type="submit"
-              className="min-w-fit rounded bg-main p-2 text-xs uppercase transition-all hover:-translate-y-1 hover:shadow-[0_2px_0_0_rgba(255,255,255,1)]"
+              className="mt-2 rounded bg-main p-2 text-xs uppercase transition-all hover:-translate-y-1 hover:shadow-[0_2px_0_0_rgba(255,255,255,1)]"
             >
               Get Notified
             </button>
