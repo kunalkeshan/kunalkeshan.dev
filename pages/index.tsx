@@ -1,9 +1,16 @@
 import Head from "next/head";
 import Lottie from "react-lottie-player";
 import WorkInProgressAnimationData from "../assets/lottie/work-in-progress.json";
+import {
+  SlSocialLinkedin,
+  SlSocialInstagram,
+  SlSocialGithub,
+  SlSocialTwitter,
+  SlSocialYoutube,
+  SlGlobe,
+} from "react-icons/sl";
+import { CiMail } from "react-icons/ci";
 import socials from "../data/socials";
-
-import SocialLinks from "../components/reusable/SocialLinks";
 
 export default function Home() {
   return (
@@ -50,6 +57,36 @@ export default function Home() {
               Get Notified
             </button>
           </form>
+          <div>
+            <p className="text-lg">Let&apos;s connect!</p>
+            <ul className="mt-2 flex flex-wrap items-center gap-4 text-xl">
+              {socials.map((social) => (
+                <li
+                  key={social.name}
+                  title={social.name}
+                  className="rounded-full bg-main p-2 opacity-80 transition-all hover:scale-105 hover:opacity-100"
+                >
+                  <a href={social.url} target="_blank" rel="noreferrer">
+                    {social.name === "linkedin" ? (
+                      <SlSocialLinkedin />
+                    ) : social.name === "instagram" ? (
+                      <SlSocialInstagram />
+                    ) : social.name === "github" ? (
+                      <SlSocialGithub />
+                    ) : social.name === "twitter" ? (
+                      <SlSocialTwitter />
+                    ) : social.name === "youtube" ? (
+                      <SlSocialYoutube />
+                    ) : social.name === "blog" ? (
+                      <SlGlobe />
+                    ) : (
+                      <CiMail />
+                    )}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
         <div className="hidden h-full items-center justify-center md:flex md:flex-[0.4]">
           <Lottie loop play animationData={WorkInProgressAnimationData} />

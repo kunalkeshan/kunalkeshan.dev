@@ -2,23 +2,20 @@
  * Portfolio Socials
  */
 
-interface Socials {
-  linkedin: string;
-  twitter: string;
-  github: string;
-  youtube: string;
-  instagram: string;
-  email: string;
+interface Social {
+  name: string;
+  url: string;
 }
 
 // Social Container
-const socials: Socials = {
-  linkedin: "https://linkedin.com/in/kunalkeshan",
-  twitter: "https://twitter.com/_kunalkeshan_",
-  github: "https://github.com/kunalkeshan",
-  youtube: "https://youtube.com/@kunalkeshan",
-  instagram: "https://instagram.com/kunalkeshan",
-  email: "hey@kunalkeshan.dev",
-};
+const socials: Social[] = [
+  { name: "blog", url: "https://blog.kunalkeshan.dev" },
+  { name: "instagram", url: "https://instagram.com/kunalkeshan" },
+  { name: "linkedin", url: "https://linkedin.com/in/kunalkeshan" },
+  { name: "github", url: "https://github.com/kunalkeshan" },
+  { name: "twitter", url: "https://twitter.com/_kunalkeshan_" },
+  { name: "youtube", url: "https://youtube.com/@kunalkeshan" },
+  { name: "email", url: "hey@kunalkeshan.dev" },
+];
 
 export default socials;

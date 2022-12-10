@@ -6,7 +6,7 @@
 
 @layer components {
   #__next {
-    @apply h-full;
+    @apply min-h-full;
   }
 }
 
