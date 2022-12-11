@@ -27,7 +27,7 @@ export default function Home() {
       <nav className="container mx-auto">
         <h1 className="text-3xl">Kunal Keshan</h1>
       </nav>
-      <div className="container mx-auto flex flex-1">
+      <div className="container mx-auto flex flex-1 items-center">
         <div className="flex h-full flex-1 flex-col justify-center gap-4 md:flex-[0.6]">
           <p className="text-5xl">
             My <span className="text-main">Portfolio</span> is a work in
