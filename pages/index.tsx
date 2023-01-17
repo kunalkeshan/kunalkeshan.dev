@@ -33,30 +33,6 @@ export default function Home() {
             My <span className="text-main">Portfolio</span> is a work in
             progress.
           </p>
-          <p className="max-w-xl text-2xl">
-            Interested in the <span className="text-main">outcome</span>? Give
-            me your email and I&apos;ll notify you when it&apos;s done.
-          </p>
-          <form className="flex w-full max-w-xl flex-col gap-2">
-            <input
-              type="text"
-              placeholder="enter your first name"
-              className="w-full rounded p-2 text-black"
-              required
-            />
-            <input
-              type="email"
-              placeholder="enter your email"
-              className="w-full rounded p-2 text-black"
-              required
-            />
-            <button
-              type="submit"
-              className="mt-2 rounded bg-main p-2 text-xs uppercase transition-all hover:-translate-y-1 hover:shadow-[0_2px_0_0_rgba(255,255,255,1)]"
-            >
-              Get Notified
-            </button>
-          </form>
           <div>
             <p className="text-lg">Let&apos;s connect!</p>
             <ul className="mt-2 flex flex-wrap items-center gap-4 text-xl">
