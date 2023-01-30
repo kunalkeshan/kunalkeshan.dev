@@ -4,12 +4,23 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
+      boxShadow: {
+        '3d': '8px 8px 0 0 rgb(11, 11, 11)',
+      },
       colors: {
-        primary: "#23272a",
-        secondary: "#2c2f33",
-        main: "#ffa500",
+        themes: {
+          bg_primary: "#FFFFFF",
+          bg_secondary: "#F1F0EE",
+          txt_primary: "#0B0B0B",
+          txt_secondary: "#393939",
+        },
+        portfolio: {
+          main: "#ffa500",
+          accent: "#1C92FF"
+        }
       },
     },
   },

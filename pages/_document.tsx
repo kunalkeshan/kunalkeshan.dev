@@ -1,12 +1,13 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
-import configuration from "../config";
+import {isProduction} from "../config";
 import { GA_TRACKING_ID } from "../utils/gtag";
 
 export default function Document() {
   return (
-    <Html>
+    <Html className="">
       <Head>
+        <link rel="icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -24,7 +25,7 @@ export default function Document() {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        {configuration.isProduction && (
+        {isProduction && (
           <>
             <Script
               async
@@ -48,7 +49,7 @@ export default function Document() {
           </>
         )}
       </Head>
-      <body className="bg-secondary p-5 text-white">
+      <body className="font-['Nunito Sans'] bg-themes-bg_primary text-themes-txt_primary">
         <Main />
         <NextScript />
       </body>
