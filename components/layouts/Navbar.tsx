@@ -72,13 +72,12 @@ const Navbar = () => {
           >
             <HiOutlineEnvelope />
           </Link>
-          <motion.button
+          <button
             className="flex h-12 w-12 items-center justify-center text-xl md:hidden"
-            layout
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <RxCross2 /> : <GiHamburgerMenu />}
-          </motion.button>
+          </button>
         </span>
       </div>
       {isOpen && (
