@@ -8,7 +8,7 @@ export default function Home() {
         <title>Kunal Keshan</title>
         <meta name="title" content="Kunal Keshan" />
       </Head>
-      <PublicLayout>hii</PublicLayout>
+      <PublicLayout></PublicLayout>
     </>
   );
 }
