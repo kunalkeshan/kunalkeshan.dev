@@ -12,7 +12,9 @@ const PublicLayout: NextPage<PropsWithChildren> = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main className="mt-40 w-full px-5 py-10 md:mt-48">{children}</main>
+      <main className="mt-40 w-full px-5 py-10 md:mt-32 lg:mt-0">
+        {children}
+      </main>
       <Footer />
     </>
   );
