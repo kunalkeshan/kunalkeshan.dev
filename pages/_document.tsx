@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
-import {isProduction} from "../config";
+import { isProduction } from "../config";
 import { GA_TRACKING_ID } from "../utils/gtag";
 
 export default function Document() {
@@ -49,7 +49,7 @@ export default function Document() {
           </>
         )}
       </Head>
-      <body className="font-['Nunito Sans'] bg-themes-bg_primary text-themes-txt_primary">
+      <body className="font-['Nunito Sans'] relative bg-themes-bg_primary text-themes-txt_primary">
         <Main />
         <NextScript />
       </body>

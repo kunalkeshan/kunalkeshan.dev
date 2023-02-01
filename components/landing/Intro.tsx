@@ -10,6 +10,7 @@ import { FaEnvelope, FaSuitcase } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import { IMAGE_SOURCE } from "../../config";
+import LINKS from "../../data/external";
 
 const typewriterOptions: Options = {
   strings: ["Web Developer", "Writer", "Creator"],
@@ -42,18 +43,52 @@ const Intro = () => {
           </div>
         </h1>
         <h2 className="mt-4 font-[Montserrat] font-semibold text-themes-txt_secondary md:text-lg">
-          Currently building Codelance Devs, admin at Think-Digital, technical
-          head at IEEE SRM, and CPO at Rentyaar
+          Building{" "}
+          <a
+            href={LINKS.codelanceDevs}
+            target="_blank"
+            rel="noreferrer"
+            className="border-b-2 border-b-codelanceDevs transition-all duration-300 hover:text-codelanceDevs"
+          >
+            Codelance Devs
+          </a>
+          , admin at{" "}
+          <a
+            href={LINKS.thinkDigital}
+            target="_blank"
+            rel="noreferrer"
+            className="border-b-2 border-b-blue-500 transition-all duration-300 hover:text-blue-500"
+          >
+            Think-Digital
+          </a>
+          , technical head at{" "}
+          <a
+            href={LINKS.ieeeSrm}
+            target="_blank"
+            rel="noreferrer"
+            className="border-b-2 border-b-purple-500 transition-all duration-300 hover:text-purple-500"
+          >
+            IEEE SRM
+          </a>
+          , and <abbr title="Chief Product Officer">CPO</abbr> at{" "}
+          <a
+            href={LINKS.rentyaar}
+            target="_blank"
+            rel="noreferrer"
+            className="border-b-2 border-b-yellow-300 transition-all duration-300 hover:text-yellow-300"
+          >
+            Rentyaar
+          </a>
         </h2>
         <div className="mt-8 flex flex-col gap-4 md:flex-row">
           <Link
-            href="/"
+            href="/contact"
             className="flex w-full items-center justify-center gap-2 rounded-lg bg-themes-txt_primary py-4 text-center font-[Montserrat] font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-main md:w-1/2"
           >
             <FaEnvelope /> Get in touch
           </Link>
           <Link
-            href="/"
+            href="/#projects"
             className="flex w-full items-center justify-center gap-2 rounded-lg border-2 border-black bg-white py-4 text-center font-[Montserrat] font-semibold transition-all duration-300 hover:-translate-y-1 hover:bg-themes-txt_primary hover:text-themes-bg_primary md:w-1/2"
           >
             <FaSuitcase /> View portfolio
@@ -61,9 +96,9 @@ const Intro = () => {
         </div>
       </div>
       <div className="flex h-full w-full items-center justify-center">
-        <div className="flex h-fit w-full max-w-lg items-center justify-center overflow-hidden rounded-xl border-[3px] border-black shadow-3d">
+        <div className="flex h-fit max-h-[520px] w-full max-w-lg items-center justify-center overflow-hidden rounded-xl border-[3px] border-black bg-portfolio-main shadow-3d transition-all duration-300 hover:shadow-3d-hover">
           <Image
-            src={IMAGE_SOURCE.PROFILE_IMAGE}
+            src={IMAGE_SOURCE.ART_IMAGE}
             alt="(/≧▽≦)/"
             width={100}
             height={100}

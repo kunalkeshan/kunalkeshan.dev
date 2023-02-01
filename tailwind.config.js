@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       boxShadow: {
         '3d': '8px 8px 0 0 rgb(11, 11, 11)',
+        '3d-hover': '10px 10px 0 0 rgb(11, 11, 11)',
       },
       colors: {
         themes: {
@@ -21,7 +22,8 @@ module.exports = {
         portfolio: {
           main: "#ffa500",
           accent: "#1C92FF"
-        }
+        },
+        codelanceDevs: "#00e07b",
       },
     },
   },
