@@ -39,7 +39,7 @@ const Navbar = () => {
       className="fixed w-full py-9 px-3"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.4, type: "tween", ease: "easeIn" }}
+      transition={{ delay: 0.2, type: "spring" }}
     >
       <div className="mx-auto flex w-full max-w-3xl items-center justify-between rounded-xl border-2 border-black bg-white py-3 px-4 shadow-3d">
         <Link
@@ -90,10 +90,11 @@ const Navbar = () => {
             translateX: "-50%",
           }}
           transition={{
-            delay: 0.3,
+            delay: 0.2,
+            type: "spring",
           }}
           exit={{ opacity: 0, y: -20 }}
-          className="absolute top-36 left-1/2 w-full max-w-sm rounded-xl border-2 border-black py-4 px-5 text-base font-semibold sm:max-w-lg md:hidden"
+          className="absolute top-36 left-1/2 w-full max-w-sm rounded-xl border-2 border-black bg-white py-4 px-5 text-base font-semibold sm:max-w-lg md:hidden"
         >
           <ul className="flex w-full flex-col gap-4">
             {navOptions.map((option, index) => (
