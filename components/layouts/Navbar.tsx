@@ -27,7 +27,7 @@ const navOptions = [
   },
   {
     name: "Services",
-    url: "/services",
+    url: "/#services",
   },
 ];
 
