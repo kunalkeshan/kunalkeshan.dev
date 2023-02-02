@@ -8,6 +8,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      borderWidth: {
+        3: '3px',
+      },
       boxShadow: {
         '3d': '8px 8px 0 0 rgb(11, 11, 11)',
         '3d-hover': '10px 10px 0 0 rgb(11, 11, 11)',
