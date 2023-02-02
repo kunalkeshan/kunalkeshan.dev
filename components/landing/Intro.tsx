@@ -43,7 +43,7 @@ const Intro = () => {
           </div>
         </h1>
         <h2 className="mt-4 font-[Montserrat] font-semibold text-themes-txt_secondary md:text-lg">
-          Building{" "}
+          Creative explorer, seeking new frontiers with a bold spirit. Building{" "}
           <a
             href={LINKS.codelanceDevs}
             target="_blank"
