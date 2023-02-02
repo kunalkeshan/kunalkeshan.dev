@@ -8,6 +8,7 @@ import SERVICES from "../../data/services";
 import Image from "next/image";
 import Link from "next/link";
 import { FaEnvelope } from "react-icons/fa";
+import MemeTooltip from "../reusable/MemeTooltip";
 
 type ServiceDataType = typeof SERVICES[number];
 
@@ -44,12 +45,17 @@ const Services = () => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4, type: "spring" }}
-      className="mx-auto mt-20 min-h-screen max-w-7xl scroll-mt-44 lg:mt-0"
+      className="mx-auto mt-20 min-h-screen max-w-7xl scroll-mt-20 lg:mt-0"
       id="services"
     >
-      <h2 className="text-center text-5xl font-semibold">
-        My varied{" "}
-        <span className="bg-portfolio-main px-1">selection of services</span>
+      <h2 className="group relative text-center text-5xl font-semibold">
+        Modern problems, requires{" "}
+        <span className="bg-portfolio-main px-1">modern services</span>
+        <MemeTooltip
+          image={
+            "https://res.cloudinary.com/kunalkeshan/image/upload/v1675358191/Portfolio/memes/Modern_Problems_Require_Modern_Solutions_oxftic.jpg"
+          }
+        />
       </h2>
       <p className="mx-auto mt-4 max-w-xl text-center font-[Montserrat] font-semibold text-themes-txt_secondary md:text-lg">
         Offering versatile solutions in web development, design, no-code, video

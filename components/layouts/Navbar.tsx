@@ -36,7 +36,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="fixed z-50 w-full py-9 px-3"
+      className="z-50 w-full py-6 px-3"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2, type: "spring" }}
