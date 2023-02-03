@@ -1,10 +1,93 @@
 /**
- * Landing Page - Portfolio Section
+ * Index Page - Portfolio Section
  */
 
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
+import { FaArrowRight, FaGithub, FaGlobe } from "react-icons/fa";
 import MemeTooltip from "../reusable/MemeTooltip";
+import PROJECTS from "../../data/projects";
+
+type ProjectDataType = typeof PROJECTS[number];
+
+const ProjectCard: React.FC<ProjectDataType> = ({
+  coverImage,
+  color,
+  title,
+  description,
+  feature,
+  logo,
+  type,
+  github,
+  website,
+}) => {
+  return (
+    <div className="group flex min-h-[400px] w-full flex-col overflow-hidden rounded-xl border-3 border-black transition-all duration-300 hover:-translate-y-2 hover:shadow-3d md:flex-row">
+      <div className="w-full p-14 md:w-1/2">
+        <div className="flex items-center gap-4">
+          <Image
+            src={logo}
+            alt={title}
+            width={100}
+            height={100}
+            className="h-10 w-10"
+          />
+          <p className="font-['Ubuntu Mono'] rounded-3xl bg-themes-txt_primary py-2 px-4 text-sm font-semibold uppercase text-themes-bg_primary">
+            {type}
+          </p>
+        </div>
+        <h3 className="mt-4 text-4xl font-bold">{title}</h3>
+        <p className="mt-8 font-[Montserrat] font-semibold">{description}</p>
+        {false ? (
+          <Link
+            href="#"
+            className="mt-8 flex items-center gap-2 font-[Montserrat] text-sm font-semibold"
+          >
+            More info{" "}
+            <FaArrowRight className="transition-all duration-300 group-hover:translate-x-1" />
+          </Link>
+        ) : (
+          <div className="mt-8 flex w-full items-center gap-4 font-[Montserrat] text-sm font-semibold md:flex-wrap">
+            {github && (
+              <a
+                className="flex items-center gap-2 rounded-xl py-2 px-8 transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-main"
+                href={github}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Code <FaGithub />
+              </a>
+            )}
+            {website && (
+              <a
+                className="flex items-center gap-2 rounded-xl bg-themes-txt_primary py-2 px-8 text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent"
+                href={website}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit <FaGlobe />
+              </a>
+            )}
+          </div>
+        )}
+      </div>
+      <div
+        className="flex h-[200px] w-full items-center justify-center md:h-auto md:w-1/2"
+        style={{ backgroundColor: color }}
+      >
+        <Image
+          src={coverImage}
+          alt={title}
+          width={100}
+          height={100}
+          className="h-auto w-full max-w-[160px] object-contain drop-shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-2xl md:max-w-xs"
+        />
+      </div>
+    </div>
+  );
+};
 
 const Portfolio = () => {
   return (
@@ -12,7 +95,7 @@ const Portfolio = () => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4, type: "spring" }}
-      className="mx-auto min-h-screen max-w-7xl"
+      className="mx-auto mt-20 min-h-screen max-w-7xl lg:mt-0"
     >
       <h2 className="group relative mx-auto max-w-[26ch] text-center text-5xl font-semibold">
         Some fine additions to my{" "}
@@ -25,7 +108,11 @@ const Portfolio = () => {
           }
         />
       </h2>
-      <div></div>
+      <div className="mt-8 flex flex-col items-center justify-center gap-8">
+        {PROJECTS.map((project, index) => (
+          <ProjectCard key={index} {...project} />
+        ))}
+      </div>
     </motion.section>
   );
 };

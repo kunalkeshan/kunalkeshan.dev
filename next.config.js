@@ -9,6 +9,11 @@ const nextConfig = {
         hostname: 'res.cloudinary.com',
         pathname: '/**'
       },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+        pathname: '/kunalkeshan/**'
+      },
     ],
   },
 };

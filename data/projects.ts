@@ -14,9 +14,10 @@ interface Project {
   description: string;
   github?: string;
   website?: string;
-  logo?: string;
+  logo: string;
   coverImage: string;
   color: string;
+  feature?: boolean;
   // images: string[];
 }
 
@@ -33,6 +34,7 @@ const PROJECTS: Project[] = [
     coverImage:
       "https://res.cloudinary.com/kunalkeshan/image/upload/v1675360105/Portfolio/projects/operating_system_re_iqsc_knzx8u.svg",
     color: "#1976D2",
+    feature: true,
   },
   {
     type: "web development",
@@ -45,6 +47,7 @@ const PROJECTS: Project[] = [
     coverImage:
       "https://res.cloudinary.com/kunalkeshan/image/upload/v1675360107/Portfolio/projects/bookshelves_re_lxoy_f0ds3d.svg",
     color: "#FDCA40",
+    feature: true,
   },
 ];
 
