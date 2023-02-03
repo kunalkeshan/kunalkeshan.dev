@@ -6,6 +6,7 @@
 import React from "react";
 import Head from "next/head";
 import PublicLayout from "../layouts/PublicLayout";
+import WorkInProgress from "../components/reusable/WorkInProgress";
 
 const FeedPage = () => {
   return (
@@ -13,7 +14,9 @@ const FeedPage = () => {
       <Head>
         <title>Feed | Kunal Keshan</title>
       </Head>
-      <PublicLayout></PublicLayout>
+      <PublicLayout>
+        <WorkInProgress />
+      </PublicLayout>
     </>
   );
 };

@@ -5,7 +5,7 @@
 // Dependencies
 import Head from "next/head";
 import About from "../components/landing/About";
-import Blog from "../components/landing/Blog";
+// import Blog from "../components/landing/Blog";
 import Experience from "../components/landing/Experience";
 import Intro from "../components/landing/Intro";
 import Portfolio from "../components/landing/Portfolio";
@@ -29,7 +29,7 @@ export default function Home() {
         <Portfolio />
         <Experience />
         <Testimonials />
-        <Blog />
+        {/* <Blog /> */}
       </PublicLayout>
     </>
   );
