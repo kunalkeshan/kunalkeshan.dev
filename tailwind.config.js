@@ -12,6 +12,7 @@ module.exports = {
         3: '3px',
       },
       boxShadow: {
+        '3d-small': '4px 4px 0 0 rgb(11, 11, 11)',
         '3d': '8px 8px 0 0 rgb(11, 11, 11)',
         '3d-hover': '10px 10px 0 0 rgb(11, 11, 11)',
       },

@@ -15,7 +15,7 @@ const PublicLayout: NextPage<PropsWithChildren> = ({ children }) => {
       <Headroom>
         <Navbar />
       </Headroom>
-      <main className="w-full px-5">{children}</main>
+      <main className="w-full">{children}</main>
       <Footer />
     </>
   );

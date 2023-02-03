@@ -45,7 +45,7 @@ const Services = () => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4, type: "spring" }}
-      className="mx-auto mt-20 min-h-screen max-w-7xl scroll-mt-20 lg:mt-0"
+      className="mx-auto mt-20 min-h-screen max-w-7xl scroll-mt-20 px-5 lg:mt-0"
       id="services"
     >
       <h2 className="group relative text-center text-5xl font-semibold">
