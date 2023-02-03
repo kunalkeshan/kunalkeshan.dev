@@ -60,10 +60,10 @@ const Experience = () => {
     >
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 pt-10 text-themes-bg_primary md:grid-cols-2 md:pt-20">
         <div className="w-full">
-          <div className="w-full md:sticky md:top-20">
+          <div className="w-full md:sticky md:top-28">
             <h2 className="group text-5xl font-semibold">
               Take a look at my{" "}
-              <span className="whitespace-nowrap bg-portfolio-main px-1 md:whitespace-normal">
+              <span className="bg-portfolio-main px-1 leading-tight">
                 past experience
               </span>
               <MemeTooltip

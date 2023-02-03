@@ -45,7 +45,7 @@ const About = () => {
       <div className="flex h-full w-full flex-col justify-center">
         <h2 className="group relative text-5xl font-semibold">
           Wait a minute,{" "}
-          <span className="mt-1 inline-block w-fit bg-portfolio-accent px-1">
+          <span className="mt-1 w-fit bg-portfolio-accent px-1 leading-tight">
             who am i
           </span>
           ?

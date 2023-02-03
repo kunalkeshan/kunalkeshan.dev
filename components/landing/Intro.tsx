@@ -13,7 +13,7 @@ import { IMAGE_SOURCE } from "../../config";
 import LINKS from "../../data/external";
 
 const typewriterOptions: Options = {
-  strings: ["Web Developer", "Writer", "Creator"],
+  strings: ["Developer", "Writer", "Creator"],
   loop: true,
   autoStart: true,
   skipAddStyles: true,
@@ -25,7 +25,7 @@ const Intro = () => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4, type: "spring" }}
-      className="mx-auto grid min-h-screen max-w-7xl grid-cols-1 gap-16 px-5 lg:grid-cols-2"
+      className="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-5 pt-10 md:pb-20 lg:grid-cols-2 lg:pt-20"
     >
       <div className="mx-auto flex w-full max-w-lg flex-col justify-center text-center md:max-w-[640px] md:text-left">
         <h1 className="text-3xl font-semibold sm:text-4xl md:text-7xl">

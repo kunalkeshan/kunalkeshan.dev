@@ -10,6 +10,7 @@ import Experience from "../components/landing/Experience";
 import Intro from "../components/landing/Intro";
 import Portfolio from "../components/landing/Portfolio";
 import Services from "../components/landing/Services";
+import Skills from "../components/landing/Skills";
 import Testimonials from "../components/landing/Testimonials";
 import PublicLayout from "../layouts/PublicLayout";
 
@@ -22,6 +23,7 @@ export default function Home() {
       </Head>
       <PublicLayout>
         <Intro />
+        <Skills />
         <Services />
         <About />
         <Portfolio />

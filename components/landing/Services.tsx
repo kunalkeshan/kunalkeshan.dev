@@ -48,9 +48,11 @@ const Services = () => {
       className="mx-auto mt-20 min-h-screen max-w-7xl scroll-mt-20 px-5 lg:mt-0"
       id="services"
     >
-      <h2 className="group relative text-center text-5xl font-semibold">
+      <h2 className="group relative min-h-fit text-center text-5xl font-semibold">
         Modern problems, requires{" "}
-        <span className="bg-portfolio-main px-1">modern services</span>
+        <span className="bg-portfolio-main px-1 leading-tight">
+          modern services
+        </span>
         <MemeTooltip
           image={
             "https://res.cloudinary.com/kunalkeshan/image/upload/v1675358191/Portfolio/memes/Modern_Problems_Require_Modern_Solutions_oxftic.jpg"
