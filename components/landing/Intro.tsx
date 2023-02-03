@@ -80,7 +80,7 @@ const Intro = () => {
             Rentyaar
           </a>
         </h2>
-        <div className="mt-8 flex flex-col gap-4 md:flex-row">
+        <div className="mt-8 flex flex-col gap-4 md:mt-16 md:flex-row">
           <Link
             href="/contact"
             className="flex w-full items-center justify-center gap-2 rounded-lg bg-themes-txt_primary py-4 text-center font-[Montserrat] font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-main md:w-1/2"
