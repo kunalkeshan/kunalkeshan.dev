@@ -2,8 +2,13 @@
  * Skills Data
  */
 
+interface Skill {
+  name: string;
+  image: string;
+}
+
 // Skills Container
-const SKILLS = [
+const SKILLS: Skill[] = [
   {
     name: "TypeScript",
     image:
