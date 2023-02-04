@@ -92,7 +92,7 @@ const Testimonials = () => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4, type: "spring" }}
-      className="mx-auto flex min-h-screen max-w-7xl flex-col items-center px-5 pt-20"
+      className="mx-auto mb-20 flex min-h-screen max-w-7xl flex-col items-center px-5 pt-20"
     >
       <h2 className="group relative h-fit w-fit text-center text-5xl font-semibold">
         What do my friends and clients say{" "}
