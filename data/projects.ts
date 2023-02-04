@@ -49,6 +49,19 @@ const PROJECTS: Project[] = [
     color: "#FDCA40",
     feature: true,
   },
+  {
+    type: "web development",
+    title: "Atom",
+    description:
+      "Atom is a platform enabling the Think-Digital community to share information and resources, keep tabs on happenings, and streamline their processes through automation tools.",
+    github: "https://github.com/td-locus/Atom",
+    website: "https://atom.think-digital.in/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675428847/Portfolio/experience/think_digital_logo_txo2sk.png",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675499797/Portfolio/projects/group_chat_re_frmo_zazi34.svg",
+    color: "#1A6885",
+    feature: true,
+  },
 ];
 
 export default PROJECTS;

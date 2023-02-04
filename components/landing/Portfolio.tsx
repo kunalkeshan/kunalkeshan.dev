@@ -89,7 +89,7 @@ const ProjectCard: React.FC<ProjectDataType> = ({
   );
 };
 
-const Portfolio = () => {
+const Portfolio: React.FC<{ showTill?: number }> = ({ showTill }) => {
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
@@ -109,16 +109,18 @@ const Portfolio = () => {
         />
       </h2>
       <div className="mt-8 flex flex-col items-center justify-center gap-8">
-        {PROJECTS.map((project, index) => (
+        {PROJECTS.slice(0, showTill).map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
       </div>
-      <Link
-        href="/projects"
-        className="mx-auto mt-8 flex w-fit gap-2 rounded-xl bg-themes-txt_primary px-8 py-4 font-[Montserrat] text-lg font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent"
-      >
-        <FaSuitcase /> View all projects
-      </Link>
+      {showTill !== undefined && (
+        <Link
+          href="/projects"
+          className="mx-auto mt-8 flex w-fit gap-2 rounded-xl bg-themes-txt_primary px-8 py-4 font-[Montserrat] text-lg font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent"
+        >
+          <FaSuitcase /> View all projects
+        </Link>
+      )}
     </motion.section>
   );
 };

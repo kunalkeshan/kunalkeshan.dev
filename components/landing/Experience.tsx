@@ -85,7 +85,7 @@ const Experience = () => {
           </div>
         </div>
         <div className="flex w-full flex-col gap-8">
-          {EXPERIENCE.map((experience, index) => (
+          {EXPERIENCE.slice(0, 4).map((experience, index) => (
             <ExperienceCard key={index} {...experience} />
           ))}
         </div>

@@ -41,18 +41,6 @@ const EXPERIENCE: Experience[] = [
     },
   },
   {
-    company: "Blackwins Tech Solutions",
-    position: "Frontend Developer, Intern",
-    description:
-      "Developed a SaaS product from scratch with React.js, Material UI, and optimized the web application to save server resources and reduce bandwidth usage on concurrent logins.",
-    website: "https://blackwinstech.com/",
-    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675427835/Portfolio/experience/blackwins_tech_solutions_o9ysff.ico",
-    date: {
-      start: "May 2022",
-      end: "July 2022",
-    },
-  },
-  {
     company: "Think-Digital",
     position: "Admin",
     description:
@@ -74,6 +62,18 @@ const EXPERIENCE: Experience[] = [
     date: {
       start: "Oct 2021",
       end: "Present",
+    },
+  },
+  {
+    company: "Blackwins Tech Solutions",
+    position: "Frontend Developer, Intern",
+    description:
+      "Developed a SaaS product from scratch with React.js, Material UI, and optimized the web application to save server resources and reduce bandwidth usage on concurrent logins.",
+    website: "https://blackwinstech.com/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675427835/Portfolio/experience/blackwins_tech_solutions_o9ysff.ico",
+    date: {
+      start: "May 2022",
+      end: "July 2022",
     },
   },
 ];
