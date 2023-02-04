@@ -18,12 +18,12 @@ const TestimonialCard: React.FC<TributeDataType> = ({
   image,
 }) => {
   return (
-    <div className="relative mx-auto mt-12 flex max-w-4xl flex-col rounded-xl border-3 border-black p-10 font-[Montserrat] lg:pr-72">
+    <div className="relative mx-auto mt-12 flex min-h-[400px] max-w-4xl flex-col rounded-xl border-3 border-black p-10 font-[Montserrat] lg:pr-72">
       <div className="absolute -top-10 rounded-full bg-black p-5 text-3xl text-white">
         <FaQuoteLeft />
       </div>
       <div>
-        <p className="text-sm font-semibold text-themes-txt_secondary">
+        <p className="text-lg font-semibold text-themes-txt_secondary">
           {testimonial}
         </p>
         <div className="mt-4 flex w-full items-center justify-between lg:max-w-md">

@@ -42,6 +42,10 @@ const Footer = () => {
       url: "/projects",
     },
     {
+      name: "FAQs",
+      url: "/contact#faqs",
+    },
+    {
       name: "Privacy Policy",
       url: "/privacy-policy",
     },

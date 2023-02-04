@@ -4,7 +4,7 @@ import FaqCard from "./FaqCard";
 
 const FrequentlyAskedQuestions = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-20 scroll-mt-20" id="faqs">
       <h2 className="text-center text-5xl font-semibold">
         Frequently asked{" "}
         <span className="bg-portfolio-main px-1 leading-tight">questions</span>
