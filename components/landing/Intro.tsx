@@ -88,7 +88,7 @@ const Intro = () => {
             <FaEnvelope /> Get in touch
           </Link>
           <Link
-            href="/#projects"
+            href="/projects"
             className="flex w-full items-center justify-center gap-2 rounded-lg border-2 border-black bg-white py-4 text-center font-[Montserrat] font-semibold transition-all duration-300 hover:-translate-y-1 hover:bg-themes-txt_primary hover:text-themes-bg_primary md:w-1/2"
           >
             <FaSuitcase /> View portfolio

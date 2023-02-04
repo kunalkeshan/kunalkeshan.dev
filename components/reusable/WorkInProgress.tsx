@@ -18,7 +18,7 @@ const WordInProgress = () => {
         This page is a work in progress...
       </p>
       <Link
-        href="/"
+        href="/contact"
         className="mt-8 flex items-center justify-center gap-2 rounded-xl bg-themes-txt_primary py-4 px-8 text-lg text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent"
       >
         <FaSuitcase /> Contact for more info

@@ -3,17 +3,20 @@
  */
 
 // Dependencies
-import Head from "next/head";
 import React from "react";
+import Head from "next/head";
 import PublicLayout from "../layouts/PublicLayout";
+import WorkInProgress from "../components/reusable/WorkInProgress";
 
 const AboutPage = () => {
   return (
     <>
       <Head>
-        <title>Contact | Kunal Keshan</title>
+        <title>About | Kunal Keshan</title>
       </Head>
-      <PublicLayout></PublicLayout>
+      <PublicLayout>
+        <WorkInProgress />
+      </PublicLayout>
     </>
   );
 };

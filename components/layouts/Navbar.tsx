@@ -23,7 +23,7 @@ const navOptions = [
   },
   {
     name: "Projects",
-    url: "/#projects",
+    url: "/projects",
   },
   {
     name: "Services",

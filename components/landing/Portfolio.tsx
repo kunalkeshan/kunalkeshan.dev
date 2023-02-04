@@ -114,7 +114,7 @@ const Portfolio = () => {
         ))}
       </div>
       <Link
-        href="#"
+        href="/projects"
         className="mx-auto mt-8 flex w-fit gap-2 rounded-xl bg-themes-txt_primary px-8 py-4 font-[Montserrat] text-lg font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent"
       >
         <FaSuitcase /> View all projects

@@ -77,7 +77,7 @@ const Experience = () => {
               are also working on improving themselves and putting in their 100%
             </p>
             <Link
-              href="#"
+              href="/resume"
               className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-themes-bg_primary px-8 py-4 font-[Montserrat] text-lg font-semibold text-themes-txt_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent md:w-fit"
             >
               <FaUser /> See full resume

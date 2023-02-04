@@ -6,6 +6,7 @@
 import React from "react";
 import Head from "next/head";
 import PublicLayout from "../layouts/PublicLayout";
+import WorkInProgress from "../components/reusable/WorkInProgress";
 
 const ContactPage = () => {
   return (
@@ -13,7 +14,9 @@ const ContactPage = () => {
       <Head>
         <title>Contact | Kunal Keshan</title>
       </Head>
-      <PublicLayout></PublicLayout>
+      <PublicLayout>
+        <WorkInProgress />
+      </PublicLayout>
     </>
   );
 };
