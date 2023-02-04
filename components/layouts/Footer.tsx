@@ -115,7 +115,7 @@ const Footer = () => {
             {PAGE_LINKS.map((link, index) => (
               <li
                 key={index}
-                className="mt-4 font-semibold transition-all duration-300 hover:translate-x-1 hover:text-portfolio-accent"
+                className="mt-4 w-fit font-semibold transition-all duration-300 hover:translate-x-1 hover:text-portfolio-accent"
               >
                 <Link href={link.url}>{link.name}</Link>
               </li>
@@ -128,7 +128,7 @@ const Footer = () => {
             {INTERNAL_UTILITY_LINKS.map((link, index) => (
               <li
                 key={index}
-                className="mt-4 font-semibold transition-all duration-300 hover:translate-x-1 hover:text-portfolio-accent"
+                className="mt-4 w-fit font-semibold transition-all duration-300 hover:translate-x-1 hover:text-portfolio-accent"
               >
                 <Link href={link.url} target="_blank" rel="noreferrer">
                   {link.name}
