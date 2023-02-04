@@ -145,7 +145,7 @@ const Footer = () => {
           <p className="text-xl font-semibold">Contact me</p>
           <Link
             href="mailto:hey@kunalkeshan.dev"
-            className="group mt-4 flex items-center gap-2 text-lg font-semibold transition-all duration-300 hover:text-portfolio-main"
+            className="group mt-8 flex items-center gap-2 text-lg font-semibold transition-all duration-300 hover:text-portfolio-main"
           >
             <span className="rounded-full bg-white p-2 text-xl text-black transition-all duration-300 group-hover:text-portfolio-main">
               <FaEnvelope />
