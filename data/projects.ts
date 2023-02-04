@@ -62,6 +62,19 @@ const PROJECTS: Project[] = [
     color: "#1A6885",
     feature: true,
   },
+  {
+    type: "web development",
+    title: "Hardware Web UI",
+    description:
+      "A graphical user interface (GUI) that is built on the Web and used to communicate with the Breast Cancer Detection Neural Network.",
+    github: "https://github.com/kunalkeshan/Hardware-Web-UI",
+    website: "https://hardware-webui.netlify.app/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675501377/Portfolio/projects/nexus-logo.29958d16f2b5d7665c64_lvu8ms.png",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675501196/Portfolio/projects/circuit_sdmr_grloza.svg",
+    color: "#FF39FF",
+    feature: true,
+  },
 ];
 
 export default PROJECTS;
