@@ -1,9 +1,51 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { FaEnvelope } from "react-icons/fa";
+import { BsExclamationTriangle, BsCheckCircle } from "react-icons/bs";
 import SOCIALS from "../../data/socials";
+import { motion } from "framer-motion";
+import { sendContactMail } from "../../utils/mail";
+
+type InputType = "name" | "email" | "phone" | "subject" | "message";
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+  const [input, setInput] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState(false);
+
+  const handleInput =
+    (prop: InputType) =>
+    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      setInput((prev) => {
+        return { ...prev, [prop]: e.target.value };
+      });
+      setError(null);
+    };
+
+  const handleContact = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+      setLoading(true);
+      await sendContactMail(input);
+      setSuccess(true);
+    } catch (error) {
+      setError(
+        "Unable to accept responses right now, please try again later! Sorry for the inconvenience."
+      );
+      setSuccess(false);
+    } finally {
+      setLoading(false);
+      setError(null);
+    }
+  };
+
   return (
     <div className="mx-auto grid w-full grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-4">
       <div className="flex w-full flex-col items-center justify-center text-center lg:items-start lg:justify-start lg:text-left">
@@ -43,78 +85,119 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex items-center justify-center font-[Montserrat]">
-        <form className="flex w-full max-w-lg flex-col gap-8 rounded-xl border-2 border-black p-8 font-semibold shadow-3d">
-          <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
-            <div>
-              <label htmlFor="name" className=" font-bold">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                className="mt-2 w-full rounded-xl border-2  border-black p-4 outline-none transition-all duration-300 hover:shadow-3d focus:shadow-3d"
-                placeholder="Jonathan Joestar"
-                required
-              />
+        {success ? (
+          <div className="flex w-full max-w-lg flex-col items-center gap-2 rounded-xl border-2 border-black p-8 text-center font-semibold shadow-3d">
+            <div className="text-7xl">
+              <BsCheckCircle />
             </div>
-            <div>
-              <label htmlFor="email" className="font-bold">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="mt-2 w-full rounded-xl border-2 border-black p-4 outline-none transition-all duration-300 hover:shadow-3d focus:shadow-3d"
-                placeholder="j.joestar@gmail.com"
-                required
-              />
-            </div>
+            <p className="mt-4 font-bold">Thank you</p>
+            <p>Your message has been submitted.</p>
+            <p>I&apos;l get back to you within 28 - 48 hours.</p>
           </div>
-          <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
-            <div>
-              <label htmlFor="Phone" className="font-bold">
-                Phone
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                placeholder="+91 9876543210"
-                className="mt-2 w-full rounded-xl border-2  border-black p-4 outline-none transition-all duration-300 hover:shadow-3d focus:shadow-3d"
-              />
-            </div>
-            <div>
-              <label htmlFor="subject" className="font-bold">
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                placeholder="Select"
-                className="mt-2 w-full rounded-xl border-2 border-black p-4 outline-none transition-all duration-300 hover:shadow-3d focus:shadow-3d"
-              />
-            </div>
-          </div>
-          <div className="w-full">
-            <label
-              htmlFor="message"
-              className="font-bold text-themes-txt_secondary"
-            >
-              Message
-            </label>
-            <textarea
-              id="message"
-              className="mt-2 w-full rounded-xl border-2 border-black p-4 outline-none transition-all duration-300 hover:shadow-3d focus:shadow-3d"
-              required
-              placeholder="Got any message for me?"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="rounded-xl bg-themes-txt_primary px-8 py-4 text-lg text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent md:w-fit"
+        ) : (
+          <form
+            onSubmit={handleContact}
+            className="flex w-full max-w-lg flex-col gap-8 rounded-xl border-2 border-black p-8 font-semibold shadow-3d"
           >
-            Send message
-          </button>
-        </form>
+            {error && (
+              <motion.div
+                initial={{ opacity: 0, height: 0, translateZ: "20px" }}
+                animate={{
+                  opacity: 1,
+                  height: "fit-content",
+                  translateZ: "0px",
+                }}
+                transition={{ delay: 0.2, type: "spring" }}
+                className="font-['Ubuntu Mono'] rounded-xl border-2 border-red-500 bg-red-100 px-8 py-4 text-red-500"
+              >
+                <p className="flex items-center gap-2">
+                  <BsExclamationTriangle /> {error}
+                </p>
+              </motion.div>
+            )}
+            <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
+              <div>
+                <label htmlFor="name" className=" font-bold">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  className="mt-2 w-full rounded-xl border-2  border-black p-4 outline-none transition-all duration-300 hover:shadow-3d focus:shadow-3d"
+                  placeholder="Jonathan Joestar"
+                  required
+                  value={input.name}
+                  onChange={handleInput("name")}
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="font-bold">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  className="mt-2 w-full rounded-xl border-2 border-black p-4 outline-none transition-all duration-300 hover:shadow-3d focus:shadow-3d"
+                  placeholder="j.joestar@gmail.com"
+                  required
+                  value={input.email}
+                  onChange={handleInput("email")}
+                />
+              </div>
+            </div>
+            <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
+              <div>
+                <label htmlFor="Phone" className="font-bold">
+                  Phone
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="+91 9876543210"
+                  className="mt-2 w-full rounded-xl border-2  border-black p-4 outline-none transition-all duration-300 hover:shadow-3d focus:shadow-3d"
+                  value={input.phone}
+                  onChange={handleInput("phone")}
+                />
+              </div>
+              <div>
+                <label htmlFor="subject" className="font-bold">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  placeholder="Select"
+                  className="mt-2 w-full rounded-xl border-2 border-black p-4 outline-none transition-all duration-300 hover:shadow-3d focus:shadow-3d"
+                  value={input.subject}
+                  onChange={handleInput("subject")}
+                  required
+                />
+              </div>
+            </div>
+            <div className="w-full">
+              <label
+                htmlFor="message"
+                className="font-bold text-themes-txt_secondary"
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                className="mt-2 w-full rounded-xl border-2 border-black p-4 outline-none transition-all duration-300 hover:shadow-3d focus:shadow-3d"
+                required
+                placeholder="Got any message for me?"
+                value={input.message}
+                onChange={handleInput("message")}
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="rounded-xl bg-themes-txt_primary px-8 py-4 text-lg text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:border-portfolio-accent hover:bg-portfolio-accent md:w-fit"
+            >
+              {!loading ? "Send message" : "Please wait..."}
+            </button>
+          </form>
+        )}
       </div>
     </div>
   );

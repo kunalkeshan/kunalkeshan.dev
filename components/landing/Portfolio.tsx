@@ -2,7 +2,7 @@
  * Index Page - Portfolio Section
  */
 
-import React, { useMemo } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -93,10 +93,11 @@ const ProjectCard: React.FC<ProjectDataType> = ({
 };
 
 const Portfolio: React.FC<{ showTill?: number }> = ({ showTill }) => {
-  let isNotProjectsPage = useMemo(
-    () => !window.location.pathname.includes("projects"),
-    []
-  );
+  const [isNotProjectsPage, setIsNotProjectPage] = useState(true);
+
+  useEffect(() => {
+    setIsNotProjectPage(!window.location.pathname.includes("projects"));
+  }, []);
 
   return (
     <motion.section
