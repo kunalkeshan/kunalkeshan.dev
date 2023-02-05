@@ -2,7 +2,7 @@
  * Index Page - Portfolio Section
  */
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -92,7 +92,12 @@ const ProjectCard: React.FC<ProjectDataType> = ({
   );
 };
 
-const Portfolio: React.FC<{ showTill: number }> = ({ showTill }) => {
+const Portfolio: React.FC<{ showTill?: number }> = ({ showTill }) => {
+  let isProjectsPage = false;
+
+  useEffect(() => {
+    isProjectsPage = window.location.pathname.includes("projects");
+  });
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
@@ -116,15 +121,14 @@ const Portfolio: React.FC<{ showTill: number }> = ({ showTill }) => {
           <ProjectCard key={index} {...project} />
         ))}
       </div>
-      {window !== undefined &&
-        !window.location.pathname.includes("projects") && (
-          <Link
-            href="/projects"
-            className="mx-auto mt-8 flex w-fit gap-2 rounded-xl bg-themes-txt_primary px-8 py-4 font-[Montserrat] text-lg font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent"
-          >
-            <FaSuitcase /> View all projects
-          </Link>
-        )}
+      {isProjectsPage && (
+        <Link
+          href="/projects"
+          className="mx-auto mt-8 flex w-fit gap-2 rounded-xl bg-themes-txt_primary px-8 py-4 font-[Montserrat] text-lg font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent"
+        >
+          <FaSuitcase /> View all projects
+        </Link>
+      )}
     </motion.section>
   );
 };
