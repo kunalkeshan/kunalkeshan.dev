@@ -4,8 +4,13 @@ import { isProduction } from "../config";
 import { GA_TRACKING_ID } from "../utils/gtag";
 
 export default function Document() {
+  const metaDescription =
+    "Full-stack dev with a passion for delivering value & helping others thrive. As a 3rd-year Electronics & Communication Engineering student at SRMIST, I offer top-notch full-stack web dev services with a focus on consistency, discipline, grit & hard work. Codelance Devs, my web design co., helps SMEs establish a web presence. I aim to be a knowledgeable software dev & assist startups & enterprises. Passionate about tech education, open-source, productivity & building openly. Improving my skills & sharing my expertise in full-stack dev.";
+  const metaImage = "/thumbnail.png";
+  const metaWebsite = `https://kunalkeshan.dev`;
+
   return (
-    <Html className="">
+    <Html className="" lang="en">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link
@@ -35,6 +40,24 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
           rel="stylesheet"
         />
+
+        {/* <!-- Primary Meta Tags --> */}
+        <meta name="title" content="Kunal Keshan" />
+        <meta name="description" content={metaDescription} />
+
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={metaWebsite} />
+        <meta property="og:title" content="Kunal Keshan" />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={metaImage} />
+
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={metaWebsite} />
+        <meta property="twitter:title" content="Kunal Keshan" />
+        <meta property="twitter:description" content={metaDescription} />
+        <meta property="twitter:image" content={metaImage} />
         {isProduction && (
           <>
             <Script
