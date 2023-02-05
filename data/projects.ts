@@ -18,7 +18,10 @@ interface Project {
   coverImage: string;
   color: string;
   feature?: boolean;
-  // images: string[];
+  slug: string;
+  technologies?: string[];
+  motivation?: string;
+  images?: string[];
 }
 
 // Projects Container
@@ -35,6 +38,18 @@ const PROJECTS: Project[] = [
       "https://res.cloudinary.com/kunalkeshan/image/upload/v1675360105/Portfolio/projects/operating_system_re_iqsc_knzx8u.svg",
     color: "#1976D2",
     feature: true,
+    slug: "shiryoku",
+    technologies: ["TypeScript", "React.js", "Material UI"],
+    motivation:
+      'I founded Shiryoku with the goal of reducing the barrier between students and the resources they need to up-skill themselves. During my third year of college, I was inspired by the philosophy "be the senior you needed the most as a junior." With Shiryoku, I aim to provide students with access to the best resources based on their individual needs, and to guide them with a roadmap for a structured approach to maximize the resources. This initiative is my way of giving back and helping the next generation of students achieve their goals.',
+    images: [
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675591454/Portfolio/projects/shiryoku/shiryoku1_y0ogso.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675591452/Portfolio/projects/shiryoku/shiryoku2_iu7dxc.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675591454/Portfolio/projects/shiryoku/shiryoku3_u5caoj.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675591455/Portfolio/projects/shiryoku/shiryoku4_sudyel.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675591455/Portfolio/projects/shiryoku/shiryoku5_nvgx6k.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675591452/Portfolio/projects/shiryoku/shiryoku6_ccjfav.png",
+    ],
   },
   {
     type: "web development",
@@ -48,6 +63,17 @@ const PROJECTS: Project[] = [
       "https://res.cloudinary.com/kunalkeshan/image/upload/v1675360107/Portfolio/projects/bookshelves_re_lxoy_f0ds3d.svg",
     color: "#FDCA40",
     feature: true,
+    slug: "ece-notes-initiative",
+    technologies: ["JavaScript", "React.js", "Material UI"],
+    motivation:
+      'As a student who took all my classes online, I struggled with finding relevant readings and organizing my time effectively. I felt isolated without the opportunity to interact with upperclassmen and receive guidance on how to effectively use the materials I was given. Inspired by the idea of "being the senior I needed the most as a junior", I created this repository to provide support for anyone who needs access to relevant study materials. This project is my way of making a difference and helping others succeed, just as I wish I had a senior to guide me during my online studies.',
+    images: [
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675591606/Portfolio/projects/ece-notes-initiative/notes1_rexety.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675591607/Portfolio/projects/ece-notes-initiative/notes2_bbwq1e.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675591607/Portfolio/projects/ece-notes-initiative/notes3_vtznwu.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675591608/Portfolio/projects/ece-notes-initiative/notes4_lqg2pm.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675591607/Portfolio/projects/ece-notes-initiative/notes5_xu0r6v.png",
+    ],
   },
   {
     type: "web development",
@@ -60,7 +86,8 @@ const PROJECTS: Project[] = [
     coverImage:
       "https://res.cloudinary.com/kunalkeshan/image/upload/v1675499797/Portfolio/projects/group_chat_re_frmo_zazi34.svg",
     color: "#1A6885",
-    feature: true,
+    feature: false,
+    slug: "td-atom",
   },
   {
     type: "web development",
@@ -73,7 +100,8 @@ const PROJECTS: Project[] = [
     coverImage:
       "https://res.cloudinary.com/kunalkeshan/image/upload/v1675501196/Portfolio/projects/circuit_sdmr_grloza.svg",
     color: "#FF39FF",
-    feature: true,
+    feature: false,
+    slug: "bcd-web-ui",
   },
 ];
 

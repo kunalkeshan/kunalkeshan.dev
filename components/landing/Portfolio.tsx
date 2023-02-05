@@ -22,6 +22,7 @@ const ProjectCard: React.FC<ProjectDataType> = ({
   type,
   github,
   website,
+  slug,
 }) => {
   return (
     <div className="group flex min-h-[400px] w-full flex-col overflow-hidden rounded-xl border-3 border-black transition-all duration-300 hover:-translate-y-2 hover:shadow-3d md:flex-row">
@@ -44,7 +45,7 @@ const ProjectCard: React.FC<ProjectDataType> = ({
         <p className="mt-8 font-[Montserrat] font-semibold">{description}</p>
         {feature ? (
           <Link
-            href="#"
+            href={`/projects/${slug}`}
             className="mt-8 flex items-center gap-2 font-[Montserrat] text-sm font-semibold"
           >
             More info{" "}
@@ -53,24 +54,24 @@ const ProjectCard: React.FC<ProjectDataType> = ({
         ) : (
           <div className="mt-8 flex w-full items-center gap-4 font-[Montserrat] text-sm font-semibold md:flex-wrap">
             {github && (
-              <a
+              <Link
                 className="flex items-center gap-2 rounded-xl py-2 px-8 transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-main"
                 href={github}
                 target="_blank"
                 rel="noreferrer"
               >
                 Code <FaGithub />
-              </a>
+              </Link>
             )}
             {website && (
-              <a
+              <Link
                 className="flex items-center gap-2 rounded-xl bg-themes-txt_primary py-2 px-8 text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent"
                 href={website}
                 target="_blank"
                 rel="noreferrer"
               >
                 Visit <FaGlobe />
-              </a>
+              </Link>
             )}
           </div>
         )}
@@ -91,7 +92,7 @@ const ProjectCard: React.FC<ProjectDataType> = ({
   );
 };
 
-const Portfolio: React.FC<{ showTill?: number }> = ({ showTill }) => {
+const Portfolio: React.FC<{ showTill: number }> = ({ showTill }) => {
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
@@ -115,14 +116,15 @@ const Portfolio: React.FC<{ showTill?: number }> = ({ showTill }) => {
           <ProjectCard key={index} {...project} />
         ))}
       </div>
-      {showTill !== undefined && (
-        <Link
-          href="/projects"
-          className="mx-auto mt-8 flex w-fit gap-2 rounded-xl bg-themes-txt_primary px-8 py-4 font-[Montserrat] text-lg font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent"
-        >
-          <FaSuitcase /> View all projects
-        </Link>
-      )}
+      {window !== undefined &&
+        !window.location.pathname.includes("projects") && (
+          <Link
+            href="/projects"
+            className="mx-auto mt-8 flex w-fit gap-2 rounded-xl bg-themes-txt_primary px-8 py-4 font-[Montserrat] text-lg font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent"
+          >
+            <FaSuitcase /> View all projects
+          </Link>
+        )}
     </motion.section>
   );
 };

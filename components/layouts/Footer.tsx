@@ -68,6 +68,10 @@ const Footer = () => {
       name: "API Repo",
       url: "https://github.com/kunalkeshan/api.kunalkeshan.dev",
     },
+    {
+      name: "Blog",
+      url: "https://blog.kunalkeshan.dev/",
+    },
   ];
 
   const EXTERNAL_UTILITY_LINKS = [];

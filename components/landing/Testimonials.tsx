@@ -9,6 +9,10 @@ import MemeTooltip from "../reusable/MemeTooltip";
 import TRIBUTES from "../../data/tributes";
 import Image from "next/image";
 
+const TributesWithTestimonials = TRIBUTES.filter(
+  (tribute) => tribute.testimonial !== undefined
+);
+
 type TributeDataType = typeof TRIBUTES[number];
 
 const TestimonialCard: React.FC<TributeDataType> = ({
@@ -60,29 +64,29 @@ const TestimonialCard: React.FC<TributeDataType> = ({
 
 const Testimonials = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState<TributeDataType>(
-    TRIBUTES[0]
+    TributesWithTestimonials[0]
   );
 
   type IncDec = -1 | 1;
 
   const handleChangeTestimonial = (change: IncDec) => () => {
-    let currentIndex = TRIBUTES.findIndex(
+    let currentIndex = TributesWithTestimonials.findIndex(
       (tribute) => tribute.name === currentTestimonial.name
     );
-    const length = TRIBUTES.length - 1;
+    const length = TributesWithTestimonials.length - 1;
     if (change > 0) {
       if (currentIndex + 1 <= length) {
         currentIndex++;
-        setCurrentTestimonial(TRIBUTES[currentIndex]);
+        setCurrentTestimonial(TributesWithTestimonials[currentIndex]);
       } else {
-        setCurrentTestimonial(TRIBUTES[0]);
+        setCurrentTestimonial(TributesWithTestimonials[0]);
       }
     } else {
       if (currentIndex - 1 >= 0) {
         currentIndex--;
-        setCurrentTestimonial(TRIBUTES[currentIndex]);
+        setCurrentTestimonial(TributesWithTestimonials[currentIndex]);
       } else {
-        setCurrentTestimonial(TRIBUTES[length]);
+        setCurrentTestimonial(TributesWithTestimonials[length]);
       }
     }
   };
