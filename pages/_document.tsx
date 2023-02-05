@@ -59,7 +59,7 @@ export default function Document() {
           </>
         )}
       </Head>
-      <body className="font-['Nunito Sans'] relative bg-themes-bg_primary text-themes-txt_primary">
+      <body className="font-['Nunito Sans'] relative bg-[#FAF9F6] text-themes-txt_primary">
         <Main />
         <NextScript />
       </body>
