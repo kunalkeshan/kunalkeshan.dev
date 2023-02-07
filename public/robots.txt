@@ -4,4 +4,4 @@ Disallow: /admin/
 User-agent: *
 Allow: /
 
-Sitemap: http://kunalkeshan.com/sitemap.xml
+Sitemap: http://kunalkeshan.dev/sitemap.xml
