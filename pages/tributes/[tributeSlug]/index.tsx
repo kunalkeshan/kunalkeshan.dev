@@ -8,12 +8,22 @@ import Head from "next/head";
 import PublicLayout from "../../../layouts/PublicLayout";
 import WorkInProgress from "../../../components/reusable/WorkInProgress";
 import { motion } from "framer-motion";
+import TRIBUTES from "../../../data/tributes";
+import {
+  GetServerSideProps,
+  InferGetServerSidePropsType,
+  NextPage,
+} from "next";
 
-const TributesPage = () => {
+const IndividualTributePage: NextPage<
+  InferGetServerSidePropsType<typeof getServerSideProps>
+> = ({ tribute }) => {
+  const { name } = tribute;
+
   return (
     <>
       <Head>
-        <title>Tributes | Kunal Keshan</title>
+        <title>{name}</title>
       </Head>
       <PublicLayout>
         <motion.section
@@ -29,4 +39,29 @@ const TributesPage = () => {
   );
 };
 
-export default TributesPage;
+export default IndividualTributePage;
+
+type Tribute = typeof TRIBUTES[number];
+
+export const getServerSideProps: GetServerSideProps<{
+  tribute: Tribute;
+}> = async (context) => {
+  const { tributeSlug } = context.query;
+
+  const tribute = TRIBUTES.find(
+    (trib) => trib.slug === tributeSlug && trib.feature
+  );
+
+  if (!tribute) {
+    return {
+      redirect: {
+        destination: "/projects",
+        permanent: false,
+      },
+    };
+  }
+
+  return {
+    props: { tribute },
+  };
+};

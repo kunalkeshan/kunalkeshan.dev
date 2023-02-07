@@ -93,7 +93,7 @@ const TributeCard: React.FC<TributeDataType> = ({
           {company.position} @{company.name}
         </div>
       </h2>
-      <p className="mb-8 mt-4 text-justify font-[Montserrat] text-sm font-semibold md:text-base">
+      <p className="my-4 text-justify font-[Montserrat] text-sm font-semibold md:text-base">
         {intro}
       </p>
       <Link
