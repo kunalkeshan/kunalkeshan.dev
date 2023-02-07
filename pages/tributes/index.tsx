@@ -76,7 +76,7 @@ const TributeCard: React.FC<TributeDataType> = ({
         </Link>
         <Link
           href={`/tributes/${slug}`}
-          className="absolute bottom-0 right-[40px] -z-10 flex h-full max-h-[80px] max-w-[80px] items-center justify-center overflow-hidden rounded-full border-2 border-black bg-white shadow-3d-small transition-all duration-300 hover:z-0 hover:-translate-y-1 hover:shadow-3d"
+          className="absolute bottom-0 right-[40px] -z-10 flex h-full max-h-[80px] max-w-[80px] rotate-6 items-center justify-center overflow-hidden rounded-full border-2 border-black bg-white shadow-3d-small transition-all duration-300 hover:z-0 hover:-translate-y-1 hover:shadow-3d"
         >
           <Image
             src={company.logo}
