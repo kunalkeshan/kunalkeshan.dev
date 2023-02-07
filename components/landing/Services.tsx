@@ -18,10 +18,7 @@ const ServiceCard: React.FC<ServiceDataType> = ({
   description,
 }) => {
   return (
-    <Link
-      href="/#services"
-      className="group min-h-[460px] w-full overflow-hidden rounded-xl border-3 border-black transition-all duration-300 hover:-translate-y-2 hover:shadow-3d"
-    >
+    <div className="group min-h-[460px] w-full overflow-hidden rounded-xl border-3 border-black transition-all duration-300 hover:-translate-y-2 hover:shadow-3d">
       <div className="flex min-h-[240px] w-full items-center justify-center bg-themes-bg_secondary">
         <Image
           src={image}
@@ -35,7 +32,7 @@ const ServiceCard: React.FC<ServiceDataType> = ({
         <h3 className="text-2xl font-semibold">{title}</h3>
         <p className="mt-4 text-justify text-sm">{description}</p>
       </div>
-    </Link>
+    </div>
   );
 };
 
