@@ -41,7 +41,13 @@ const ExperienceCard: React.FC<ExperienceDataType> = ({
       </div>
       <hr className="border-2 border-b-black" />
       <div className="px-10 py-5">
-        <h3 className="text-2xl font-semibold">{position}</h3>
+        <h3 className="text-2xl font-semibold">{position},</h3>
+        <Link
+          href={website}
+          className="text-lg font-semibold underline-offset-2 transition-all duration-300 hover:text-portfolio-accent hover:underline"
+        >
+          {company}
+        </Link>
         <p className="mt-4 font-semibold text-themes-txt_secondary">
           {description}
         </p>
