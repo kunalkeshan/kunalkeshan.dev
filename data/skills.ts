@@ -27,7 +27,7 @@ const SKILLS: Skill[] = [
   {
     name: "Next.js",
     image:
-      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675439306/Portfolio/skills/next_ompczl.svg",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675740659/Portfolio/skills/nextjs_uc4a9b.png",
   },
   {
     name: "React.js",
