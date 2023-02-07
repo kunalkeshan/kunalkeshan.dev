@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+
+User-agent: *
+Allow: /
+
+Sitemap: http://kunalkeshan.com/sitemap.xml
