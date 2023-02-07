@@ -25,7 +25,7 @@ const ResumeCard: React.FC<ResumeCardDataType> = ({
         <Link
           href={website}
           target="_blank"
-          className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-full border-2 border-black shadow-3d-small transition-all duration-300 hover:shadow-3d lg:h-20 lg:w-20"
+          className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-full border-2 border-black shadow-3d-small transition-all duration-300 hover:-translate-y-1 hover:shadow-3d lg:h-20 lg:w-20"
         >
           <Image
             src={logo}

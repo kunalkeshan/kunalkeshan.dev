@@ -52,7 +52,7 @@ const ProjectCard: React.FC<ProjectDataType> = ({
             <FaArrowRight className="transition-all duration-300 group-hover:translate-x-1" />
           </Link>
         ) : (
-          <div className="mt-8 flex w-full items-center gap-4 font-[Montserrat] text-sm font-semibold md:flex-wrap">
+          <div className="mt-8 flex w-full flex-wrap items-center gap-4 font-[Montserrat] text-sm font-semibold">
             {github && (
               <Link
                 className="flex items-center gap-2 rounded-xl py-2 px-8 transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-main"
@@ -106,9 +106,9 @@ const Portfolio: React.FC<{ showTill?: number }> = ({ showTill }) => {
       transition={{ delay: 0.4, type: "spring" }}
       className="mx-auto mt-20 min-h-screen max-w-7xl px-5 xl:mt-5"
     >
-      <h2 className="group relative mx-auto max-w-[26ch] text-center text-5xl font-semibold">
+      <h2 className="group relative mx-auto max-w-[26ch] text-center text-3xl font-semibold leading-tight md:text-5xl">
         Some fine additions to my{" "}
-        <span className="mt-1 bg-portfolio-main px-1 leading-tight">
+        <span className="mt-1 whitespace-nowrap bg-portfolio-main px-1 leading-tight">
           development portfolio
         </span>
         <MemeTooltip

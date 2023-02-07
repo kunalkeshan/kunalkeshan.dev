@@ -1,5 +1,5 @@
 /**
- * Tributes Page
+ * Individual Tributes Page
  */
 
 // Dependencies
