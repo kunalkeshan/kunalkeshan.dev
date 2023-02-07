@@ -59,7 +59,7 @@ export default function Document() {
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:image" content={metaImage} />
 
-        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="all" />
         {isProduction && (
           <>
             <Script
