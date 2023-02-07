@@ -41,7 +41,7 @@ const Navbar = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2, type: "spring" }}
     >
-      <div className="mx-auto flex w-full max-w-3xl items-center justify-between rounded-xl border-2 border-black bg-white py-3 px-4 shadow-3d">
+      <div className="z-50 mx-auto flex w-full max-w-3xl items-center justify-between rounded-xl border-2 border-black bg-white py-3 px-4 shadow-3d">
         <Link
           href="/"
           className="h-12 w-12 overflow-hidden rounded-full transition-all duration-300 hover:scale-95"
@@ -54,7 +54,7 @@ const Navbar = () => {
             className="h-full w-full object-cover"
           />
         </Link>
-        <ul className="hidden gap-6 text-[18px] font-semibold md:flex">
+        <ul className="z-50 hidden gap-6 text-[18px] font-semibold md:flex">
           {navOptions.map((option, index) => (
             <li
               key={index}

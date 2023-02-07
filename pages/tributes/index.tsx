@@ -60,11 +60,10 @@ const TributeCard: React.FC<TributeDataType> = ({
   ];
 
   return (
-    <li className="flex w-full flex-col gap-4 rounded-xl border-3 border-black bg-white px-10 py-5 shadow-3d">
+    <li className="z-10 flex w-full flex-col gap-4 rounded-xl border-3 border-black bg-white px-10 py-5 shadow-3d">
       <div className="relative z-20 mx-auto flex w-full items-center justify-center">
         <Link
-          href={website}
-          target="_blank"
+          href={`/tributes/${slug}`}
           className="flex h-full max-h-[200px] max-w-[200px] items-center justify-center overflow-hidden rounded-full border-2 border-black bg-white shadow-3d-small-reverse transition-all duration-300 hover:-translate-y-1 hover:shadow-3d-reverse"
         >
           <Image
@@ -76,8 +75,7 @@ const TributeCard: React.FC<TributeDataType> = ({
           ></Image>
         </Link>
         <Link
-          href={company.website}
-          target="_blank"
+          href={`/tributes/${slug}`}
           className="absolute bottom-0 right-[40px] -z-10 flex h-full max-h-[80px] max-w-[80px] items-center justify-center overflow-hidden rounded-full border-2 border-black bg-white shadow-3d-small transition-all duration-300 hover:z-0 hover:-translate-y-1 hover:shadow-3d"
         >
           <Image
@@ -95,7 +93,7 @@ const TributeCard: React.FC<TributeDataType> = ({
           {company.position} @{company.name}
         </div>
       </h2>
-      <p className="mb-8 text-justify font-[Montserrat] text-sm font-semibold md:text-base">
+      <p className="mb-8 mt-4 text-justify font-[Montserrat] text-sm font-semibold md:text-base">
         {intro}
       </p>
       <Link
