@@ -30,16 +30,18 @@ const Intro = () => {
       <div className="mx-auto flex w-full max-w-lg flex-col justify-center text-center md:max-w-[640px] md:text-left">
         <h1 className="text-3xl font-semibold sm:text-4xl md:text-7xl">
           I&apos;m{" "}
-          <span className="whitespace-nowrap bg-portfolio-main px-1 text-white">
+          <span className="whitespace-nowrap bg-portfolio-main px-1 leading-tight text-white">
             Kunal Keshan
           </span>
           ,
-          <div className="mt-4">
+          <div className="mt-4 leading-tight">
             a <Typewriter options={typewriterOptions} />
           </div>
           <div className="mt-4">
             from{" "}
-            <span className="bg-portfolio-accent px-1 text-white">Chennai</span>
+            <span className="bg-portfolio-accent px-1 leading-tight text-white">
+              Chennai
+            </span>
           </div>
         </h1>
         <h2 className="mt-4 font-[Montserrat] font-semibold text-themes-txt_secondary md:text-lg">

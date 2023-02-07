@@ -31,7 +31,7 @@ const AboutIntro = () => {
         </Link>
       </div>
       <div className="mx-auto mt-8 flex items-center justify-center gap-8">
-        <div className="h-full max-h-[160px] w-full max-w-[160px] overflow-hidden rounded-full border-2 border-black shadow-3d-small-reverse transition-all duration-300 hover:shadow-3d-reverse md:absolute md:top-1/3 md:-left-12 md:max-h-[200px] md:max-w-[200px] md:-translate-y-1/2 lg:left-4">
+        <div className="h-full max-h-[160px] w-full max-w-[160px] overflow-hidden rounded-full border-2 border-black shadow-3d-small-reverse transition-all duration-300 hover:shadow-3d-reverse md:absolute md:top-1/3 md:-left-12 md:max-h-[200px] md:max-w-[200px] md:-translate-y-1/2 lg:left-4 lg:top-[44%]">
           <Image
             src={IMAGE_SOURCE.ART_IMAGE}
             alt="(～￣▽￣)～"
@@ -40,7 +40,7 @@ const AboutIntro = () => {
             className="h-auto w-full object-contain"
           />
         </div>
-        <div className="h-full max-h-[160px] w-full max-w-[160px] overflow-hidden rounded-full border-2 border-black shadow-3d-small transition-all duration-300 hover:shadow-3d md:absolute md:top-1/4 md:-right-12 md:max-h-[200px] md:max-w-[200px] md:-translate-y-1/2 lg:right-4">
+        <div className="h-full max-h-[160px] w-full max-w-[160px] overflow-hidden rounded-full border-2 border-black shadow-3d-small transition-all duration-300 hover:shadow-3d md:absolute md:top-1/4 md:-right-12 md:max-h-[200px] md:max-w-[200px] md:-translate-y-1/2 lg:right-4 lg:top-[33%]">
           <Image
             src={IMAGE_SOURCE.PROFILE_IMAGE}
             alt="(～￣▽￣)～"

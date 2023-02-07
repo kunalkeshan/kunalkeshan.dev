@@ -36,7 +36,13 @@ const ResumeCard: React.FC<ResumeCardDataType> = ({
           />
         </Link>
         <div className="md:max-w-sm lg:max-w-lg">
-          <h3 className="mt-4 text-xl font-bold lg:text-2xl">{position}</h3>
+          <h3 className="mt-4 text-xl font-bold lg:text-2xl">{position},</h3>
+          <Link
+            href={website}
+            className="text-lg font-semibold underline-offset-2 transition-all duration-300 hover:text-portfolio-accent hover:underline"
+          >
+            {company}
+          </Link>
           <p className="mt-4 font-[Montserrat] text-sm font-semibold text-themes-txt_secondary lg:text-base">
             {description}
           </p>
@@ -57,7 +63,7 @@ const ResumeCard: React.FC<ResumeCardDataType> = ({
 
 const Resume = () => {
   return (
-    <div className="mx-auto mt-20 max-w-7xl px-5">
+    <div className="mx-auto my-20 max-w-7xl px-5">
       <h2 className="text-center text-3xl font-bold">
         Take a look at my{" "}
         <span className="leading-ti bg-portfolio-main px-1">resume</span>
