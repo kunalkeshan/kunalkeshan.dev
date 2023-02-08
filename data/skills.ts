@@ -2,7 +2,7 @@
  * Skills Data
  */
 
-interface Skill {
+export interface Skill {
   name: string;
   image: string;
 }

@@ -10,7 +10,7 @@ const WordInProgress = () => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.4, type: "spring" }}
+      transition={{ delay: 0.2, type: "spring" }}
       className="mx-auto mb-20 w-full max-w-md px-5"
     >
       <Lottie loop play animationData={WorkInProgressAnimationData} />

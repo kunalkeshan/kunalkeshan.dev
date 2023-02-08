@@ -2,7 +2,7 @@
  * Legal Data
  */
 
-interface LegalData {
+export interface LegalData {
   title: string;
   description: string;
 }

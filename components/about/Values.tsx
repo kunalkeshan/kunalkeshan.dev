@@ -1,10 +1,8 @@
 import React from "react";
-import VALUES from "../../data/values";
+import VALUES, { Values } from "../../data/values";
 import Image from "next/image";
 
-type ValueDataType = typeof VALUES[number];
-
-const ValueCard: React.FC<ValueDataType> = ({ image, title, description }) => {
+const ValueCard: React.FC<Values> = ({ image, title, description }) => {
   return (
     <li className="flex w-full flex-col overflow-hidden rounded-xl border-3 border-black md:max-w-xl md:flex-row lg:min-h-full">
       <div className="flex w-full items-center justify-center bg-themes-bg_secondary p-10 md:max-w-[200px]">
@@ -26,7 +24,7 @@ const ValueCard: React.FC<ValueDataType> = ({ image, title, description }) => {
   );
 };
 
-const Values = () => {
+const ValuesSection = () => {
   return (
     <div className="mx-auto mt-20 max-w-7xl px-5 lg:mt-40">
       <h2 className="text-center text-2xl font-bold">
@@ -47,4 +45,4 @@ const Values = () => {
   );
 };
 
-export default Values;
+export default ValuesSection;

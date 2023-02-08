@@ -2,7 +2,7 @@
  * Experience Data
  */
 
-interface Experience {
+export interface Experience {
   company: string;
   position: string;
   description: string;

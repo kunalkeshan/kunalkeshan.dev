@@ -23,7 +23,7 @@ const AboutPage = () => {
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, type: "spring" }}
+          transition={{ delay: 0.2, type: "spring" }}
           className="mt-10 mb-20 overflow-hidden"
         >
           <AboutIntro />

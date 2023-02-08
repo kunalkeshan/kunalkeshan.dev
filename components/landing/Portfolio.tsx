@@ -8,11 +8,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaArrowRight, FaGithub, FaGlobe, FaSuitcase } from "react-icons/fa";
 import MemeTooltip from "../reusable/MemeTooltip";
-import PROJECTS from "../../data/projects";
+import PROJECTS, { Project } from "../../data/projects";
 
-type ProjectDataType = typeof PROJECTS[number];
-
-const ProjectCard: React.FC<ProjectDataType> = ({
+const ProjectCard: React.FC<Project> = ({
   coverImage,
   color,
   title,
@@ -103,7 +101,7 @@ const Portfolio: React.FC<{ showTill?: number }> = ({ showTill }) => {
     <motion.section
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.4, type: "spring" }}
+      transition={{ delay: 0.2, type: "spring" }}
       className="mx-auto mt-20 min-h-screen max-w-7xl px-5 xl:mt-5"
     >
       <h2 className="group relative mx-auto max-w-[26ch] text-center text-3xl font-semibold leading-tight md:text-5xl">

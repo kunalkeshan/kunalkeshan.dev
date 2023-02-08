@@ -7,12 +7,10 @@ import { motion } from "framer-motion";
 import MemeTooltip from "../reusable/MemeTooltip";
 import Link from "next/link";
 import { FaUser } from "react-icons/fa";
-import EXPERIENCE from "../../data/experience";
+import EXPERIENCE, { Experience } from "../../data/experience";
 import Image from "next/image";
 
-type ExperienceDataType = typeof EXPERIENCE[number];
-
-const ExperienceCard: React.FC<ExperienceDataType> = ({
+const ExperienceCard: React.FC<Experience> = ({
   date,
   website,
   logo,
@@ -56,12 +54,12 @@ const ExperienceCard: React.FC<ExperienceDataType> = ({
   );
 };
 
-const Experience = () => {
+const ExperienceSection = () => {
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.4, type: "spring" }}
+      transition={{ delay: 0.2, type: "spring" }}
       className="mx-auto mt-20 min-h-screen w-full bg-themes-txt_primary p-5 pb-40"
     >
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 pt-10 text-themes-bg_primary md:grid-cols-2 md:pt-20">
@@ -100,4 +98,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default ExperienceSection;

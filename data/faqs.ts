@@ -2,7 +2,7 @@
  * Frequently Asked Question Data
  */
 
-interface Faq {
+export interface Faq {
   question: string;
   answer: string;
 }

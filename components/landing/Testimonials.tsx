@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaArrowLeft, FaArrowRight, FaQuoteLeft } from "react-icons/fa";
 import MemeTooltip from "../reusable/MemeTooltip";
-import TRIBUTES from "../../data/tributes";
+import TRIBUTES, { Tribute } from "../../data/tributes";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,7 +14,7 @@ const TributesWithTestimonials = TRIBUTES.filter(
   (tribute) => tribute.testimonial !== undefined
 );
 
-type TributeDataType = typeof TRIBUTES[number];
+type TributeDataType = WithRequired<Tribute, "testimonial">;
 
 const TestimonialName: React.FC<TributeDataType> = ({
   name,
@@ -110,7 +110,7 @@ const Testimonials = () => {
     <motion.section
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.4, type: "spring" }}
+      transition={{ delay: 0.2, type: "spring" }}
       className="mx-auto mb-20 flex min-h-screen max-w-7xl flex-col items-center px-5 pt-20"
     >
       <h2 className="group relative h-fit w-fit text-center text-5xl font-semibold">

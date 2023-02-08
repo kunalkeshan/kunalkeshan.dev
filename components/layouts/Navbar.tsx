@@ -39,7 +39,7 @@ const Navbar = () => {
       className="z-50 w-full py-6 px-3"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.2, type: "spring" }}
+      transition={{ delay: 0.4, type: "spring" }}
     >
       <div className="z-50 mx-auto flex w-full max-w-3xl items-center justify-between rounded-xl border-2 border-black bg-white py-3 px-4 shadow-3d">
         <Link

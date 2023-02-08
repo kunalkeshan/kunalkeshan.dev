@@ -24,7 +24,7 @@ const Intro = () => {
     <motion.section
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.4, type: "spring" }}
+      transition={{ delay: 0.2, type: "spring" }}
       className="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-5 pt-10 md:pb-20 lg:grid-cols-2 lg:pt-20"
     >
       <div className="mx-auto flex w-full max-w-lg flex-col justify-center text-center md:max-w-[640px] md:text-left">

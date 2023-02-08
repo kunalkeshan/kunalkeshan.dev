@@ -2,9 +2,14 @@
  * Services Data
  */
 
-// Services Container
+export interface Services {
+  title: string;
+  description: string;
+  image: string;
+}
 
-const SERVICES = [
+// Services Container
+const SERVICES: Services[] = [
   {
     title: "Web development",
     description:

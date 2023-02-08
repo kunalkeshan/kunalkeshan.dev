@@ -16,7 +16,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
-interface Social {
+export interface Social {
   name: string;
   url: string;
   Icon: IconType;

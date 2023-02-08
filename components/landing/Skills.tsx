@@ -12,7 +12,7 @@ const Skills = () => {
     <motion.section
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.4, type: "spring" }}
+      transition={{ delay: 0.2, type: "spring" }}
       className="my-32 mb-20 w-full overflow-x-clip lg:mb-52"
     >
       <div className="mx-auto block w-[120%] -translate-x-16 -rotate-[8deg] bg-themes-txt_primary px-10 py-16 text-themes-bg_primary">

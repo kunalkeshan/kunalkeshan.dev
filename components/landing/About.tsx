@@ -28,7 +28,7 @@ const About = () => {
     <motion.section
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.4, type: "spring" }}
+      transition={{ delay: 0.2, type: "spring" }}
       className="mx-auto mt-20 grid min-h-screen max-w-7xl scroll-mt-20 grid-cols-1 gap-16 px-5 text-center lg:grid-cols-2 lg:text-left xl:mt-5"
     >
       <div className="order-last flex w-full items-center justify-center lg:order-none">

@@ -2,7 +2,7 @@
  * Projects Data
  */
 
-interface Project {
+export interface Project {
   type:
     | "web development"
     | "ui/ux"
@@ -12,13 +12,13 @@ interface Project {
     | "no-code";
   title: string;
   description: string;
-  github?: string;
-  website?: string;
   logo: string;
   coverImage: string;
   color: string;
+  github?: string;
+  website?: string;
   feature?: boolean;
-  slug: string;
+  slug?: string;
   technologies?: string[];
   motivation?: string;
   images?: string[];

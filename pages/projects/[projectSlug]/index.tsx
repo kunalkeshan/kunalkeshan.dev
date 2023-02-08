@@ -8,7 +8,7 @@ import Head from "next/head";
 import PublicLayout from "../../../layouts/PublicLayout";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import PROJECTS from "../../../data/projects";
+import PROJECTS, { Project } from "../../../data/projects";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import {
   GetServerSideProps,
@@ -42,7 +42,7 @@ const ProjectsPage: NextPage<
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, type: "spring" }}
+          transition={{ delay: 0.2, type: "spring" }}
           className="mx-auto mt-10 mb-20 max-w-4xl px-5 md:max-w-7xl"
         >
           <h1 className="text-center text-3xl font-bold lg:text-5xl">
@@ -160,8 +160,6 @@ const ProjectsPage: NextPage<
 };
 
 export default ProjectsPage;
-
-type Project = typeof PROJECTS[number];
 
 export const getServerSideProps: GetServerSideProps<{
   project: Project;

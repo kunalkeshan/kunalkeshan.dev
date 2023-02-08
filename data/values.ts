@@ -4,7 +4,7 @@
 
 // Dependencies;
 
-interface Values {
+export interface Values {
   title: string;
   description: string;
   image: string;

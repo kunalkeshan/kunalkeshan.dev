@@ -2,10 +2,17 @@
  * Tributes Data
  */
 
-interface Tribute {
+export interface Tribute {
   name: string;
   website: string;
   image: string;
+  company: {
+    name: string;
+    description: string;
+    position: string;
+    website: string;
+    logo: string;
+  };
   testimonial?: string;
   socials?: {
     linkedin?: string;
@@ -13,13 +20,6 @@ interface Tribute {
     instagram?: string;
     youtube?: string;
     github?: string;
-  };
-  company: {
-    name: string;
-    description: string;
-    position: string;
-    website: string;
-    logo: string;
   };
   feature?: boolean;
   slug?: string;

@@ -7,7 +7,7 @@ import React from "react";
 import Head from "next/head";
 import PublicLayout from "../../layouts/PublicLayout";
 import { motion } from "framer-motion";
-import TRIBUTES from "../../data/tributes";
+import TRIBUTES, { Tribute } from "../../data/tributes";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -20,7 +20,10 @@ import {
 
 const TributeIndividuals = TRIBUTES.filter((tribute) => tribute.feature);
 
-type TributeDataType = typeof TRIBUTES[number];
+type TributeDataType = WithRequired<
+  Tribute,
+  "feature" | "slug" | "intro" | "testimonial"
+>;
 
 const TributeCard: React.FC<TributeDataType> = ({
   slug,
@@ -131,7 +134,7 @@ const TributesPage = () => {
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, type: "spring" }}
+          transition={{ delay: 0.2, type: "spring" }}
           className="mx-auto mt-10 mb-20 max-w-7xl px-5"
         >
           <h1 className="text-center text-3xl font-bold md:text-5xl">

@@ -4,19 +4,13 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import SERVICES from "../../data/services";
+import SERVICES, { Services } from "../../data/services";
 import Image from "next/image";
 import Link from "next/link";
 import { FaEnvelope } from "react-icons/fa";
 import MemeTooltip from "../reusable/MemeTooltip";
 
-type ServiceDataType = typeof SERVICES[number];
-
-const ServiceCard: React.FC<ServiceDataType> = ({
-  image,
-  title,
-  description,
-}) => {
+const ServiceCard: React.FC<Services> = ({ image, title, description }) => {
   return (
     <div className="group min-h-[460px] w-full overflow-hidden rounded-xl border-3 border-black transition-all duration-300 hover:-translate-y-2 hover:shadow-3d">
       <div className="flex min-h-[240px] w-full items-center justify-center bg-themes-bg_secondary">
@@ -36,12 +30,12 @@ const ServiceCard: React.FC<ServiceDataType> = ({
   );
 };
 
-const Services = () => {
+const ServicesSection = () => {
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.4, type: "spring" }}
+      transition={{ delay: 0.2, type: "spring" }}
       className="mx-auto mt-20 min-h-screen max-w-7xl scroll-mt-20 px-5 lg:mt-0"
       id="services"
     >
@@ -91,4 +85,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesSection;
