@@ -6,7 +6,6 @@
 import React from "react";
 import Head from "next/head";
 import PublicLayout from "../layouts/PublicLayout";
-import WorkInProgress from "../components/reusable/WorkInProgress";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,12 +23,7 @@ const NotFoundPage = () => {
           transition={{ delay: 0.2, type: "spring" }}
           className="mx-auto mt-10 mb-20 max-w-7xl px-5"
         >
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, type: "spring" }}
-            className="relative z-20 flex w-full flex-col items-center justify-center lg:mt-20 lg:flex-row"
-          >
+          <div className="relative z-20 flex w-full flex-col items-center justify-center lg:mt-20 lg:flex-row">
             <h1 className="absolute left-1/2 top-1/4 z-10 -translate-x-1/2 gap-10 font-[Montserrat] text-[10rem] font-extrabold text-themes-txt_secondary text-opacity-10 md:text-[15rem] lg:left-1/4 lg:-top-20">
               404
             </h1>
@@ -56,7 +50,7 @@ const NotFoundPage = () => {
                 Go to homepage
               </Link>
             </div>
-          </motion.div>
+          </div>
         </motion.section>
       </PublicLayout>
     </>
