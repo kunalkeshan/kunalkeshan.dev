@@ -118,7 +118,7 @@ const Contact = () => {
             <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
               <div>
                 <label htmlFor="name" className=" font-bold">
-                  Name
+                  Name*
                 </label>
                 <input
                   type="text"
@@ -132,7 +132,7 @@ const Contact = () => {
               </div>
               <div>
                 <label htmlFor="email" className="font-bold">
-                  Email
+                  Email*
                 </label>
                 <input
                   type="email"
@@ -161,7 +161,7 @@ const Contact = () => {
               </div>
               <div>
                 <label htmlFor="subject" className="font-bold">
-                  Subject
+                  Subject*
                 </label>
                 <input
                   type="text"
@@ -179,7 +179,7 @@ const Contact = () => {
                 htmlFor="message"
                 className="font-bold text-themes-txt_secondary"
               >
-                Message
+                Message*
               </label>
               <textarea
                 id="message"
