@@ -11,14 +11,15 @@ import Image from "next/image";
 import PROJECTS, { Project } from "../../../data/projects";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import {
-  GetServerSideProps,
-  InferGetServerSidePropsType,
+  InferGetStaticPropsType,
   NextPage,
+  GetStaticProps,
+  GetStaticPaths,
 } from "next";
 import Link from "next/link";
 
 const ProjectsPage: NextPage<
-  InferGetServerSidePropsType<typeof getServerSideProps>
+  InferGetStaticPropsType<typeof getStaticProps>
 > = ({ project }) => {
   const {
     title,
@@ -161,10 +162,24 @@ const ProjectsPage: NextPage<
 
 export default ProjectsPage;
 
-export const getServerSideProps: GetServerSideProps<{
-  project: Project;
-}> = async (context) => {
-  const { projectSlug } = context.query;
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths = PROJECTS.map((project) => {
+    return {
+      params: {
+        projectSlug: project.slug,
+      },
+    };
+  });
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps<{ project: Project }> = async (
+  context
+) => {
+  const { projectSlug } = context.params!;
 
   const project = PROJECTS.find(
     (proj) => proj.slug === projectSlug && proj.feature
