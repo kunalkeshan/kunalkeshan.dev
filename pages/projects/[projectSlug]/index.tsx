@@ -163,7 +163,7 @@ const ProjectsPage: NextPage<
 export default ProjectsPage;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = PROJECTS.map((project) => {
+  const paths = PROJECTS.filter((project) => project.feature).map((project) => {
     return {
       params: {
         projectSlug: project.slug,

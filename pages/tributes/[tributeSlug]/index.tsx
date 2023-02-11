@@ -45,7 +45,7 @@ export default IndividualTributePage;
 type Tribute = typeof TRIBUTES[number];
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = TRIBUTES.map((tribute) => {
+  const paths = TRIBUTES.filter((tribute) => tribute.feature).map((tribute) => {
     return {
       params: {
         tributeSlug: tribute.slug,
