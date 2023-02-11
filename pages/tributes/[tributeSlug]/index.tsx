@@ -10,13 +10,14 @@ import WorkInProgress from "../../../components/reusable/WorkInProgress";
 import { motion } from "framer-motion";
 import TRIBUTES from "../../../data/tributes";
 import {
-  GetServerSideProps,
-  InferGetServerSidePropsType,
   NextPage,
+  GetStaticProps,
+  GetStaticPaths,
+  InferGetStaticPropsType,
 } from "next";
 
 const IndividualTributePage: NextPage<
-  InferGetServerSidePropsType<typeof getServerSideProps>
+  InferGetStaticPropsType<typeof getStaticProps>
 > = ({ tribute }) => {
   const { name } = tribute;
 
@@ -43,10 +44,25 @@ export default IndividualTributePage;
 
 type Tribute = typeof TRIBUTES[number];
 
-export const getServerSideProps: GetServerSideProps<{
-  tribute: Tribute;
-}> = async (context) => {
-  const { tributeSlug } = context.query;
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths = TRIBUTES.filter((tribute) => tribute.feature).map((tribute) => {
+    return {
+      params: {
+        tributeSlug: tribute.slug,
+      },
+    };
+  });
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps<{ tribute: Tribute }> = async (
+  context
+) => {
+  const { tributeSlug } = context.params!;
+  console.log(tributeSlug);
 
   const tribute = TRIBUTES.find(
     (trib) => trib.slug === tributeSlug && trib.feature
@@ -55,7 +71,7 @@ export const getServerSideProps: GetServerSideProps<{
   if (!tribute) {
     return {
       redirect: {
-        destination: "/projects",
+        destination: "/tributes",
         permanent: false,
       },
     };

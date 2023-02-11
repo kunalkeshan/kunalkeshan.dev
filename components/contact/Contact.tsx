@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { FaEnvelope } from "react-icons/fa";
 import { BsExclamationTriangle, BsCheckCircle } from "react-icons/bs";
@@ -9,6 +10,7 @@ import { sendContactMail } from "../../utils/mail";
 type InputType = "name" | "email" | "phone" | "subject" | "message";
 
 const Contact = () => {
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [input, setInput] = useState({
     name: "",
@@ -43,6 +45,7 @@ const Contact = () => {
     } finally {
       setLoading(false);
       setError(null);
+      window.scrollTo({ top: 80, behavior: "smooth" });
     }
   };
 
@@ -118,7 +121,7 @@ const Contact = () => {
             <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
               <div>
                 <label htmlFor="name" className=" font-bold">
-                  Name
+                  Name*
                 </label>
                 <input
                   type="text"
@@ -132,7 +135,7 @@ const Contact = () => {
               </div>
               <div>
                 <label htmlFor="email" className="font-bold">
-                  Email
+                  Email*
                 </label>
                 <input
                   type="email"
@@ -161,7 +164,7 @@ const Contact = () => {
               </div>
               <div>
                 <label htmlFor="subject" className="font-bold">
-                  Subject
+                  Subject*
                 </label>
                 <input
                   type="text"
@@ -179,7 +182,7 @@ const Contact = () => {
                 htmlFor="message"
                 className="font-bold text-themes-txt_secondary"
               >
-                Message
+                Message*
               </label>
               <textarea
                 id="message"

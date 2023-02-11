@@ -2,7 +2,7 @@
  * Landing Page - Testimonials Section
  */
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { FaArrowLeft, FaArrowRight, FaQuoteLeft } from "react-icons/fa";
 import MemeTooltip from "../reusable/MemeTooltip";
@@ -14,7 +14,9 @@ const TributesWithTestimonials = TRIBUTES.filter(
   (tribute) => tribute.testimonial !== undefined
 );
 
-type TributeDataType = WithRequired<Tribute, "testimonial">;
+type TributeDataType = WithRequired<Tribute, "testimonial"> & {
+  contentRef: null | HTMLParagraphElement;
+};
 
 const TestimonialName: React.FC<TributeDataType> = ({
   name,
@@ -42,7 +44,10 @@ const TestimonialCard: React.FC<TributeDataType> = (props) => {
         <FaQuoteLeft />
       </div>
       <div>
-        <p className="text-lg font-semibold text-themes-txt_secondary">
+        <p
+          className="text-lg font-semibold text-themes-txt_secondary"
+          ref={props.contentRef}
+        >
           {testimonial}
         </p>
         <div className="mt-4 flex w-full items-center justify-between lg:max-w-md">
@@ -78,6 +83,7 @@ const TestimonialCard: React.FC<TributeDataType> = (props) => {
 };
 
 const Testimonials = () => {
+  const contentRef = useRef(null);
   const [currentTestimonial, setCurrentTestimonial] = useState<TributeDataType>(
     TributesWithTestimonials[0]
   );
@@ -104,6 +110,8 @@ const Testimonials = () => {
         setCurrentTestimonial(TributesWithTestimonials[length]);
       }
     }
+    // @ts-ignore
+    contentRef?.current && contentRef.current.scrollIntoView();
   };
 
   return (
@@ -130,7 +138,7 @@ const Testimonials = () => {
         approach to every project and prioritize communication for successful
         outcomes.
       </p>
-      <TestimonialCard {...currentTestimonial} />
+      <TestimonialCard {...currentTestimonial} contactRef={contentRef} />
       <div className="mt-8 flex gap-8">
         <button
           onClick={handleChangeTestimonial(1)}

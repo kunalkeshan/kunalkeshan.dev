@@ -90,6 +90,7 @@ const TRIBUTES: Tribute[] = [
       website: "https://think-digital.com",
       logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675428847/Portfolio/experience/think_digital_logo_txo2sk.png",
     },
+    slug: "raman-shekhawat",
   },
 ];
 
