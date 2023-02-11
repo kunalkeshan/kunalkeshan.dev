@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { FaEnvelope } from "react-icons/fa";
 import { BsExclamationTriangle, BsCheckCircle } from "react-icons/bs";
@@ -9,6 +10,7 @@ import { sendContactMail } from "../../utils/mail";
 type InputType = "name" | "email" | "phone" | "subject" | "message";
 
 const Contact = () => {
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [input, setInput] = useState({
     name: "",
@@ -43,6 +45,7 @@ const Contact = () => {
     } finally {
       setLoading(false);
       setError(null);
+      window.scrollTo({ top: 80, behavior: "smooth" });
     }
   };
 
