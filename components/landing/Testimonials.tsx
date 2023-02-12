@@ -1,5 +1,5 @@
 /**
- * Landing Page - Testimonials Section
+ * Index Page - Testimonials Section
  */
 
 import React, { useState, useRef } from "react";

@@ -1,5 +1,5 @@
 /**
- * Landing Page - Skills Section
+ * Index Page - Skills Section
  */
 
 import React from "react";

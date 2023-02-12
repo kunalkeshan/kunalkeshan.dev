@@ -1,3 +1,7 @@
+/**
+ * About Page - My Story Section
+ */
+
 import React from "react";
 import Lottie from "react-lottie-player";
 import Link from "next/link";

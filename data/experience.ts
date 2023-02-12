@@ -14,8 +14,15 @@ export interface Experience {
   };
 }
 
+/**
+ * Note: Using the Keyword - "Present" in the date.end
+ * will show the experience in your landing page
+ */
+
+type Experiences = Experience[];
+
 // Experience Container
-const EXPERIENCE: Experience[] = [
+const EXPERIENCE: Experiences = [
   {
     company: "Codelance Devs",
     position: "Co-founder",

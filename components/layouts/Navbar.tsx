@@ -1,5 +1,5 @@
 /**
- * Public Navbar
+ * Public Navbar Component
  */
 
 // Dependencies

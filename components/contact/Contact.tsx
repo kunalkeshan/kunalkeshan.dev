@@ -1,3 +1,7 @@
+/**
+ * Contact Page - Form and Social Links
+ */
+
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";

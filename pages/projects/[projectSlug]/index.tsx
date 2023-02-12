@@ -1,5 +1,5 @@
 /**
- * Projects Page
+ * Individual Project Page
  */
 
 // Dependencies
@@ -37,7 +37,7 @@ const ProjectsPage: NextPage<
   return (
     <>
       <Head>
-        <title>Projects | Kunal Keshan</title>
+        <title>{title}</title>
       </Head>
       <PublicLayout>
         <motion.section

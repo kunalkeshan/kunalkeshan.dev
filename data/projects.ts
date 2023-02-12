@@ -17,15 +17,29 @@ export interface Project {
   color: string;
   github?: string;
   website?: string;
-  feature?: boolean;
+  feature?: boolean; // Whether the project will have it's own page or not
   slug?: string;
   technologies?: string[];
   motivation?: string;
   images?: string[];
 }
 
+/**
+ * If you want to feature a project in it's own page
+ * then it's mandatory to put data for the following fields
+    github?: string;
+    website?: string;
+    feature?: boolean;
+    slug?: string;
+    technologies?: string[];
+    motivation?: string;
+    images?: string[];
+ */
+
+type Projects = Project[];
+
 // Projects Container
-const PROJECTS: Project[] = [
+const PROJECTS: Projects = [
   {
     type: "web development",
     title: "Shiryoku (Resources)",

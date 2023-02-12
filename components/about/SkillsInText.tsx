@@ -1,5 +1,8 @@
+/**
+ * About Page - Skills in Text Section
+ */
+
 import React from "react";
-import Image from "next/image";
 
 const SkillsInText = () => {
   const SKILLS = [
