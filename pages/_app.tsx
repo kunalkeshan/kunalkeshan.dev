@@ -8,6 +8,7 @@ import { useEffect } from "react";
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
+  // Google Analytics - Page View
   useEffect(() => {
     const handleRouteChange = (url: URL) => {
       pageview(url);

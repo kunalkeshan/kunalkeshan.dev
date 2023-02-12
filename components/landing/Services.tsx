@@ -1,5 +1,5 @@
 /**
- * Landing Page - Services Section
+ * Index Page - Services Section
  */
 
 import React from "react";

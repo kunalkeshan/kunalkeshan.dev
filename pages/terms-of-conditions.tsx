@@ -1,5 +1,5 @@
 /**
- * TermsOfConditions Page
+ * Terms Of Conditions Page
  */
 
 // Dependencies
@@ -13,7 +13,7 @@ const TermsOfConditionsPage = () => {
   return (
     <>
       <Head>
-        <title>TermsOfConditions | Kunal Keshan</title>
+        <title>Terms Of Conditions | Kunal Keshan</title>
       </Head>
       <PublicLayout>
         <motion.section

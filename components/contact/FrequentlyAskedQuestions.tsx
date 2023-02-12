@@ -1,3 +1,7 @@
+/**
+ * Contact Page - FAQ Section
+ */
+
 import React from "react";
 import FAQ from "../../data/faqs";
 import FaqCard from "./FaqCard";

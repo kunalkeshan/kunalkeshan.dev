@@ -1,5 +1,5 @@
 /**
- * PrivacyPolicy Page
+ * Privacy Policy Page
  */
 
 // Dependencies
@@ -13,7 +13,7 @@ const PrivacyPolicyPage = () => {
   return (
     <>
       <Head>
-        <title>PrivacyPolicy | Kunal Keshan</title>
+        <title>Privacy Policy | Kunal Keshan</title>
       </Head>
       <PublicLayout>
         <motion.section

@@ -22,8 +22,10 @@ export interface Social {
   Icon: IconType;
 }
 
+type Socials = Social[];
+
 // Social Container
-const SOCIALS: Social[] = [
+const SOCIALS: Socials = [
   { name: "blog", url: "https://blog.kunalkeshan.dev", Icon: FaBlog },
   {
     name: "instagram",

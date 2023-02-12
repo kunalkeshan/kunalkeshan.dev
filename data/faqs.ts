@@ -7,8 +7,10 @@ export interface Faq {
   answer: string;
 }
 
+type Faqs = Faq[];
+
 // FAQ Container
-const FAQ: Faq[] = [
+const FAQ: Faqs = [
   {
     question: "What services do you offer?",
     answer:

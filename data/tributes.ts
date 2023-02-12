@@ -30,8 +30,10 @@ export interface Tribute {
   lessonsLearnt?: string[];
 }
 
+type Tributes = Tribute[];
+
 // Tributes Container
-const TRIBUTES: Tribute[] = [
+const TRIBUTES: Tributes = [
   {
     name: "Rohan Kumar",
     website: "https://www.linkedin.com/in/kumarrohan9724/",

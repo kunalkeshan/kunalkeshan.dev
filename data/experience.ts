@@ -14,8 +14,10 @@ export interface Experience {
   };
 }
 
+type Experiences = Experience[];
+
 // Experience Container
-const EXPERIENCE: Experience[] = [
+const EXPERIENCE: Experiences = [
   {
     company: "Codelance Devs",
     position: "Co-founder",

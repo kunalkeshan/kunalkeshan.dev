@@ -1,11 +1,13 @@
+/**
+ * About Page - Resume Section
+ */
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import EXPERIENCE from "../../data/experience";
+import EXPERIENCE, { Experience } from "../../data/experience";
 
-type ResumeCardDataType = typeof EXPERIENCE[number];
-
-const ResumeCard: React.FC<ResumeCardDataType> = ({
+const ResumeCard: React.FC<Experience> = ({
   logo,
   company,
   date,

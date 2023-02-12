@@ -1,3 +1,7 @@
+/**
+ * About Page - My Values Section
+ */
+
 import React from "react";
 import VALUES, { Values } from "../../data/values";
 import Image from "next/image";

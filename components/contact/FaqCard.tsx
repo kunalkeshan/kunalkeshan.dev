@@ -1,7 +1,11 @@
+/**
+ * Individual FAQ Card
+ */
+
 import React, { useState } from "react";
 import FAQ from "../../data/faqs";
 import { FaPlus } from "react-icons/fa";
-import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 type FaqDataType = typeof FAQ[number];
 

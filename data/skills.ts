@@ -7,8 +7,10 @@ export interface Skill {
   image: string;
 }
 
+type Skills = Skill[];
+
 // Skills Container
-const SKILLS: Skill[] = [
+const SKILLS: Skills = [
   {
     name: "TypeScript",
     image:

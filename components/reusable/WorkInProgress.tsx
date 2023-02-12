@@ -1,3 +1,7 @@
+/**
+ * Work in Progress Component
+ */
+
 import React from "react";
 import Lottie from "react-lottie-player";
 import WorkInProgressAnimationData from "../../assets/lottie/work-in-progress.json";

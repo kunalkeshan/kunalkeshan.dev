@@ -24,8 +24,10 @@ export interface Project {
   images?: string[];
 }
 
+type Projects = Project[];
+
 // Projects Container
-const PROJECTS: Project[] = [
+const PROJECTS: Projects = [
   {
     type: "web development",
     title: "Shiryoku (Resources)",
