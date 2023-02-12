@@ -120,7 +120,7 @@ const IndividualTributePage: NextPage<
             </div>
             <div className="mt-8">
               <h2 className="text-xl font-bold md:text-3xl">Lessons Learnt</h2>
-              <ul className="list-[square]">
+              <ul className="list-[square] pl-4">
                 {lessonsLearnt &&
                   lessonsLearnt.length > 0 &&
                   lessonsLearnt.map((lessons, index) => (
