@@ -14,8 +14,8 @@ export interface Tribute {
     logo: string;
   };
   coverImage?: string;
-  connected?: number;
-  testimonial?: string;
+  connected?: number; // When you met the person (in milliseconds UTC)
+  testimonial?: string; // What testimonial that person has given to you
   socials?: {
     linkedin?: string;
     twitter?: string;
@@ -23,7 +23,7 @@ export interface Tribute {
     youtube?: string;
     github?: string;
   };
-  feature?: boolean;
+  feature?: boolean; // Whether that person will have their own page or not
   slug?: string;
   intro?: string;
   tributes?: string[];
@@ -31,6 +31,26 @@ export interface Tribute {
 }
 
 type Tributes = Tribute[];
+
+/**
+ * If you want to feature a person whom you want to tribute to
+ * as their own page, them make sure the following properties are set
+    coverImage?: string;
+    connected?: number;
+    testimonial?: string;
+    socials?: {
+      linkedin?: string;
+      twitter?: string;
+      instagram?: string;
+      youtube?: string;
+      github?: string;
+    };
+    feature?: boolean;
+    slug?: string;
+    intro?: string;
+    tributes?: string[];
+    lessonsLearnt?: string[];
+ */
 
 // Tributes Container
 const TRIBUTES: Tributes = [
