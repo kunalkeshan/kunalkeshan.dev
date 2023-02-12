@@ -13,6 +13,8 @@ export interface Tribute {
     website: string;
     logo: string;
   };
+  coverImage?: string;
+  connected?: number;
   testimonial?: string;
   socials?: {
     linkedin?: string;
@@ -24,6 +26,8 @@ export interface Tribute {
   feature?: boolean;
   slug?: string;
   intro?: string;
+  tributes?: string[];
+  lessonsLearnt?: string[];
 }
 
 // Tributes Container
@@ -52,6 +56,20 @@ const TRIBUTES: Tribute[] = [
     slug: "rohan-kumar",
     intro:
       "Rohan Kumar, a natural leader, charming person, and visionary entrepreneur. Founder of Rentyaar and The Starterseed, changing students' lives for the better.",
+    connected: 1610217000000,
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676203370/Portfolio/tributes/rohan-kumar/rohan-kumar_ve7ywe.svg",
+    tributes: [
+      "Rohan is one of the most unparalleled individuals I've ever met. He communicates well and is open about his views and beliefs. His insights are extremely beneficial since they nearly always provide quick outcomes.",
+      "He's a great leader, a charming person, and a natural entrepreneur. Rohan is a good buddy who is a fantastic listener and can always assist you when you are in need.",
+      "Rohan and I have been friends from 1st Year of college, we've been part of Think-Digital learning together and conducting events as well. What made us bond over the years was our mutual interest to learn and grow and build out our ideas.",
+      "He's an amazing cheerleader and everything he says, he says for your best. (Even if it might hurt). I'm happy to have Rohan as a friend.",
+    ],
+    lessonsLearnt: [
+      "Don't limit yourself to just one solution. Always think of alternate approaches you can take.",
+      "If you can't do it alone, don't hesitate to ask someone who can do it better than you.",
+      "Even if you don't have the advantage, use what you have to the fullest extent.",
+    ],
   },
   {
     name: "GS Thina",
@@ -75,6 +93,20 @@ const TRIBUTES: Tribute[] = [
     slug: "gsthina",
     intro:
       "GS Thina, the mentor who empowers college students with skills and industry exposure to reach their full potential 🚀",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676201267/Portfolio/tributes/gsthina/gsthina_tghqea.svg",
+    connected: 1610217000000,
+    tributes: [
+      "Thina bhaiya is a fantastic mentor and a wonderful friend. His advice and mentoring have been invaluable not just as a Think-Digital member but also as an individual. His clear vision and passion for assisting others and guiding students by giving mentoring and opportunities are very inspiring.",
+      "He mentored me when I began attending college and continues to do so in by helping me learn more about who I am, how I can build on my talents and work on my shortcomings, and navigating what my vision and values in life are.",
+      "Without his initiatives at Think-Digital, I can openly tell than I would have taken 10X times more to learn and excel than at the stage in which I am today. And for this I'll always be grateful to Thina bhaiya.",
+    ],
+    lessonsLearnt: [
+      "Even if it feels scary just do it. Don't overthink it, and just get started.",
+      "Whatever it might be, communicating it is the best solution to solve what you might be going through.",
+      "Leadership is truly appreciated when you're able to turn those who you work with as leaders themselves.",
+      "When the going get's rough, it's your ability to hold on that will determine how successful you will be.",
+    ],
   },
   {
     name: "Raman Shekhawat",
