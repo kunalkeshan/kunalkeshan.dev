@@ -11,6 +11,7 @@ import { HiOutlineEnvelope } from "react-icons/hi2";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { IMAGE_SOURCE } from "../../config";
+import { FaCaretDown } from "react-icons/fa";
 
 const navOptions = [
   {
@@ -31,8 +32,36 @@ const navOptions = [
   },
 ];
 
+const moreNavOptions = [
+  {
+    name: "Blog",
+    url: "https://blog.kunalkeshan.dev",
+  },
+  {
+    name: "Tributes",
+    url: "/tributes",
+  },
+  {
+    name: "Resume",
+    url: "/resume",
+  },
+  {
+    name: "FAQs",
+    url: "/contact#faqs",
+  },
+  {
+    name: "Feed",
+    url: "/feed",
+  },
+  {
+    name: "Links",
+    url: "/links",
+  },
+];
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [moreIsOpen, setMoreIsOpen] = useState(false);
 
   return (
     <motion.nav
@@ -65,6 +94,35 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          <li className="relative hidden md:block">
+            <div
+              onClick={() => setMoreIsOpen(!moreIsOpen)}
+              className="flex cursor-pointer items-center gap-2 transition-all duration-300 hover:scale-95 hover:text-portfolio-accent active:scale-105"
+            >
+              More{" "}
+              <FaCaretDown
+                className={`${
+                  moreIsOpen ? "rotate-0" : ""
+                }-rotate-90 transition-all`}
+              />
+            </div>
+            <ul
+              className={`${
+                moreIsOpen ? "h-fit border-2 border-black p-4" : "h-0"
+              } absolute top-10 flex flex-col items-center justify-center gap-2 overflow-hidden rounded-xl bg-white transition-all duration-500`}
+            >
+              {moreNavOptions.map((option, index) => (
+                <li
+                  key={index}
+                  className="transition-all duration-300 hover:text-portfolio-accent"
+                >
+                  <Link href={option.url} onClick={() => setMoreIsOpen(false)}>
+                    {option.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </li>
         </ul>
         <span className="flex items-center justify-center gap-2">
           <Link
@@ -105,6 +163,35 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+          <li className="mt-4 block md:hidden">
+            <div
+              onClick={() => setMoreIsOpen(!moreIsOpen)}
+              className="flex cursor-pointer items-center gap-2 transition-all duration-300 hover:scale-95 hover:text-portfolio-accent active:scale-105"
+            >
+              More{" "}
+              <FaCaretDown
+                className={`${
+                  moreIsOpen ? "rotate-0" : ""
+                }-rotate-90 transition-all`}
+              />
+            </div>
+            <ul
+              className={`${
+                moreIsOpen ? "h-fit pt-4 pl-8" : "h-0"
+              } flex flex-col gap-2 overflow-hidden bg-white transition-all duration-500`}
+            >
+              {moreNavOptions.map((option, index) => (
+                <li
+                  key={index}
+                  className="transition-all duration-300 hover:text-portfolio-accent"
+                >
+                  <Link href={option.url} onClick={() => setMoreIsOpen(false)}>
+                    {option.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </li>
         </motion.div>
       )}
     </motion.nav>
