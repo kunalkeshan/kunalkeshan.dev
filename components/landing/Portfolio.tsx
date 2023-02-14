@@ -46,7 +46,7 @@ const ProjectCard: React.FC<Project> = ({
             href={`/projects/${slug}`}
             className="mt-8 flex items-center gap-2 font-[Montserrat] text-sm font-semibold"
           >
-            More info{" "}
+            More about {title}{" "}
             <FaArrowRight className="transition-all duration-300 group-hover:translate-x-1" />
           </Link>
         ) : (
