@@ -131,6 +131,112 @@ const TRIBUTES: Tributes = [
     ],
   },
   {
+    name: "Mohammad Muazam",
+    website: "https://muazam.me",
+    image:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676408694/Portfolio/tributes/muazam_sspfhc.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/mohammad-muazam-129838190//",
+      twitter: "https://twitter.com/mmuazam98",
+      instagram: "https://www.instagram.com/m.muazam.98/",
+      github: "https://github.com/mmuazam98",
+    },
+    company: {
+      name: "Think-Digital",
+      description: "",
+      position: "Mentor",
+      website: "https://think-digital.com",
+      logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675428847/Portfolio/experience/think_digital_logo_txo2sk.png",
+    },
+    feature: true,
+    slug: "mohammad-muzam",
+    intro:
+      "Muazam bhaiya's support helped me excel in web development. His critical feedback and logical approach towards work help improve and prioritize things. A great mentor who inspires to achieve what he sets his mind to",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676408595/Portfolio/tributes/mohammad-muzam/muazam_plnpv0.svg",
+    connected: 1610217000000,
+    tributes: [
+      "Without Muazam bhaiyas support I wouldn't be in the position I am today. He's one of the sole reasons why I was able to excel in web development and learn a lot at a faster pace.",
+      "His ability to give critical feedback, and able to point out how you can improve your work is really helpful. He's the most logical person I've met who has his priorities clear and always achieves whatever he sets his mind towards. ",
+      "I can say that it would have take me a lot more time to learn web development by myself, and with Muazam bhaiyas help, I was able to do it much faster.",
+    ],
+    lessonsLearnt: [
+      "View what you learn and see from more than one perspective, you never know what you might come about and get inspired from.",
+      "You build trust only when you deliver what you promise.",
+      'Taking the idealogy forward, "Be the senior you need the most as a junior".',
+    ],
+  },
+  {
+    name: "Kaushik Kumaran",
+    website: "https://www.linkedin.com/in/kaushikkums/",
+    image:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676406815/Portfolio/tributes/kaushik_kumaran_lwzuj2.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/kaushikkums/",
+    },
+    company: {
+      name: "IEEE SRM SB",
+      description: "",
+      position: "Webmaster",
+      website: "https://ieeesrmist.edu.in",
+      logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675429201/Portfolio/experience/IEEElogo_fa3bhb.png",
+    },
+    feature: true,
+    slug: "kaushik-kumaran",
+    intro:
+      "Kaushik Kumaran, the ultimate mentor, with a pure-hearted and enthusiastic approach, is a natural leader who motivates juniors to learn, take initiatives, and progress. His mentorship and support are unparalleled!",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676406965/Portfolio/tributes/kaushik-kumaran/undraw_surveillance_re_8tkl_sosmhn.svg",
+    connected: 1634754600000,
+    tributes: [
+      "Kaushik bhaiya is the elder brother we all need but don't deserve. That's because he's just that pure-hearted. When I started working with him at IEEE, his guidance and mentorship towards me and all the juniors were unparalleled.",
+      "His kind and enthusiastic approach motivated us to learn more on our own and take initiatives outside of development. He's a natural leader, who cares for your progress, will give you challenges to work out and learn on your own and will support you whenever needed.",
+      "His public speaking skills and ability to engage with a large crowd always amazes me and inspires me to be like him one day.",
+    ],
+    lessonsLearnt: [
+      "Work is important, but never at the expense of your well being. Learn to prioritize what's important and take time off to avoid burn out.",
+      "Learn to have a proactive approach, sometimes you'll have to do the work even if it's not your responsibility.",
+      "Give your 100% in whatever you do.",
+    ],
+  },
+  {
+    name: "Snehil",
+    website: "https://snehil.dev/",
+    image:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676407876/Portfolio/tributes/snehil_mvrfbl.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/snehilcodes/",
+      instagram: "https://www.instagram.com/sneakysensei/",
+      youtube: "https://www.youtube.com/channel/UC2S8KvlxBnkwgWZyWDzFggA",
+      twitter: "https://twitter.com/snehilcodes",
+      github: "https://github.com/sneakysensei",
+    },
+    company: {
+      name: "IEEE SRM SB",
+      description: "",
+      position: "Secretary (WAD)",
+      website: "https://ieeesrmist.edu.in",
+      logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675429201/Portfolio/experience/IEEElogo_fa3bhb.png",
+    },
+    feature: true,
+    slug: "snehil",
+    intro:
+      "Snehil bhaiya is the coolest! In every conversation, he imparts something new for you to use in projects. With clear and concise explanations, he makes learning easier for everyone. His peer-interaction and bonding skills set him apart. A true gem!",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676407838/Portfolio/tributes/snehil/snehil_hnrrr1.svg",
+    connected: 1634754600000,
+    tributes: [
+      "There's no one cooler than Snehil bhaiya. In every conversation with him, you'll learn something new that you never knew and you can't wait to see how you can use that in your projects.",
+      "Snehil bhaiya has the clearest and most concise explanation for what he's skilled in and will put in the effort to learn something himself and make it easier for others to learn as well. His ability to interact with his peers and get bonded with them is what sets him apart from others.",
+      "His dedication to perfect pixel delivery and the way he implements it with ease is really cool to spectate and learn from.",
+    ],
+    lessonsLearnt: [
+      "There's no shame in admitting that you don't know something. In fact, admitting it is the first step to pique your curiosity to learn more about it.",
+      "Go the extra mile in whatever you do and do what feels right to you.",
+      "When you learn something, try to teach to others as much as you can.",
+    ],
+  },
+  {
     name: "Raman Shekhawat",
     website: "https://www.linkedin.com/in/raman-shekhawat-1013381ba/",
     image:

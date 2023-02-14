@@ -148,8 +148,8 @@ const IndividualTributePage: NextPage<
                   <p className="text-xl font-bold">‣ Connected</p>
                   <p className="ml-2 font-semibold text-themes-txt_secondary">
                     / {connectedDate.toDateString()} (
-                    {new Date().getFullYear() - connectedDate.getFullYear()} to
-                    date)
+                    {new Date().getFullYear() - connectedDate.getFullYear()}{" "}
+                    years to date)
                   </p>
                 </div>
                 <div className="gap-4">
