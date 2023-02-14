@@ -146,6 +146,22 @@ const TRIBUTES: Tributes = [
     },
     slug: "raman-shekhawat",
   },
+  {
+    name: "Yakub Mathew",
+    website: "https://www.linkedin.com/in/yakub-mathew-7169621b6/",
+    image:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676359192/Portfolio/tributes/yakub-mathew_undfqz.jpg",
+    testimonial:
+      "Despite being somewhat lazy and ignoring many people, my friend has a unique passion for web development that consumes him. He devotes long hours to coding, designing websites, and creating unique user interfaces. It's fascinating to see how his love for this field motivates him to overcome his laziness and concentrate on producing something truly remarkable. Despite his tendency to distance himself from others, his dedication to web development is genuinely inspiring.",
+    company: {
+      name: "Student",
+      description: "",
+      position: "SRMIST",
+      website: "https://srmist.edu.in",
+      logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1676359360/Portfolio/experience/srmist_n5dnqj.png",
+    },
+    slug: "yakub-mathew",
+  },
 ];
 
 export default TRIBUTES;
