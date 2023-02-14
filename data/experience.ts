@@ -83,6 +83,18 @@ const EXPERIENCE: Experiences = [
       end: "July 2022",
     },
   },
+  {
+    company: "SRM Institute of Science & Technology",
+    position: "B.Tech Electronics & Communications Engineering",
+    description:
+      "Gained comprehensive knowledge of electronic devices and circuits, digital signal processing, communication systems, and electromagnetic theory.",
+    website: "https://srmist.edu.in/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1676359360/Portfolio/experience/srmist_n5dnqj.png",
+    date: {
+      start: "September 2020",
+      end: "July 2024 (Tentative)",
+    },
+  },
 ];
 
 export default EXPERIENCE;
