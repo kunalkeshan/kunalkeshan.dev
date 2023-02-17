@@ -102,6 +102,8 @@ const IndividualTributePage: NextPage<
                   width={100}
                   height={100}
                   className="h-auto w-full object-contain"
+                  unoptimized={true}
+                  priority
                 />
               </div>
             </div>

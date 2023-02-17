@@ -76,6 +76,7 @@ const TestimonialCard: React.FC<TributeDataType> = (props) => {
           width={100}
           height={100}
           className="h-full w-full object-contain"
+          unoptimized={true}
         />
       </div>
     </div>
