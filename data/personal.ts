@@ -34,6 +34,30 @@ export const SCHOOL_INFO: PersonalInfos = [
       "https://res.cloudinary.com/kunalkeshan/image/upload/v1676668535/Portfolio/Personal/School/finshed_school_1_ox00na.jpg",
     ],
   },
+  {
+    title: "Last practical exam of school",
+    date: "Feb 2020",
+    description: [
+      "The last practical in school. Done with it with a blast and completed the practical with loads of fun. Sure there was some pressure, but with my friends there, it was quite fun to do it.",
+    ],
+    images: [
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676671089/Portfolio/Personal/School/practical_exam_d8aatz.jpg",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676671087/Portfolio/Personal/School/practical_exam_1_srsooe.jpg",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676671087/Portfolio/Personal/School/practical_exam_3_nawh8i.jpg",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676671086/Portfolio/Personal/School/praactical_exam_fcf59u.jpg",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676671087/Portfolio/Personal/School/practical_exam_2_rgtk7s.jpg",
+    ],
+  },
+  {
+    title: "Birthday Bash",
+    date: "December 2019",
+    description: [""],
+    images: [
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676671565/Portfolio/Personal/School/birthday_3_pw0aeo.jpg",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676671565/Portfolio/Personal/School/birthday_2_dn3knz.jpg",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676671562/Portfolio/Personal/School/birthday_1_ra86jb.jpg",
+    ],
+  },
 ];
 
 export const COLLEGE_INFO: PersonalInfos = [];

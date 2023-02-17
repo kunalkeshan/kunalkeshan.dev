@@ -113,7 +113,7 @@ const Navbar = () => {
             <ul
               className={`${
                 moreIsOpen ? "h-fit border-2 border-black p-4" : "h-0"
-              } absolute top-10 flex flex-col items-center justify-center gap-2 overflow-hidden rounded-xl bg-white transition-all duration-500`}
+              } absolute top-10 grid w-60 grid-cols-2 items-center justify-center gap-2 overflow-hidden rounded-xl bg-white transition-all duration-500`}
             >
               {moreNavOptions.map((option, index) => (
                 <li
@@ -182,7 +182,7 @@ const Navbar = () => {
             <ul
               className={`${
                 moreIsOpen ? "h-fit pt-4 pl-8" : "h-0"
-              } flex flex-col gap-2 overflow-hidden bg-white transition-all duration-500`}
+              } grid grid-cols-2 gap-2 overflow-hidden bg-white transition-all duration-500`}
             >
               {moreNavOptions.map((option, index) => (
                 <li
