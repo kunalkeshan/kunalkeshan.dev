@@ -85,23 +85,25 @@ const Footer = () => {
 
   const RickRollAudio = useMemo(
     () =>
-      new Audio(
-        "https://res.cloudinary.com/kunalkeshan/video/upload/v1676638777/Portfolio/Audio/Rick_Astley_-_Never_Gonna_Give_You_Up_uyabg0.mp3"
-      ),
+      typeof window !== "undefined" && typeof Audio !== "undefined"
+        ? new Audio(
+            "https://res.cloudinary.com/kunalkeshan/video/upload/v1676638777/Portfolio/Audio/Rick_Astley_-_Never_Gonna_Give_You_Up_uyabg0.mp3"
+          )
+        : null,
     []
   );
 
   const toggleRickRollPlay = useCallback(() => {
-    if (RickRollAudio.paused) {
-      RickRollAudio.play();
+    if (RickRollAudio?.paused) {
+      RickRollAudio?.play();
     } else {
-      RickRollAudio.pause();
+      RickRollAudio?.pause();
     }
   }, [RickRollAudio]);
 
   useEffect(() => {
-    RickRollAudio.pause();
-    RickRollAudio.currentTime = 0;
+    RickRollAudio!.pause();
+    RickRollAudio!.currentTime = 0;
   }, [RickRollAudio, router.events]);
 
   return (
