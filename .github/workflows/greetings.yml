@@ -1,0 +1,24 @@
+name: Greetings
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: |-
+          "Hi there 👋,"
+          "I wanted to personally thank you for opening a new issue in my project! 🎉 I'm thrilled to have you as part of the community and I appreciate your contribution."
+          "Your feedback helps me to improve and make my project better for everyone. I'll take a look at the issue you reported and get back to you as soon as I can."
+          "Thanks again for taking the time to let me know about this! 😊"
+        pr-message: |-
+          "Hey there 👋,"
+          "I just wanted to give you a big shoutout and say thank you for creating a new pull request in my project! 🎉 I'm so grateful for your contribution and excited to have you as part of the community."
+          "Your code will help me to make my project better for everyone. I'll take a look at your pull request and get back to you as soon as I can."
+          "Thanks again for taking the time to contribute to my project! 😊"
