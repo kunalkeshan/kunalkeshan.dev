@@ -3,7 +3,8 @@
  */
 
 // Dependencies
-import React from "react";
+import React, { useEffect, useMemo, useCallback } from "react";
+import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { IMAGE_SOURCE } from "../../config";
 import SOCIALS from "../../data/socials";
@@ -12,6 +13,7 @@ import Link from "next/link";
 import { FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
+  const router = useRouter();
   const PAGE_LINKS = [
     {
       name: "Home",
@@ -81,20 +83,26 @@ const Footer = () => {
     },
   ];
 
-  const RickRollAudio: HTMLAudioElement | null =
-    typeof window !== "undefined" && typeof Audio !== "undefined"
-      ? new Audio(
-          "https://res.cloudinary.com/kunalkeshan/video/upload/v1676638777/Portfolio/Audio/Rick_Astley_-_Never_Gonna_Give_You_Up_uyabg0.mp3"
-        )
-      : null;
+  const RickRollAudio = useMemo(
+    () =>
+      new Audio(
+        "https://res.cloudinary.com/kunalkeshan/video/upload/v1676638777/Portfolio/Audio/Rick_Astley_-_Never_Gonna_Give_You_Up_uyabg0.mp3"
+      ),
+    []
+  );
 
-  const toggleRickRollPlay = () => {
-    if (RickRollAudio?.paused) {
-      RickRollAudio?.play();
+  const toggleRickRollPlay = useCallback(() => {
+    if (RickRollAudio.paused) {
+      RickRollAudio.play();
     } else {
-      RickRollAudio?.pause();
+      RickRollAudio.pause();
     }
-  };
+  }, [RickRollAudio]);
+
+  useEffect(() => {
+    RickRollAudio.pause();
+    RickRollAudio.currentTime = 0;
+  }, [RickRollAudio, router.events]);
 
   return (
     <motion.footer
