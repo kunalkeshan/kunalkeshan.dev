@@ -64,6 +64,9 @@ const Footer = () => {
       name: "Admin",
       url: "/admin",
     },
+  ];
+
+  const EXTERNAL_UTILITY_LINKS = [
     {
       name: "Open-Source Repo",
       url: "https://github.com/kunalkeshan/kunalkeshan.dev",
@@ -76,13 +79,19 @@ const Footer = () => {
       name: "Blog",
       url: "https://blog.kunalkeshan.dev/",
     },
-    {
-      name: "~(˘▽˘)~",
-      url: "http://bit.ly/3EhU4fL",
-    },
   ];
 
-  const EXTERNAL_UTILITY_LINKS = [];
+  const RickRollAudio = new Audio(
+    "https://res.cloudinary.com/kunalkeshan/video/upload/v1676638777/Portfolio/Audio/Rick_Astley_-_Never_Gonna_Give_You_Up_uyabg0.mp3"
+  );
+
+  const toggleRickRollPlay = () => {
+    if (RickRollAudio.paused) {
+      RickRollAudio.play();
+    } else {
+      RickRollAudio.pause();
+    }
+  };
 
   return (
     <motion.footer
@@ -151,6 +160,23 @@ const Footer = () => {
                 </Link>
               </li>
             ))}
+            <hr className="mt-4 max-w-[120px]" />
+            {EXTERNAL_UTILITY_LINKS.map((link, index) => (
+              <li
+                key={index}
+                className="mt-4 w-fit font-semibold transition-all duration-300 hover:translate-x-1 hover:text-portfolio-accent"
+              >
+                <Link href={link.url} target="_blank" rel="noreferrer">
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+            <li
+              onClick={toggleRickRollPlay}
+              className="mt-4 w-fit cursor-pointer font-semibold transition-all duration-300 hover:translate-x-1 hover:text-portfolio-accent"
+            >
+              ~(˘▽˘)~
+            </li>
           </ul>
         </div>
         <div>
