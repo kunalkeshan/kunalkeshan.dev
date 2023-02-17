@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import React from "react";
 import { PersonalInfo } from "../../data/personal";
 import Image from "next/image";
@@ -11,10 +10,7 @@ const PersonalInfoCard: React.FC<PersonalInfo & { index: number }> = ({
   images,
 }) => {
   return (
-    <motion.li
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.2, type: "spring" }}
+    <li
       className={`${
         index % 2 ? "top-40" : ""
       } static z-10 mt-10 h-fit w-full max-w-2xl rounded-xl border-3 border-black bg-white px-8 py-4 pb-8 font-[Montserrat] shadow-3d md:relative md:mt-24`}
@@ -48,7 +44,7 @@ const PersonalInfoCard: React.FC<PersonalInfo & { index: number }> = ({
           ))}
         </ul>
       )}
-    </motion.li>
+    </li>
   );
 };
 
