@@ -76,6 +76,10 @@ const Footer = () => {
       name: "Blog",
       url: "https://blog.kunalkeshan.dev/",
     },
+    {
+      name: "~(˘▽˘)~",
+      url: "http://bit.ly/3EhU4fL",
+    },
   ];
 
   const EXTERNAL_UTILITY_LINKS = [];
