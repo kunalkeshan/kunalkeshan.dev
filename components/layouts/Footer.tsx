@@ -81,15 +81,18 @@ const Footer = () => {
     },
   ];
 
-  const RickRollAudio = new Audio(
-    "https://res.cloudinary.com/kunalkeshan/video/upload/v1676638777/Portfolio/Audio/Rick_Astley_-_Never_Gonna_Give_You_Up_uyabg0.mp3"
-  );
+  const RickRollAudio: HTMLAudioElement | null =
+    typeof window !== "undefined" && typeof Audio !== "undefined"
+      ? new Audio(
+          "https://res.cloudinary.com/kunalkeshan/video/upload/v1676638777/Portfolio/Audio/Rick_Astley_-_Never_Gonna_Give_You_Up_uyabg0.mp3"
+        )
+      : null;
 
   const toggleRickRollPlay = () => {
-    if (RickRollAudio.paused) {
-      RickRollAudio.play();
+    if (RickRollAudio?.paused) {
+      RickRollAudio?.play();
     } else {
-      RickRollAudio.pause();
+      RickRollAudio?.pause();
     }
   };
 
