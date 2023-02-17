@@ -38,7 +38,6 @@ const PersonalInfoCard: React.FC<PersonalInfo & { index: number }> = ({
                 height={100}
                 alt={title}
                 className="h-full w-full object-cover"
-                unoptimized={true}
               />
             </li>
           ))}
