@@ -3,7 +3,7 @@
  */
 
 // Dependencies
-import React, { useEffect, useMemo, useCallback } from "react";
+import React, { useEffect, useRef, useCallback } from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { IMAGE_SOURCE } from "../../config";
@@ -83,28 +83,28 @@ const Footer = () => {
     },
   ];
 
-  const RickRollAudio = useMemo(
-    () =>
-      typeof window !== "undefined" && typeof Audio !== "undefined"
-        ? new Audio(
-            "https://res.cloudinary.com/kunalkeshan/video/upload/v1676638777/Portfolio/Audio/Rick_Astley_-_Never_Gonna_Give_You_Up_uyabg0.mp3"
-          )
-        : null,
-    []
+  const RickRollAudio = useRef(
+    typeof window !== "undefined" && typeof Audio !== "undefined"
+      ? new Audio(
+          "https://res.cloudinary.com/kunalkeshan/video/upload/v1676638777/Portfolio/Audio/Rick_Astley_-_Never_Gonna_Give_You_Up_uyabg0.mp3"
+        )
+      : null
   );
 
   const toggleRickRollPlay = useCallback(() => {
-    if (RickRollAudio?.paused) {
-      RickRollAudio?.play();
+    if (RickRollAudio?.current?.paused) {
+      RickRollAudio?.current?.play();
     } else {
-      RickRollAudio?.pause();
+      RickRollAudio?.current?.pause();
     }
   }, [RickRollAudio]);
 
   useEffect(() => {
-    RickRollAudio!.pause();
-    RickRollAudio!.currentTime = 0;
-  }, [RickRollAudio, router.events]);
+    router.events.on("routeChangeComplete", () => {
+      RickRollAudio!.current!.pause();
+      RickRollAudio!.current!.currentTime = 0;
+    });
+  }, [router.events]);
 
   return (
     <motion.footer
