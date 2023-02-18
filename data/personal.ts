@@ -20,18 +20,27 @@ type PersonalInfos = PersonalInfo[];
 
 export const SCHOOL_INFO: PersonalInfos = [
   {
-    title: "Graduated 12th",
-    date: "March 2020",
+    title: "New school, new journey",
+    date: "July 2013",
     description: [
-      "Finished schooling at St. Johns International Residential School just as the COVID-19 Pandemic hit. I was lucky enough to finish all my exams before the lock down became official.",
+      "Joined St. Johns's International Residential School. Didn't have much ambitions then but compared to my past performance, I wished to improve on myself this time.",
+      "I don't remember how we got the phone to take the picture here, what's even more odd is our pose in the picture as well XD.",
     ],
     images: [
-      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676668534/Portfolio/Personal/School/finsished_school_ddrbzo.jpg",
-      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676668535/Portfolio/Personal/School/finshed_school_2_kfksdq.jpg",
-      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676668535/Portfolio/Personal/School/finshed_school_wrqmjs.jpg",
-      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676668536/Portfolio/Personal/School/finished_school_p1l7px.jpg",
-      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676668533/Portfolio/Personal/School/finsihed_school_hxlb0m.jpg",
-      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676668535/Portfolio/Personal/School/finshed_school_1_ox00na.jpg",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676704264/Portfolio/Personal/School/school_vkazho.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676674762/Portfolio/Personal/School/first_pic_of_school_-_jul_2013_utv9r6.jpg",
+    ],
+  },
+  {
+    title: "Birthday Bash",
+    date: "December 2019",
+    description: [
+      "Celebrated birthday with friends from school at my home. First time I invited my friends over at home for something other than studies.",
+    ],
+    images: [
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676671565/Portfolio/Personal/School/birthday_3_pw0aeo.jpg",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676671565/Portfolio/Personal/School/birthday_2_dn3knz.jpg",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676671562/Portfolio/Personal/School/birthday_1_ra86jb.jpg",
     ],
   },
   {
@@ -49,25 +58,18 @@ export const SCHOOL_INFO: PersonalInfos = [
     ],
   },
   {
-    title: "Birthday Bash",
-    date: "December 2019",
+    title: "Graduated 12th",
+    date: "March 2020",
     description: [
-      "Celebrated birthday with friends from school at my home. First time I invited my friends over at home for something other than studies.",
+      "Finished schooling at St. Johns International Residential School just as the COVID-19 Pandemic hit. I was lucky enough to finish all my exams before the lock down became official.",
     ],
     images: [
-      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676671565/Portfolio/Personal/School/birthday_3_pw0aeo.jpg",
-      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676671565/Portfolio/Personal/School/birthday_2_dn3knz.jpg",
-      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676671562/Portfolio/Personal/School/birthday_1_ra86jb.jpg",
-    ],
-  },
-  {
-    title: "First Pic in School",
-    date: "July 2013",
-    description: [
-      "I don't remember how we got the phone to take the picture here, what's even more odd is our pose in the picture as well XD.",
-    ],
-    images: [
-      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676674762/Portfolio/Personal/School/first_pic_of_school_-_jul_2013_utv9r6.jpg",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676668534/Portfolio/Personal/School/finsished_school_ddrbzo.jpg",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676668535/Portfolio/Personal/School/finshed_school_2_kfksdq.jpg",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676668535/Portfolio/Personal/School/finshed_school_wrqmjs.jpg",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676668536/Portfolio/Personal/School/finished_school_p1l7px.jpg",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676668533/Portfolio/Personal/School/finsihed_school_hxlb0m.jpg",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676668535/Portfolio/Personal/School/finshed_school_1_ox00na.jpg",
     ],
   },
 ];

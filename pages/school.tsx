@@ -30,6 +30,11 @@ const SchoolPage = () => {
               schooling
             </span>
           </h1>
+          <p className="mx-auto mt-4 max-w-xs text-center font-[Montserrat] text-base font-semibold text-themes-txt_secondary md:max-w-3xl md:text-lg">
+            Despite some gaps, I&apos;ve documented my academic journey from 6th
+            to 12th grade, spanning from 2013 to 2020 - reliving my experiences
+            has been truly rewarding!
+          </p>
           <Line />
           <ul className="mx-auto grid w-fit grid-cols-1 gap-10 md:grid-cols-2 md:gap-24 md:pb-72">
             {SCHOOL_INFO.map((info, index) => (
