@@ -22,7 +22,7 @@ const SchoolPage = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, type: "spring" }}
-          className="relative mx-auto mb-20 h-auto min-h-screen w-full overflow-clip px-5"
+          className="relative mx-auto mb-20 h-auto w-full overflow-clip px-5"
         >
           <h1 className="mt-4 text-center text-3xl font-semibold md:text-5xl">
             Journey through my{" "}
