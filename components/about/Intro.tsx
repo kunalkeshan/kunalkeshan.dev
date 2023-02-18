@@ -42,6 +42,8 @@ const AboutIntro = () => {
             height={100}
             width={100}
             className="h-auto w-full object-contain"
+            unoptimized={true}
+            priority
           />
         </div>
         <div className="h-full max-h-[160px] w-full max-w-[160px] overflow-hidden rounded-full border-2 border-black shadow-3d-small transition-all duration-300 hover:shadow-3d md:absolute md:top-1/4 md:-right-12 md:max-h-[200px] md:max-w-[200px] md:-translate-y-1/2 lg:right-4 lg:top-[33%]">
@@ -51,6 +53,8 @@ const AboutIntro = () => {
             height={100}
             width={100}
             className="h-full w-full object-contain"
+            unoptimized={true}
+            priority
           />
         </div>
       </div>

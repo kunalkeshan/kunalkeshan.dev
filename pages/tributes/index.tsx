@@ -75,6 +75,8 @@ const TributeCard: React.FC<TributeDataType> = ({
             height={100}
             alt={name}
             className="h-auto w-full object-contain"
+            unoptimized={true}
+            priority
           ></Image>
         </Link>
         <Link
