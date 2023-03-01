@@ -1,29 +1,24 @@
 import {
-  GetServerSideProps,
   GetServerSidePropsContext,
   GetServerSidePropsResult,
   NextApiHandler,
-  NextApiRequest,
-  NextApiResponse,
 } from "next";
+import { withIronSessionApiRoute, withIronSessionSsr } from "iron-session/next";
 import { ironOptions } from "../config";
-import { Session, withIronSession } from "next-iron-session";
 
-export type NextIronRequest = NextApiRequest & { session: Session };
-type ServerSideContext = GetServerSidePropsContext & { req: NextIronRequest };
-
-export type ApiHandler = (
-  req: NextIronRequest,
-  res: NextApiResponse
-) => Promise<void>;
-
-export type ServerSideHandler = (
-  context: ServerSideContext
-) => ReturnType<GetServerSideProps>;
+function withSessionRoute(handler: NextApiHandler) {
+  return withIronSessionApiRoute(handler, ironOptions);
+}
 
 // Theses types are compatible with InferGetStaticPropsType https://nextjs.org/docs/basic-features/data-fetching#typescript-use-getstaticprops
-export function withSession<T extends ApiHandler | ServerSideHandler>(
-  handler: T
+function withSessionSsr<
+  P extends { [key: string]: unknown } = { [key: string]: unknown }
+>(
+  handler: (
+    context: GetServerSidePropsContext
+  ) => GetServerSidePropsResult<P> | Promise<GetServerSidePropsResult<P>>
 ) {
-  return withIronSession(handler, ironOptions);
+  return withIronSessionSsr(handler, ironOptions);
 }
+
+export { withSessionRoute, withSessionSsr };

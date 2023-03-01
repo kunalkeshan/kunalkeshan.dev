@@ -3,7 +3,7 @@
  */
 
 // Dependencies
-import { SessionOptions } from "next-iron-session";
+import { IronSessionOptions } from "iron-session";
 
 export const isProduction = process.env.NODE_ENV === "production";
 
@@ -14,7 +14,7 @@ export const IMAGE_SOURCE = {
     "https://res.cloudinary.com/kunalkeshan/image/upload/v1675069234/Portfolio/art-pic-kunal-keshan.jpg",
 };
 
-export const ironOptions: SessionOptions = {
+export const ironOptions: IronSessionOptions = {
   cookieName: "kunalkeshan.dev_admin_auth_cookie",
   password: process.env.IRON_SESSION_COOKIE_PASSWORD!,
   ...(isProduction && { secure: true }),
