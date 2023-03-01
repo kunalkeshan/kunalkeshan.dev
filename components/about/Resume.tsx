@@ -45,7 +45,7 @@ const ResumeCard: React.FC<Experience> = ({
           >
             {company}
           </Link>
-          <p className="mt-4 font-[Montserrat] text-sm font-semibold text-themes-txt_secondary lg:text-base">
+          <p className="mt-4 font-montserrat text-sm font-semibold text-themes-txt_secondary lg:text-base">
             {description}
           </p>
         </div>

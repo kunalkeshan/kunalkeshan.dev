@@ -30,7 +30,7 @@ const SchoolPage = () => {
               schooling
             </span>
           </h1>
-          <p className="mx-auto mt-4 max-w-xs text-center font-[Montserrat] text-base font-semibold text-themes-txt_secondary md:max-w-3xl md:text-lg">
+          <p className="mx-auto mt-4 max-w-xs text-center font-montserrat text-base font-semibold text-themes-txt_secondary md:max-w-3xl md:text-lg">
             Despite some gaps, I&apos;ve documented my academic journey from 6th
             to 12th grade, spanning from 2013 to 2020 - reliving my experiences
             has been truly rewarding!

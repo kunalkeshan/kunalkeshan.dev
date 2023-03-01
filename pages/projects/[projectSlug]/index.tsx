@@ -113,7 +113,7 @@ const ProjectsPage: NextPage<
                 </>
               )}
             </div>
-            <div className="top-40 mx-auto mt-8 w-full rounded-xl border-3 border-black px-4 py-8 font-[Montserrat] shadow-3d lg:sticky lg:h-fit lg:min-w-[420px]">
+            <div className="top-40 mx-auto mt-8 w-full rounded-xl border-3 border-black px-4 py-8 font-montserrat shadow-3d lg:sticky lg:h-fit lg:min-w-[420px]">
               <p className="text-2xl font-semibold">Information</p>
               <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
                 <div className="gap-4">

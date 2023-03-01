@@ -8,6 +8,10 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        montserrat: 'var(--font-montserrat)',
+        nunitoSans: 'var(--font-nunito-sans)',
+      },
       borderWidth: {
         3: '3px',
       },

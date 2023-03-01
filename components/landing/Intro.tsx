@@ -44,7 +44,7 @@ const Intro = () => {
             </span>
           </div>
         </h1>
-        <h2 className="mt-4 font-[Montserrat] font-semibold text-themes-txt_secondary md:text-lg">
+        <h2 className="mt-4 font-montserrat font-semibold text-themes-txt_secondary md:text-lg">
           Creative explorer, seeking new frontiers with a bold spirit. Building{" "}
           <a
             href={LINKS.codelanceDevs}
@@ -85,13 +85,13 @@ const Intro = () => {
         <div className="mt-8 flex flex-col gap-4 md:mt-16 md:flex-row">
           <Link
             href="/contact"
-            className="flex w-full items-center justify-center gap-2 rounded-lg bg-themes-txt_primary py-4 text-center font-[Montserrat] font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-main md:w-1/2"
+            className="flex w-full items-center justify-center gap-2 rounded-lg bg-themes-txt_primary py-4 text-center font-montserrat font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-main md:w-1/2"
           >
             <FaEnvelope /> Get in touch
           </Link>
           <Link
             href="/projects"
-            className="flex w-full items-center justify-center gap-2 rounded-lg border-2 border-black bg-white py-4 text-center font-[Montserrat] font-semibold transition-all duration-300 hover:-translate-y-1 hover:bg-themes-txt_primary hover:text-themes-bg_primary md:w-1/2"
+            className="flex w-full items-center justify-center gap-2 rounded-lg border-2 border-black bg-white py-4 text-center font-montserrat font-semibold transition-all duration-300 hover:-translate-y-1 hover:bg-themes-txt_primary hover:text-themes-bg_primary md:w-1/2"
           >
             <FaSuitcase /> View portfolio
           </Link>

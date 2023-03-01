@@ -98,7 +98,7 @@ const TributeCard: React.FC<TributeDataType> = ({
           {company.position} @{company.name}
         </div>
       </h2>
-      <p className="my-4 text-justify font-[Montserrat] text-sm font-semibold md:text-base">
+      <p className="my-4 text-justify font-montserrat text-sm font-semibold md:text-base">
         {intro}
       </p>
       <Link
@@ -146,7 +146,7 @@ const TributesPage = () => {
             </span>{" "}
             who I am today
           </h1>
-          <p className="mt-4 text-center font-[Montserrat] text-base font-semibold text-themes-txt_secondary md:text-lg">
+          <p className="mt-4 text-center font-montserrat text-base font-semibold text-themes-txt_secondary md:text-lg">
             I&apos;ve been fortunate to have had many amazing individuals cross
             paths with me and play a crucial role in my growth and shaping me
             into who I am today. This page is my tribute to those who have made

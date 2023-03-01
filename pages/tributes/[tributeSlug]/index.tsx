@@ -84,7 +84,7 @@ const IndividualTributePage: NextPage<
         >
           <div className="w-full md:col-span-2">
             <h1 className="text-3xl font-bold md:text-5xl">{name}</h1>
-            <p className="mt-4 font-[Montserrat] text-base font-semibold text-themes-txt_secondary md:text-lg">
+            <p className="mt-4 font-montserrat text-base font-semibold text-themes-txt_secondary md:text-lg">
               {intro}
             </p>
             <div className="relative mt-8 max-h-96 w-full overflow-hidden rounded-xl border-3 border-black">
@@ -114,7 +114,7 @@ const IndividualTributePage: NextPage<
                 tributes.map((trib, index) => (
                   <p
                     key={index}
-                    className="mt-4 font-[Montserrat] text-sm md:text-base"
+                    className="mt-4 font-montserrat text-sm md:text-base"
                   >
                     {trib}
                   </p>
@@ -128,7 +128,7 @@ const IndividualTributePage: NextPage<
                   lessonsLearnt.map((lessons, index) => (
                     <li
                       key={index}
-                      className="mt-2 font-[Montserrat] text-sm md:text-base"
+                      className="mt-2 font-montserrat text-sm md:text-base"
                     >
                       {lessons}
                     </li>
@@ -137,7 +137,7 @@ const IndividualTributePage: NextPage<
             </div>
           </div>
           <div className="">
-            <div className="top-20 mx-auto mt-8 w-full rounded-xl border-3 border-black px-4 py-8 font-[Montserrat] shadow-3d lg:sticky lg:h-fit lg:min-w-[420px]">
+            <div className="top-20 mx-auto mt-8 w-full rounded-xl border-3 border-black px-4 py-8 font-montserrat shadow-3d lg:sticky lg:h-fit lg:min-w-[420px]">
               <p className="text-2xl font-semibold">Information</p>
               <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
                 <div className="gap-4">

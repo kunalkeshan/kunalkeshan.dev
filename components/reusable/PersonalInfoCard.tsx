@@ -13,7 +13,7 @@ const PersonalInfoCard: React.FC<PersonalInfo & { index: number }> = ({
     <li
       className={`${
         index % 2 ? "top-40" : ""
-      } static z-10 mt-10 h-fit w-full max-w-2xl rounded-xl border-3 border-black bg-white px-8 py-4 pb-8 font-[Montserrat] shadow-3d md:relative md:mt-24`}
+      } static z-10 mt-10 h-fit w-full max-w-2xl rounded-xl border-3 border-black bg-white px-8 py-4 pb-8 font-montserrat shadow-3d md:relative md:mt-24`}
     >
       <h2 className="flex w-full items-center justify-between font-bold">
         <span className="text-lg md:text-2xl">{title}</span>

@@ -19,7 +19,7 @@ const ExperienceCard: React.FC<Experience> = ({
   company,
 }) => {
   return (
-    <div className="w-full rounded-xl bg-themes-bg_primary font-[Montserrat] text-themes-txt_primary">
+    <div className="w-full rounded-xl bg-themes-bg_primary font-montserrat text-themes-txt_primary">
       <div className="flex w-full items-center justify-between px-10 py-5">
         <p className="text-xl font-semibold">
           {date.start} - {date.end}
@@ -76,13 +76,13 @@ const ExperienceSection = () => {
                 }
               />
             </h2>
-            <p className="mt-4 font-[Montserrat] font-semibold text-themes-bg_secondary">
+            <p className="mt-4 font-montserrat font-semibold text-themes-bg_secondary">
               Working with others is really fun when you know that your members
               are also working on improving themselves and putting in their 100%
             </p>
             <Link
               href="/resume"
-              className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-themes-bg_primary px-8 py-4 font-[Montserrat] text-lg font-semibold text-themes-txt_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent md:w-fit"
+              className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-themes-bg_primary px-8 py-4 font-montserrat text-lg font-semibold text-themes-txt_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent md:w-fit"
             >
               <FaUser /> See full resume
             </Link>
