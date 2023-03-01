@@ -40,17 +40,17 @@ const ProjectCard: React.FC<Project> = ({
           </p>
         </div>
         <h3 className="mt-4 text-4xl font-bold">{title}</h3>
-        <p className="mt-8 font-[Montserrat] font-semibold">{description}</p>
+        <p className="mt-8 font-montserrat font-semibold">{description}</p>
         {feature ? (
           <Link
             href={`/projects/${slug}`}
-            className="mt-8 flex items-center gap-2 font-[Montserrat] text-sm font-semibold"
+            className="mt-8 flex items-center gap-2 font-montserrat text-sm font-semibold"
           >
             More about {title}{" "}
             <FaArrowRight className="transition-all duration-300 group-hover:translate-x-1" />
           </Link>
         ) : (
-          <div className="mt-8 flex w-full flex-wrap items-center gap-4 font-[Montserrat] text-sm font-semibold">
+          <div className="mt-8 flex w-full flex-wrap items-center gap-4 font-montserrat text-sm font-semibold">
             {github && (
               <Link
                 className="flex items-center gap-2 rounded-xl py-2 px-8 transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-main"
@@ -123,7 +123,7 @@ const Portfolio: React.FC<{ showTill?: number }> = ({ showTill }) => {
       {isNotProjectsPage && (
         <Link
           href="/projects"
-          className="mx-auto mt-8 flex w-fit gap-2 rounded-xl bg-themes-txt_primary px-8 py-4 font-[Montserrat] text-lg font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent"
+          className="mx-auto mt-8 flex w-fit gap-2 rounded-xl bg-themes-txt_primary px-8 py-4 font-montserrat text-lg font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent"
         >
           <FaSuitcase /> View all projects
         </Link>

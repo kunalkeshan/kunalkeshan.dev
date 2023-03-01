@@ -22,7 +22,7 @@ const ServiceCard: React.FC<Services> = ({ image, title, description }) => {
           className="h-auto w-full max-w-[140px] object-contain drop-shadow-lg transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-110 group-hover:drop-shadow-2xl"
         />
       </div>
-      <div className="p-8 font-[Montserrat]">
+      <div className="p-8 font-montserrat">
         <h3 className="text-2xl font-semibold">{title}</h3>
         <p className="mt-4 text-justify text-sm">{description}</p>
       </div>
@@ -50,7 +50,7 @@ const ServicesSection = () => {
           }
         />
       </h2>
-      <p className="mx-auto mt-4 max-w-xl text-center font-[Montserrat] font-semibold text-themes-txt_secondary md:text-lg">
+      <p className="mx-auto mt-4 max-w-xl text-center font-montserrat font-semibold text-themes-txt_secondary md:text-lg">
         Offering versatile solutions in web development, design, no-code, video
         and photo editing, to bring your ideas to life
       </p>
@@ -58,7 +58,7 @@ const ServicesSection = () => {
         {SERVICES.map((service, index) => (
           <ServiceCard {...service} key={index} />
         ))}
-        <div className="flex min-h-[460px] w-full flex-col items-center justify-center gap-4 overflow-hidden rounded-xl border-3 border-black bg-portfolio-accent p-8 font-[Montserrat] shadow-3d">
+        <div className="flex min-h-[460px] w-full flex-col items-center justify-center gap-4 overflow-hidden rounded-xl border-3 border-black bg-portfolio-accent p-8 font-montserrat shadow-3d">
           <Image
             src={
               "https://res.cloudinary.com/kunalkeshan/image/upload/v1675323035/Portfolio/services/mailbox_fa5ver.svg"

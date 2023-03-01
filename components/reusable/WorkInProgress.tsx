@@ -18,7 +18,7 @@ const WordInProgress = () => {
       className="mx-auto mb-20 w-full max-w-md px-5"
     >
       <Lottie loop play animationData={WorkInProgressAnimationData} />
-      <p className="mx-auto w-fit text-center font-[Montserrat] text-3xl">
+      <p className="mx-auto w-fit text-center font-montserrat text-3xl">
         This page is a work in progress...
       </p>
       <Link

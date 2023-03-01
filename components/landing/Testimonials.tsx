@@ -39,7 +39,7 @@ const TestimonialCard: React.FC<TributeDataType> = (props) => {
   const { testimonial, name, company, image } = props;
 
   return (
-    <div className="relative mx-auto mt-12 flex min-h-[400px] max-w-4xl flex-col rounded-xl border-3 border-black p-10 font-[Montserrat] lg:pr-72">
+    <div className="relative mx-auto mt-12 flex min-h-[400px] max-w-4xl flex-col rounded-xl border-3 border-black p-10 font-montserrat lg:pr-72">
       <div className="absolute -top-10 rounded-full bg-black p-5 text-3xl text-white">
         <FaQuoteLeft />
       </div>
@@ -133,7 +133,7 @@ const Testimonials = () => {
           }
         />
       </h2>
-      <p className="mx-auto mt-4 max-w-2xl text-center font-[Montserrat] font-semibold text-themes-txt_secondary">
+      <p className="mx-auto mt-4 max-w-2xl text-center font-montserrat font-semibold text-themes-txt_secondary">
         Close friends and clients describe me as dedicated, hardworking, and
         always striving for excellence. I bring a fresh perspective and creative
         approach to every project and prioritize communication for successful

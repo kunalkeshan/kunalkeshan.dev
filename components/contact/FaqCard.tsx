@@ -25,7 +25,7 @@ const FaqCard: React.FC<FaqDataType> = ({ question, answer }) => {
   return (
     <div
       onClick={() => setIsOpen(!isOpen)}
-      className="mx-auto h-fit w-full max-w-3xl cursor-pointer rounded-xl border-2 border-black px-12 py-6 font-[Montserrat] transition-all duration-300 hover:-translate-y-1 hover:shadow-3d focus:shadow-3d active:shadow-3d"
+      className="mx-auto h-fit w-full max-w-3xl cursor-pointer rounded-xl border-2 border-black px-12 py-6 font-montserrat transition-all duration-300 hover:-translate-y-1 hover:shadow-3d focus:shadow-3d active:shadow-3d"
     >
       <div className="flex items-center justify-between gap-4">
         <p className="text-xl font-bold">{question}</p>

@@ -55,7 +55,7 @@ const About = () => {
             }
           />
         </h2>
-        <p className="mt-4 font-[Montserrat] font-semibold text-themes-txt_secondary">
+        <p className="mt-4 font-montserrat font-semibold text-themes-txt_secondary">
           I am an Electronics and Communication Engineering Student at SRMIST,
           presently in my third year. I&apos;ve been pursuing full-stack web
           development since my first year and have a big interest in developing
@@ -66,7 +66,7 @@ const About = () => {
           {CONTENT.map((content, index) => (
             <li
               key={index}
-              className={`mt-4 flex flex-col items-center justify-center gap-2 font-[Montserrat] lg:flex-row lg:items-stretch`}
+              className={`mt-4 flex flex-col items-center justify-center gap-2 font-montserrat lg:flex-row lg:items-stretch`}
             >
               <div
                 className={`mt-1 h-5 w-full max-w-[1.25rem] rounded-md border ${
@@ -86,7 +86,7 @@ const About = () => {
         </ul>
         <Link
           href="/about"
-          className="mx-auto mt-8 flex w-fit items-center justify-center gap-2 rounded-xl bg-themes-txt_primary py-6 px-12 font-[Montserrat] font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent lg:mx-0"
+          className="mx-auto mt-8 flex w-fit items-center justify-center gap-2 rounded-xl bg-themes-txt_primary py-6 px-12 font-montserrat font-semibold text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-accent lg:mx-0"
         >
           <FaUser /> More about me
         </Link>

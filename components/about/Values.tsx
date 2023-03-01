@@ -20,7 +20,7 @@ const ValueCard: React.FC<Values> = ({ image, title, description }) => {
       </div>
       <div className="py-8 px-6">
         <h3 className="text-xl font-bold md:text-2xl">{title}</h3>
-        <p className="md:font-base mt-2 font-[Montserrat] text-sm font-semibold text-themes-txt_secondary md:mt-4">
+        <p className="md:font-base mt-2 font-montserrat text-sm font-semibold text-themes-txt_secondary md:mt-4">
           {description}
         </p>
       </div>
@@ -34,7 +34,7 @@ const ValuesSection = () => {
       <h2 className="text-center text-2xl font-bold">
         My core values, personally and professionally
       </h2>
-      <p className="mt-4 text-center font-bold text-themes-txt_secondary text-[Montserrat]">
+      <p className="text-montserrat mt-4 text-center font-bold text-themes-txt_secondary">
         Guiding principles that shape both my personal and professional life.
         From the importance of continuous learning to treating others with
         respect and fairness, here&apos;s what drives me to be my best self and

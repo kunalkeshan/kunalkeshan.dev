@@ -24,7 +24,7 @@ const NotFoundPage = () => {
           className="mx-auto mt-10 mb-20 max-w-7xl px-5"
         >
           <div className="relative z-20 flex w-full flex-col items-center justify-center lg:mt-20 lg:flex-row">
-            <h1 className="absolute left-1/2 top-1/4 z-10 -translate-x-1/2 gap-10 font-[Montserrat] text-[10rem] font-extrabold text-themes-txt_secondary text-opacity-10 md:text-[15rem] lg:left-1/4 lg:-top-20">
+            <h1 className="absolute left-1/2 top-1/4 z-10 -translate-x-1/2 gap-10 font-montserrat text-[10rem] font-extrabold text-themes-txt_secondary text-opacity-10 md:text-[15rem] lg:left-1/4 lg:-top-20">
               404
             </h1>
             <div className="z-20 w-full max-w-[200px] md:max-w-xs lg:mr-8 lg:ml-auto">
@@ -39,7 +39,7 @@ const NotFoundPage = () => {
             <div className="mt-8 w-fit text-center font-semibold lg:mr-auto lg:text-left">
               <p className="text-5xl lg:text-7xl">Oops!</p>
               <p className="mt-4 text-4xl lg:text-6xl">Page not found</p>
-              <p className="mx-auto mt-2 max-w-md font-[Montserrat] text-themes-txt_secondary md:text-lg lg:mx-0 lg:text-xl">
+              <p className="mx-auto mt-2 max-w-md font-montserrat text-themes-txt_secondary md:text-lg lg:mx-0 lg:text-xl">
                 A disturbance in the force has caused this page to disappear.
               </p>
               <Link

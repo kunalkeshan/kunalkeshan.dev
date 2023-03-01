@@ -62,14 +62,14 @@ const Contact = () => {
           </span>{" "}
           me
         </h2>
-        <p className="mt-4 font-[Montserrat] font-semibold">
+        <p className="mt-4 font-montserrat font-semibold">
           Feel free to connect with me through email, my socials or simply drop
           me a message and I&apos;ll get back to you soon.
         </p>
         <div className="mt-8 w-fit rounded-xl border-2 border-black bg-white py-6 px-12">
           <Link
             href="mailto:hey@kunalkeshan.dev"
-            className="group flex items-center gap-2 font-[Montserrat] text-lg font-semibold transition-all duration-300 hover:text-portfolio-main"
+            className="group flex items-center gap-2 font-montserrat text-lg font-semibold transition-all duration-300 hover:text-portfolio-main"
           >
             <span className="rounded-full bg-white py-2 pr-2 text-xl text-black transition-all duration-300 group-hover:text-portfolio-main">
               <FaEnvelope />
@@ -91,7 +91,7 @@ const Contact = () => {
           ))}
         </div>
       </div>
-      <div className="flex items-center justify-center font-[Montserrat]">
+      <div className="flex items-center justify-center font-montserrat">
         {success ? (
           <div className="flex w-full max-w-lg flex-col items-center gap-2 rounded-xl border-2 border-black p-8 text-center font-semibold shadow-3d">
             <div className="text-7xl">
