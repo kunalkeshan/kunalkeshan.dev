@@ -10,8 +10,10 @@ import { motion } from "framer-motion";
 import { AiFillLock } from "react-icons/ai";
 import axios, { AxiosError } from "axios";
 import { withSessionSsr } from "../../utils/withSession";
+import { useRouter } from "next/router";
 
 const AdminPage = () => {
+  const router = useRouter();
   const [input, setInput] = useState("");
   const [error, setError] = useState({
     error: false,
@@ -52,6 +54,7 @@ const AdminPage = () => {
           setRequest((prev) => {
             return { ...prev, success: true };
           });
+          router.push({ pathname: "/admin/home" });
         }
       } catch (error) {
         setRequest((prev) => {
@@ -80,7 +83,7 @@ const AdminPage = () => {
   return (
     <>
       <Head>
-        <title>Admin | Kunal Keshan</title>
+        <title>Admin Login | Kunal Keshan</title>
       </Head>
       <PublicLayout>
         <motion.section
@@ -101,7 +104,7 @@ const AdminPage = () => {
             </p>
             <div className="w-full">
               <input
-                type="text"
+                type="password"
                 className={`${
                   error.error
                     ? "border-red-500 placeholder:text-red-500"
