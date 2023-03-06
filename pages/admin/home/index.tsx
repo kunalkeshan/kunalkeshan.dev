@@ -5,8 +5,8 @@
 // Dependencies
 import React from "react";
 import Head from "next/head";
-import PublicLayout from "../../../layouts/PublicLayout";
 import WorkInProgress from "../../../components/reusable/WorkInProgress";
+import PrivateLayout from "../../../layouts/PrivateLayout";
 
 const AdminHomePage = () => {
   return (
@@ -14,9 +14,9 @@ const AdminHomePage = () => {
       <Head>
         <title>Admin | Kunal Keshan</title>
       </Head>
-      <PublicLayout>
+      <PrivateLayout>
         <WorkInProgress />
-      </PublicLayout>
+      </PrivateLayout>
     </>
   );
 };
