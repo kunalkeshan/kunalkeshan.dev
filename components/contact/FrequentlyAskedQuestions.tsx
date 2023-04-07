@@ -3,10 +3,15 @@
  */
 
 import React from "react";
-import FAQ from "../../data/faqs";
 import FaqCard from "./FaqCard";
 
-const FrequentlyAskedQuestions = () => {
+interface FrequentlyAskedQuestionsProps {
+  faqs: Faq[];
+}
+
+const FrequentlyAskedQuestions: React.FC<FrequentlyAskedQuestionsProps> = ({
+  faqs,
+}) => {
   return (
     <div className="mt-20 scroll-mt-20" id="faqs">
       <h2 className="text-center text-5xl font-semibold">
@@ -18,7 +23,7 @@ const FrequentlyAskedQuestions = () => {
         answer any of your questions.
       </p>
       <div className="mt-8 flex flex-col gap-8">
-        {FAQ.map((faq, index) => (
+        {faqs.map((faq, index) => (
           <FaqCard key={index} {...faq} />
         ))}
       </div>

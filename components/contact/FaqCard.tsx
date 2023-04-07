@@ -3,13 +3,10 @@
  */
 
 import React, { useState } from "react";
-import FAQ from "../../data/faqs";
 import { FaPlus } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 
-type FaqDataType = typeof FAQ[number];
-
-const FaqCard: React.FC<FaqDataType> = ({ question, answer }) => {
+const FaqCard: React.FC<Faq> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const OpenAnimation = {
