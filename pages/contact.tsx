@@ -37,7 +37,6 @@ const ContactPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
 export const getStaticProps: GetStaticProps<{ faqs: Faq[] }> = async () => {
   const faqs = await client.fetch(`*[_type == "faqs"]`);
-  console.log(faqs);
   return {
     props: {
       faqs,
