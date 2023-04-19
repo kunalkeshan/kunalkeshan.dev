@@ -36,18 +36,6 @@ const EXPERIENCE: Experiences = [
     },
   },
   {
-    company: "Rentyaar",
-    position: "Chief Product Officer",
-    description:
-      "Building Rentyaar with a team of talented web and UI developers with the aim to make an optimized and efficient product that's scalable and easy to use.",
-    website: "https://rentyaar.com/",
-    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675447141/Portfolio/experience/RENT_YAAR_4_mbi5ek.png",
-    date: {
-      start: "Jan 2023",
-      end: "Present",
-    },
-  },
-  {
     company: "Think-Digital",
     position: "Admin",
     description:
@@ -56,7 +44,7 @@ const EXPERIENCE: Experiences = [
     logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675428847/Portfolio/experience/think_digital_logo_txo2sk.png",
     date: {
       start: "Feb 2021",
-      end: "Present",
+      end: "March 2023",
     },
   },
   {
