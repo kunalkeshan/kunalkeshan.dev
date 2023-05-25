@@ -22,3 +22,5 @@ export const ironOptions: IronSessionOptions = {
     secure: isProduction,
   },
 };
+
+export const SANITY_ACCESS_TOKEN = process.env.SANITY_ACCESS_TOKEN;
