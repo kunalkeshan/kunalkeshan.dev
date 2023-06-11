@@ -99,7 +99,7 @@ const Contact = () => {
             </div>
             <p className="mt-4 font-bold">Thank you</p>
             <p>Your message has been submitted.</p>
-            <p>I&apos;l get back to you within 28 - 48 hours.</p>
+            <p>I&apos;ll get back to you within 24 - 48 hours.</p>
           </div>
         ) : (
           <form
