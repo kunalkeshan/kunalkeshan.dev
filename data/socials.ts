@@ -14,6 +14,8 @@ import {
   FaTwitter,
   FaYoutube,
   FaEnvelope,
+  FaDiscord,
+  FaTelegram,
 } from "react-icons/fa";
 
 export interface Social {
@@ -44,6 +46,12 @@ const SOCIALS: Socials = [
     Icon: FaTwitter,
   },
   { name: "youtube", url: "https://youtube.com/@kunalkeshan", Icon: FaYoutube },
+  {
+    name: "discord",
+    url: "https://discordapp.com/users/327454845558849537",
+    Icon: FaDiscord,
+  },
+  { name: "telegram", url: "https://t.me/kunalkeshan", Icon: FaTelegram },
   { name: "email", url: "hey@kunalkeshan.dev", Icon: FaEnvelope },
 ];
 
