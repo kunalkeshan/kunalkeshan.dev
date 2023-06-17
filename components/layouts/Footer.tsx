@@ -3,7 +3,7 @@
  */
 
 // Dependencies
-import React, { useEffect, useRef, useCallback } from "react";
+import React, { useEffect, useRef, useCallback, useState } from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { IMAGE_SOURCE } from "../../config";
@@ -13,6 +13,7 @@ import Link from "next/link";
 import { FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
+  const [currentTime, setCurrentTime] = useState(0);
   const router = useRouter();
   const PAGE_LINKS = [
     {
@@ -100,6 +101,7 @@ const Footer = () => {
       RickRollAudio?.current?.play();
     } else {
       RickRollAudio?.current?.pause();
+      // @ts-ignore
     }
   }, [RickRollAudio]);
 
@@ -107,8 +109,24 @@ const Footer = () => {
     router.events.on("routeChangeComplete", () => {
       RickRollAudio!.current!.pause();
       RickRollAudio!.current!.currentTime = 0;
+      setCurrentTime(0);
     });
+    RickRollAudio?.current?.addEventListener("timeupdate", (e) =>
+      setCurrentTime(Math.round(e.timeStamp / 800))
+    );
+    return () => {
+      router.events.off("routeChangeComplete", () => {});
+      RickRollAudio?.current?.removeEventListener("timeupdate", () => {});
+    };
   }, [router.events]);
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const rickRoll = urlParams.get("r");
+    if (rickRoll === "r" && RickRollAudio?.current?.paused) {
+      RickRollAudio?.current?.play();
+    }
+  }, []);
 
   return (
     <motion.footer
@@ -192,7 +210,11 @@ const Footer = () => {
               onClick={toggleRickRollPlay}
               className="mt-4 w-fit cursor-pointer font-semibold transition-all duration-300 hover:translate-x-1 hover:text-portfolio-accent"
             >
-              ~(˘▽˘)~
+              {RickRollAudio.current?.paused
+                ? "~(˘▽˘)~"
+                : currentTime % 2
+                ? "↜(˘▽˘)↦"
+                : "↤(˘▽˘)↝"}
             </li>
           </ul>
         </div>
