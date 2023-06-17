@@ -120,14 +120,6 @@ const Footer = () => {
     };
   }, [router.events]);
 
-  useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const rickRoll = urlParams.get("r");
-    if (rickRoll === "r" && RickRollAudio?.current?.paused) {
-      RickRollAudio?.current?.play();
-    }
-  }, []);
-
   return (
     <motion.footer
       initial={{ opacity: 0, y: 20 }}
