@@ -106,9 +106,10 @@ const Footer = () => {
   }, [RickRollAudio]);
 
   useEffect(() => {
+    const currentAduio = RickRollAudio?.current;
     router.events.on("routeChangeComplete", () => {
-      RickRollAudio!.current!.pause();
-      RickRollAudio!.current!.currentTime = 0;
+      currentAduio!.pause();
+      currentAduio!.currentTime = 0;
       setCurrentTime(0);
     });
     RickRollAudio?.current?.addEventListener("timeupdate", (e) =>
@@ -116,7 +117,7 @@ const Footer = () => {
     );
     return () => {
       router.events.off("routeChangeComplete", () => {});
-      RickRollAudio?.current?.removeEventListener("timeupdate", () => {});
+      currentAduio?.removeEventListener("timeupdate", () => {});
     };
   }, [router.events]);
 
