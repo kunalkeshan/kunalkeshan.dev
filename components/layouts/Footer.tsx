@@ -10,7 +10,7 @@ import { IMAGE_SOURCE } from "../../config";
 import SOCIALS from "../../data/socials";
 import Image from "next/image";
 import Link from "next/link";
-import { FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaMap, FaTelegram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   const [currentTime, setCurrentTime] = useState(0);
@@ -61,8 +61,12 @@ const Footer = () => {
       url: "/privacy-policy",
     },
     {
-      name: "Terms of Conditions",
-      url: "/terms-of-conditions",
+      name: "Terms and Conditions",
+      url: "/terms-and-conditions",
+    },
+    {
+      name: "Refund Policy",
+      url: "/refund-policy",
     },
   ];
 
@@ -221,6 +225,16 @@ const Footer = () => {
               <FaEnvelope />
             </span>{" "}
             hey@kunalkeshan.dev
+          </Link>
+          <Link
+            href="https://goo.gl/maps/KuyuYdWZikyja5xv8"
+            className="group mt-8 flex gap-2 text-sm font-semibold transition-all duration-300 hover:text-portfolio-main"
+          >
+            <span className="rounded-full bg-white h-fit p-2 text-xl text-black transition-all duration-300 group-hover:text-portfolio-main">
+              <FaMap />
+            </span>{" "}
+            1195A, Sundar Clinic, Nehru Street, Bangalore, Bengaluru - Chennai
+            Hwy, Pappanchathiram, Chennai, Tamil Nadu - 600123.
           </Link>
         </div>
       </div>

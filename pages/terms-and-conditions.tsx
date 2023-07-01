@@ -23,7 +23,7 @@ const TermsOfConditionsPage = () => {
           className="mx-auto mt-10 mb-20 max-w-7xl px-10 font-montserrat lg:px-5"
         >
           <h2 className="text-5xl font-semibold">
-            Terms of{" "}
+            Terms and{" "}
             <span className="bg-portfolio-main px-1 leading-tight">
               conditions
             </span>

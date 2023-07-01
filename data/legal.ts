@@ -109,3 +109,16 @@ export const TERMS_OF_CONDITIONS: LegalData[] = [
       "If you have any questions or concerns about our services or these terms and conditions, please don't hesitate to contact us at hey@kunalkeshan.dev.",
   },
 ];
+
+export const REFUND_POLICY: LegalData[] = [
+  {
+    title: "Technical Support",
+    description:
+      "We offer a refund for technical support services within 7 working days after the order is confirmed and the service is provided. If you encounter any difficulties or have concerns regarding the technical support received, please reach out to our team at hey@kunalkeshan.dev. We will be happy to assist you and find a suitable solution.",
+  },
+  {
+    title: "Digital Products (Code Templates)",
+    description:
+      "Refunds are available for non-tangible irrevocable goods (digital products or code templates) within 7 working days after the order is confirmed and the product is delivered. If you experience any issues with receiving or downloading our code templates, kindly contact us promptly at hey@kunalkeshan.dev. We will promptly address your concerns and work towards a resolution.",
+  },
+];

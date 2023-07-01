@@ -5,7 +5,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import { FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaMap } from "react-icons/fa";
 import { BsExclamationTriangle, BsCheckCircle } from "react-icons/bs";
 import SOCIALS from "../../data/socials";
 import { motion } from "framer-motion";
@@ -66,7 +66,7 @@ const Contact = () => {
           Feel free to connect with me through email, my socials or simply drop
           me a message and I&apos;ll get back to you soon.
         </p>
-        <div className="mt-8 w-fit rounded-xl border-2 border-black bg-white py-6 px-12">
+        <div className="mt-8 w-fit rounded-xl text-left border-2 border-black bg-white py-6 px-12">
           <Link
             href="mailto:hey@kunalkeshan.dev"
             className="group flex items-center gap-2 font-montserrat text-lg font-semibold transition-all duration-300 hover:text-portfolio-main"
@@ -75,6 +75,16 @@ const Contact = () => {
               <FaEnvelope />
             </span>{" "}
             hey@kunalkeshan.dev
+          </Link>
+          <Link
+            href="https://goo.gl/maps/KuyuYdWZikyja5xv8"
+            className="group flex gap-2 text-sm font-semibold transition-all duration-300 hover:text-portfolio-main"
+          >
+            <span className="rounded-full bg-white h-fit py-2 pr-2 text-xl text-black transition-all duration-300 group-hover:text-portfolio-main">
+              <FaMap />
+            </span>{" "}
+            1195A, Sundar Clinic, Nehru Street, Bangalore, Bengaluru - Chennai
+            Hwy, Pappanchathiram, Chennai, Tamil Nadu - 600123.
           </Link>
         </div>
         <div className="mt-8 flex w-full flex-wrap items-center justify-center gap-4 lg:justify-start">
