@@ -76,7 +76,7 @@ const Contact = () => {
             </span>{" "}
             hey@kunalkeshan.dev
           </Link>
-          <Link
+          {/* <Link
             href="https://goo.gl/maps/KuyuYdWZikyja5xv8"
             className="group flex gap-2 text-sm font-semibold transition-all duration-300 hover:text-portfolio-main"
           >
@@ -85,7 +85,7 @@ const Contact = () => {
             </span>{" "}
             1195A, Sundar Clinic, Nehru Street, Bangalore, Bengaluru - Chennai
             Hwy, Pappanchathiram, Chennai, Tamil Nadu - 600123.
-          </Link>
+          </Link> */}
         </div>
         <div className="mt-8 flex w-full flex-wrap items-center justify-center gap-4 lg:justify-start">
           {SOCIALS.map((social, index) => (

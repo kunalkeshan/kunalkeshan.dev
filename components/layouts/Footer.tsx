@@ -64,14 +64,14 @@ const Footer = () => {
       name: "Terms & Conditions",
       url: "/terms-and-conditions",
     },
-    {
-      name: "Refund Policy",
-      url: "/refund-policy",
-    },
-    {
-      name: "Shipping & Deliver",
-      url: "https://merchant.razorpay.com/policy/M8pulBCJSqi7c4/shipping",
-    },
+    // {
+    //   name: "Refund Policy",
+    //   url: "/refund-policy",
+    // },
+    // {
+    //   name: "Shipping & Deliver",
+    //   url: "https://merchant.razorpay.com/policy/M8pulBCJSqi7c4/shipping",
+    // },
   ];
 
   const INTERNAL_UTILITY_LINKS = [
@@ -230,7 +230,7 @@ const Footer = () => {
             </span>{" "}
             hey@kunalkeshan.dev
           </Link>
-          <Link
+          {/* <Link
             href="https://goo.gl/maps/KuyuYdWZikyja5xv8"
             className="group mt-8 flex gap-2 text-sm font-semibold transition-all duration-300 hover:text-portfolio-main"
           >
@@ -239,7 +239,7 @@ const Footer = () => {
             </span>{" "}
             1195A, Sundar Clinic, Nehru Street, Bangalore, Bengaluru - Chennai
             Hwy, Pappanchathiram, Chennai, Tamil Nadu - 600123.
-          </Link>
+          </Link> */}
         </div>
       </div>
       <hr className="mx-10 my-10 border border-t-themes-txt_secondary bg-themes-txt_secondary md:mx-40" />
