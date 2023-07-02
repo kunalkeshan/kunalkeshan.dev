@@ -28,6 +28,9 @@ const TermsOfConditionsPage = () => {
               conditions
             </span>
           </h2>
+          <p className="font-semibold text-lg mt-4">
+            Updated at: [2nd July 2023]
+          </p>
           <ul className="mt-12 flex list-[square] flex-col gap-4">
             {TERMS_OF_CONDITIONS.map((terms, index) => (
               <li key={index}>
