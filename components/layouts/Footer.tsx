@@ -61,12 +61,16 @@ const Footer = () => {
       url: "/privacy-policy",
     },
     {
-      name: "Terms and Conditions",
+      name: "Terms & Conditions",
       url: "/terms-and-conditions",
     },
     {
       name: "Refund Policy",
       url: "/refund-policy",
+    },
+    {
+      name: "Shipping & Deliver",
+      url: "https://merchant.razorpay.com/policy/M8pulBCJSqi7c4/shipping",
     },
   ];
 
