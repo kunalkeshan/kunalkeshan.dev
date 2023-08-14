@@ -40,9 +40,6 @@ dependencies:
   react-dom:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
-  react-headroom:
-    specifier: ^3.2.1
-    version: 3.2.1(react@18.2.0)
   react-icons:
     specifier: ^4.7.1
     version: 4.7.1(react@18.2.0)
@@ -63,9 +60,6 @@ devDependencies:
   '@types/gtag.js':
     specifier: ^0.0.12
     version: 0.0.12
-  '@types/react-headroom':
-    specifier: ^3.2.0
-    version: 3.2.0
   autoprefixer:
     specifier: ^10.4.13
     version: 10.4.13(postcss@8.4.19)
@@ -518,6 +512,7 @@ packages:
 
   /@types/prop-types@15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
+    dev: false
 
   /@types/qs@6.9.7:
     resolution: {integrity: sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==}
@@ -533,21 +528,17 @@ packages:
       '@types/react': 18.0.25
     dev: false
 
-  /@types/react-headroom@3.2.0:
-    resolution: {integrity: sha512-ihs02xvfXg8wLFCsxgi9I3Q+p0s1SajzJxuwdF6/cL//+dZ4F9Bwn3b5EpTYkXelEMDFa055sIq/yxKHRNjfuw==}
-    dependencies:
-      '@types/react': 18.0.25
-    dev: true
-
   /@types/react@18.0.25:
     resolution: {integrity: sha512-xD6c0KDT4m7n9uD4ZHi02lzskaiqcBxf4zi+tXZY98a04wvc0hi/TcCPC2FOESZi51Nd7tlUeOJY8RofL799/g==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.3
       csstype: 3.1.2
+    dev: false
 
   /@types/scheduler@0.16.3:
     resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
+    dev: false
 
   /@types/serve-static@1.15.1:
     resolution: {integrity: sha512-NUo5XNiAdULrJENtJXZZ3fHtfMolzZwczzBbnAeBbqBwG+LaG6YaJtuwzwGSQZ2wsCrxjEhNNjAkKigy3n8teQ==}
@@ -931,6 +922,7 @@ packages:
 
   /csstype@3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
+    dev: false
 
   /damerau-levenshtein@1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
@@ -2527,17 +2519,6 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-headroom@3.2.1(react@18.2.0):
-    resolution: {integrity: sha512-C+7bmTwmHWIOjU1r5aSLm4tAQKjmqW4PB65tHllE/D6h+If1+V3gy83BOvp46OCo25LtJJlLa/HDs7Eq5OPFgA==}
-    peerDependencies:
-      react: ^16.3.0 || ^17 || ^18
-    dependencies:
-      prop-types: 15.8.1
-      raf: 3.4.1
-      react: 18.2.0
-      shallowequal: 1.1.0
-    dev: false
-
   /react-icons@4.7.1(react@18.2.0):
     resolution: {integrity: sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw==}
     peerDependencies:
@@ -2690,10 +2671,6 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
-    dev: false
-
-  /shallowequal@1.1.0:
-    resolution: {integrity: sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==}
     dev: false
 
   /shebang-command@2.0.0:

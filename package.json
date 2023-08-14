@@ -23,7 +23,6 @@
     "next": "13.0.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-headroom": "^3.2.1",
     "react-icons": "^4.7.1",
     "react-lottie-player": "^1.5.0",
     "typescript": "4.9.3",
@@ -32,7 +31,6 @@
   },
   "devDependencies": {
     "@types/gtag.js": "^0.0.12",
-    "@types/react-headroom": "^3.2.0",
     "autoprefixer": "^10.4.13",
     "eslint-config-prettier": "^8.5.0",
     "postcss": "^8.4.19",
