@@ -20,7 +20,7 @@ const PrivacyPolicyPage = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, type: "spring" }}
-          className="mx-auto mt-10 mb-20 max-w-7xl px-10 font-montserrat lg:px-5"
+          className="mx-auto mt-10 mb-20 max-w-7xl px-10 font-montserrat lg:px-5 pt-36"
         >
           <h2 className="text-5xl font-semibold">
             <span className="bg-portfolio-main px-1 leading-tight">

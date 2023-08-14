@@ -80,7 +80,7 @@ const IndividualTributePage: NextPage<
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, type: "spring" }}
-          className="mx-auto mt-10 mb-20 grid max-w-7xl grid-cols-1 gap-4 px-5 md:grid-cols-3"
+          className="mx-auto mt-10 mb-20 grid max-w-7xl grid-cols-1 gap-4 px-5 md:grid-cols-3 pt-36"
         >
           <div className="w-full md:col-span-2">
             <h1 className="text-3xl font-bold md:text-5xl">{name}</h1>

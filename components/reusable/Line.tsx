@@ -17,11 +17,13 @@ const Line = () => {
             document.documentElement.clientHeight);
         const drawLength = pathLength! * scrollPercentage;
         pathRef.current!.style.strokeDashoffset = `${pathLength! - drawLength}`;
-        if (scrollPercentage >= 0.99) {
-          pathRef.current!.style.strokeDasharray = "none";
-        } else {
-          pathRef.current!.style.strokeDasharray =
-            pathLength + " " + pathLength;
+        if (pathRef.current) {
+          if (scrollPercentage >= 0.99) {
+            pathRef.current.style.strokeDasharray = "none";
+          } else {
+            pathRef.current.style.strokeDasharray =
+              pathLength + " " + pathLength;
+          }
         }
       });
     }

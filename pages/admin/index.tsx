@@ -90,7 +90,7 @@ const AdminPage = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, type: "spring" }}
-          className="mx-auto mt-10 mb-20 flex max-w-7xl items-center justify-center px-5"
+          className="mx-auto mt-10 mb-20 flex max-w-7xl items-center justify-center px-5 pt-36"
         >
           <div className="flex flex-col items-center justify-center gap-6 rounded-xl border-3 border-black px-5 py-10 lg:min-w-[32rem]">
             <div className="group rounded-full border-2 border-black p-4 text-7xl shadow-3d-small transition-all duration-300 hover:-translate-y-1 hover:shadow-3d">

@@ -44,7 +44,7 @@ const ProjectsPage: NextPage<
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, type: "spring" }}
-          className="mx-auto mt-10 mb-20 max-w-4xl px-5 md:max-w-7xl"
+          className="mx-auto mt-10 mb-20 max-w-4xl px-5 md:max-w-7xl pt-36"
         >
           <h1 className="text-center text-3xl font-bold lg:text-5xl">
             {title}

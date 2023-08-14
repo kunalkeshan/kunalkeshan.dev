@@ -12,9 +12,7 @@ import Headroom from "react-headroom";
 const PublicLayout: NextPage<PropsWithChildren> = ({ children }) => {
   return (
     <>
-      <Headroom className="z-50">
-        <Navbar />
-      </Headroom>
+      <Navbar />
       <main className="w-full">{children}</main>
       <Footer />
     </>

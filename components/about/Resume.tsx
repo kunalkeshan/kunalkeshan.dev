@@ -7,6 +7,8 @@ import Image from "next/image";
 import Link from "next/link";
 import EXPERIENCE, { Experience } from "../../data/experience";
 
+interface ResumePageProps extends React.ComponentProps<"div"> {}
+
 const ResumeCard: React.FC<Experience> = ({
   logo,
   company,
@@ -63,9 +65,9 @@ const ResumeCard: React.FC<Experience> = ({
   );
 };
 
-const Resume = () => {
+const Resume: React.FC<ResumePageProps> = (props) => {
   return (
-    <div className="mx-auto my-20 max-w-7xl px-5">
+    <div className="mx-auto my-20 max-w-7xl px-5" {...props}>
       <h2 className="text-center text-3xl font-bold">
         Take a look at my{" "}
         <span className="leading-ti bg-portfolio-main px-1">resume</span>

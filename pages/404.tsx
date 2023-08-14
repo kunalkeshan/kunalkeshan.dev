@@ -21,7 +21,7 @@ const NotFoundPage = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, type: "spring" }}
-          className="mx-auto mt-10 mb-20 max-w-7xl px-5"
+          className="mx-auto mt-10 mb-20 max-w-7xl px-5 pt-36"
         >
           <div className="relative z-20 flex w-full flex-col items-center justify-center lg:mt-20 lg:flex-row">
             <h1 className="absolute left-1/2 top-1/4 z-10 -translate-x-1/2 gap-10 font-montserrat text-[10rem] font-extrabold text-themes-txt_secondary text-opacity-10 md:text-[15rem] lg:left-1/4 lg:-top-20">

@@ -137,7 +137,7 @@ const TributesPage = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, type: "spring" }}
-          className="mx-auto mt-10 mb-20 max-w-7xl px-5"
+          className="mx-auto mt-10 mb-20 max-w-7xl px-5 pt-36"
         >
           <h1 className="text-center text-3xl font-bold md:text-5xl">
             My Tribute to those{" "}
