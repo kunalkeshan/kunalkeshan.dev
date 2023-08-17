@@ -134,6 +134,7 @@ const Footer = () => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2, type: "spring" }}
+      viewport={{ once: true }}
       className="z-20 mt-auto w-full bg-themes-txt_primary py-9 px-5 font-montserrat text-themes-bg_primary"
     >
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">

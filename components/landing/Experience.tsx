@@ -60,6 +60,7 @@ const ExperienceSection = () => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2, type: "spring" }}
+      viewport={{ once: true }}
       className="mx-auto mt-20 min-h-screen w-full bg-themes-txt_primary p-5 pb-40"
     >
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 pt-10 text-themes-bg_primary md:grid-cols-2 md:pt-20">

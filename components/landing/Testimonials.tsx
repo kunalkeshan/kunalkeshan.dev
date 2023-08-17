@@ -120,6 +120,7 @@ const Testimonials = () => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2, type: "spring" }}
+      viewport={{ once: true }}
       className="mx-auto mb-20 flex min-h-screen max-w-7xl flex-col items-center px-5 pt-20"
     >
       <h2 className="group relative h-fit w-fit text-center text-5xl font-semibold">

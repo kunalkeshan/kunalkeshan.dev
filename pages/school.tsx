@@ -22,6 +22,7 @@ const SchoolPage = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, type: "spring" }}
+          viewport={{ once: true }}
           className="relative mx-auto mb-20 h-auto w-full overflow-clip px-5 pt-36"
         >
           <h1 className="mt-4 text-center text-3xl font-semibold md:text-5xl">

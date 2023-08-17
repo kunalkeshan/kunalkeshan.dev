@@ -102,6 +102,7 @@ const Portfolio: React.FC<{ showTill?: number }> = ({ showTill }) => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2, type: "spring" }}
+      viewport={{ once: true }}
       className="mx-auto mt-20 min-h-screen max-w-7xl px-5 xl:mt-5"
     >
       <h2 className="group relative mx-auto max-w-[26ch] text-center text-3xl font-semibold leading-tight md:text-5xl">

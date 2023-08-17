@@ -80,6 +80,7 @@ const IndividualTributePage: NextPage<
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, type: "spring" }}
+          viewport={{ once: true }}
           className="mx-auto mt-10 mb-20 grid max-w-7xl grid-cols-1 gap-4 px-5 md:grid-cols-3 pt-36"
         >
           <div className="w-full md:col-span-2">

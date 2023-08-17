@@ -24,6 +24,7 @@ const AboutPage = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, type: "spring" }}
+          viewport={{ once: true }}
           className="mt-10 mb-20 overflow-hidden pt-36"
         >
           <AboutIntro />
