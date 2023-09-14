@@ -39,19 +39,19 @@ const EXPERIENCE: Experiences = [
     company: "IEEE SRM SB",
     position: "Chairperson, Computer Society",
     description:
-      "Conducting events, training members in various aspects of computer science (basics, Web and App development, AI/Ml, & blockchain). Managing in-house and external projects.",
+      "Conducted events, trained members in various aspects of computer science (basics, Web and App development, AI/ML, & blockchain). Managed in-house and external projects.",
     website: "https://www.ieeesrmist.in/",
     logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675429201/Portfolio/experience/IEEElogo_fa3bhb.png",
     date: {
       start: "Oct 2021",
-      end: "Present",
+      end: "Sept 2023",
     },
   },
   {
     company: "Think-Digital",
     position: "Admin",
     description:
-      "Creating an X'perience beyond learning. Responsible for managing leads of other domains and helping reduce the gap between students and the industry skills needed.",
+      "Created an X'perience beyond learning. Was responsible for managing leads of other domains and helping reduce the gap between students and the industry skills needed.",
     website: "https://think-digital.in/",
     logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675428847/Portfolio/experience/think_digital_logo_txo2sk.png",
     date: {

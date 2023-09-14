@@ -55,15 +55,6 @@ const Intro = () => {
           >
             Codelance Devs
           </a>
-          , Chairperson (<abbr title="Computer Society">COMSOC</abbr>) at{" "}
-          <a
-            href={LINKS.ieeeSrm}
-            target="_blank"
-            rel="noreferrer"
-            className="border-b-2 border-b-purple-500 transition-all duration-300 hover:text-purple-500"
-          >
-            IEEE SRM
-          </a>
           .
         </h2>
         <div className="mt-8 flex flex-col gap-4 md:mt-16 md:flex-row">
