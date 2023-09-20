@@ -49,7 +49,7 @@ const EXPERIENCE: Experiences = [
   },
   {
     company: "Think-Digital",
-    position: "Admin",
+    position: "Team Lead",
     description:
       "Created an X'perience beyond learning. Was responsible for managing leads of other domains and helping reduce the gap between students and the industry skills needed.",
     website: "https://think-digital.in/",
