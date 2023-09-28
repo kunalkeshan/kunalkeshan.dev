@@ -28,7 +28,7 @@ const CertificateCard: React.FC<CertificateCardProps> = ({
       {...props}
       className="block w-full p-4 rounded-xl border-2 border-black transition-all duration-300 shadow-3d-small hover:shadow-3d hover:-translate-y-1"
     >
-      <div className="w-full overflow-hidden rounded-md">
+      <div className="w-full overflow-hidden rounded-md border-2 border-black">
         <Image
           src={certificate.image}
           alt={certificate.title}
