@@ -30,7 +30,7 @@ const CertificationsPage = () => {
               certifications
             </span>
           </h2>
-          <ul className="mx-auto max-w-7xl scroll-mt-20 px-5 mt-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <ul className="mx-auto max-w-7xl scroll-mt-20 px-5 mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {CERTIFICATIONS.map((cert) => (
               <CertificateCard key={cert.credentialId} certificate={cert} />
             ))}
