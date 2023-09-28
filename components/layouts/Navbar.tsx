@@ -46,6 +46,10 @@ const moreNavOptions = [
     url: "/resume",
   },
   {
+    name: "Certifications",
+    url: "/certifications",
+  },
+  {
     name: "FAQs",
     url: "/contact#faqs",
   },

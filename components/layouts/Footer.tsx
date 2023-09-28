@@ -33,6 +33,10 @@ const Footer = () => {
       url: "/resume",
     },
     {
+      name: "Certifications",
+      url: "/certifications",
+    },
+    {
       name: "Links",
       url: "/links",
     },
