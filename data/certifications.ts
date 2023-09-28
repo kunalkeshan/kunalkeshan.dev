@@ -21,6 +21,7 @@ const organizations: Record<Organizations, Organization> = {
 
 export type Certificate = Readonly<{
   credentialId: string;
+  title: string;
   image: string;
   link: string;
   dateIssued: Date;
@@ -31,6 +32,7 @@ export type Certificate = Readonly<{
 const CERTIFICATIONS: ReadonlyArray<Certificate> = [
   {
     credentialId: "T63SX9QPBXEF",
+    title: "SQL for Data Science",
     image:
       "https://res.cloudinary.com/kunalkeshan/image/upload/v1695891849/Portfolio/certifications/SQL-for-Data-Science.jpg",
     link: "https://www.coursera.org/account/accomplishments/verify/T63SX9QPBXEF",
