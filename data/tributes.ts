@@ -55,6 +55,49 @@ type Tributes = Tribute[];
 // Tributes Container
 const TRIBUTES: Tributes = [
   {
+    name: "GS Thina",
+    website: "https://gsthina.me",
+    image:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675464441/Portfolio/tributes/gs_thina_n80sqg.jpg",
+    testimonial: `Working with Kunal has been one of the best experiences of working with students, in the last 7 years! It didn't feel like working with a typical college student.
+      Kunal was quite a step ahead always and is a go-to person for any new projects and programmes. His notable qualities are staying organized, documenting and being consistent about his work.
+      He has always shown top-notch behaviour in dealing with clients and the companies he has worked with. In addition, he has a commendable teamwork trait and a notable mentorship trait, which makes his presence in any organisation mentionable.
+      Having Kunal in your team is like having a solid pillar, who not just works on the assigned tasks, but also drives the team towards the organisation's goals and values.
+      Working for a company is very different from working in a company. Every employee works in a company, but it's very hard to find people who work for the company. Kunal is one such rare person you may find.
+      Cheers!`,
+    socials: {
+      linkedin: "https://www.linkedin.com/in/gsthina/",
+      twitter: "https://twitter.com/gsthina_me",
+      instagram: "https://www.instagram.com/gsthina.mentor/",
+      youtube: "https://www.youtube.com/@gsthina",
+    },
+    company: {
+      name: "Think-Digital",
+      description: "",
+      position: "Founder",
+      website: "https://think-digital.com",
+      logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675428847/Portfolio/experience/think_digital_logo_txo2sk.png",
+    },
+    feature: true,
+    slug: "gsthina",
+    intro:
+      "GS Thina, the mentor who empowers college students with skills and industry exposure to reach their full potential 🚀",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676201267/Portfolio/tributes/gsthina/gsthina_tghqea.svg",
+    connected: 1610217000000,
+    tributes: [
+      "Thina bhaiya is a fantastic mentor and a wonderful friend. His advice and mentoring have been invaluable not just as a Think-Digital member but also as an individual. His clear vision and passion for assisting others and guiding students by giving mentoring and opportunities are very inspiring.",
+      "He mentored me when I began attending college and continues to do so in by helping me learn more about who I am, how I can build on my talents and work on my shortcomings, and navigating what my vision and values in life are.",
+      "Without his initiatives at Think-Digital, I can openly tell than I would have taken 10X times more to learn and excel than at the stage in which I am today. And for this I'll always be grateful to Thina bhaiya.",
+    ],
+    lessonsLearnt: [
+      "Even if it feels scary just do it. Don't overthink it, and just get started.",
+      "Whatever it might be, communicating it is the best solution to solve what you might be going through.",
+      "Leadership is truly appreciated when you're able to turn those who you work with as leaders themselves.",
+      "When the going get's rough, it's your ability to hold on that will determine how successful you will be.",
+    ],
+  },
+  {
     name: "Rohan Kumar",
     website: "https://www.linkedin.com/in/kumarrohan9724/",
     image:
@@ -91,43 +134,6 @@ const TRIBUTES: Tributes = [
       "Don't limit yourself to just one solution. Always think of alternate approaches you can take.",
       "If you can't do it alone, don't hesitate to ask someone who can do it better than you.",
       "Even if you don't have the advantage, use what you have to the fullest extent.",
-    ],
-  },
-  {
-    name: "GS Thina",
-    website: "https://gsthina.me",
-    image:
-      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675464441/Portfolio/tributes/gs_thina_n80sqg.jpg",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/gsthina/",
-      twitter: "https://twitter.com/gsthina_me",
-      instagram: "https://www.instagram.com/gsthina.mentor/",
-      youtube: "https://www.youtube.com/@gsthina",
-    },
-    company: {
-      name: "Think-Digital",
-      description: "",
-      position: "Founder",
-      website: "https://think-digital.com",
-      logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675428847/Portfolio/experience/think_digital_logo_txo2sk.png",
-    },
-    feature: true,
-    slug: "gsthina",
-    intro:
-      "GS Thina, the mentor who empowers college students with skills and industry exposure to reach their full potential 🚀",
-    coverImage:
-      "https://res.cloudinary.com/kunalkeshan/image/upload/v1676201267/Portfolio/tributes/gsthina/gsthina_tghqea.svg",
-    connected: 1610217000000,
-    tributes: [
-      "Thina bhaiya is a fantastic mentor and a wonderful friend. His advice and mentoring have been invaluable not just as a Think-Digital member but also as an individual. His clear vision and passion for assisting others and guiding students by giving mentoring and opportunities are very inspiring.",
-      "He mentored me when I began attending college and continues to do so in by helping me learn more about who I am, how I can build on my talents and work on my shortcomings, and navigating what my vision and values in life are.",
-      "Without his initiatives at Think-Digital, I can openly tell than I would have taken 10X times more to learn and excel than at the stage in which I am today. And for this I'll always be grateful to Thina bhaiya.",
-    ],
-    lessonsLearnt: [
-      "Even if it feels scary just do it. Don't overthink it, and just get started.",
-      "Whatever it might be, communicating it is the best solution to solve what you might be going through.",
-      "Leadership is truly appreciated when you're able to turn those who you work with as leaders themselves.",
-      "When the going get's rough, it's your ability to hold on that will determine how successful you will be.",
     ],
   },
   {
