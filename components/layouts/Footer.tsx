@@ -10,7 +10,7 @@ import { IMAGE_SOURCE } from "../../config";
 import SOCIALS from "../../data/socials";
 import Image from "next/image";
 import Link from "next/link";
-import { FaEnvelope, FaMap, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   const [currentTime, setCurrentTime] = useState(0);
