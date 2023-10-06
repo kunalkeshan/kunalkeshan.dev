@@ -243,6 +243,22 @@ const TRIBUTES: Tributes = [
     ],
   },
   {
+    name: "Surendar PD",
+    website: "https://surendarpd.vercel.app/",
+    image:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1696239014/Portfolio/tributes/surendar-pd.jpg",
+    testimonial: `I am delighted to endorse Kunal as an outstanding backend web developer. Over three years of collaboration on various full-stack projects, Kunal's expertise in backend development has consistently shone. His mastery of languages such as Python, JavaScript etc, coupled with his skill in database management systems like MySQL and MongoDB, distinguishes him in the field. Kunal's ability to architect and optimize backend systems is exceptional, and he excels at solving intricate problems with efficiency and elegance.
+      Kunal's commitment to excellence extends beyond technical proficiency. He approaches each project with meticulous attention to detail, producing maintainable and secure code. Kunal's collaborative nature, adaptability, and strong work ethic make him an invaluable team member. His enthusiasm for staying current with industry trends enriches our projects and demonstrates his dedication to continuous improvement.`,
+    company: {
+      name: "Codelance Devs",
+      description: "",
+      position: "Co-founder",
+      website: "https://codelancedevs.com",
+      logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675427501/Portfolio/experience/codelance_devs_logo_katy7w.png",
+    },
+    slug: "surendar-pd",
+  },
+  {
     name: "Raman Shekhawat",
     website: "https://www.linkedin.com/in/raman-shekhawat-1013381ba/",
     image:
