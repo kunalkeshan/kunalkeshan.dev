@@ -259,6 +259,22 @@ const TRIBUTES: Tributes = [
     slug: "surendar-pd",
   },
   {
+    name: "Diveakssh Schae",
+    website: "https://diveaksshschae.com/",
+    image:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1696239051/Portfolio/tributes/diveakssh-schae.jpg",
+    testimonial: `I engaged Kunal's services to help me build a custom accordion with video embeds for my website. He did a fantastic job with understanding each of my needs, and keenly working to smoothen out the customer experience. You can see the results of his work here: 
+    https://diveaksshschae.com/moments-of-clarity. Keep up the great work mate!`,
+    company: {
+      name: "diveaksshschae.com",
+      description: "",
+      position: "Audio Nomad",
+      website: "https://diveaksshschae.com/",
+      logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1696550912/Portfolio/tributes/diveakssh-schae-logo.png",
+    },
+    slug: "diveakssh-schae",
+  },
+  {
     name: "Raman Shekhawat",
     website: "https://www.linkedin.com/in/raman-shekhawat-1013381ba/",
     image:
