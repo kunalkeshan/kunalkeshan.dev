@@ -42,6 +42,31 @@ type Projects = Project[];
 const PROJECTS: Projects = [
   {
     type: "web development",
+    title: "Mind-Check",
+    description:
+      "Mind Check is a free and open-source web application designed to assess and track your mental well-being. Take a variety of mental health tests, receive personalized feedback, and track your progress over time. Improve your mental well-being with Mind Check's resources.",
+    github: "https://github.com/kunalkeshan/Mind-Check",
+    website: "https://mind-check.vercel.app/",
+    logo: "https://raw.githubusercontent.com/kunalkeshan/Mind-Check/main/public/mind-check-logo.png",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697084423/Portfolio/projects/undraw_community_re_cyrm_lcs2qp.svg",
+    color: "#ffc8c8",
+    feature: true,
+    slug: "mind-check",
+    technologies: ["Next.js", "Firebase", "Tailwind CSS", "TypeScript"],
+    motivation:
+      'The motivation behind "Mind Check" is to offer individuals a free and accessible resource for assessing and tracking their mental well-being. In a time where mental health is of paramount importance, I believe that these tests should be readily available to anyone without any paywall restrictions or the need to sign up. The aim is to empower users with a test that evaluate various aspects of their mental health, providing them with personalized feedback and insights, ultimately promoting a holistic approach to mental well-being.',
+    images: [
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697084947/Portfolio/projects/mind-check/landing_p7q1j9.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697084947/Portfolio/projects/mind-check/score-history_q5wu2k.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697084947/Portfolio/projects/mind-check/profile_kug3yj.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697084947/Portfolio/projects/mind-check/resources_pj1eaw.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697084947/Portfolio/projects/mind-check/test_gxrse3.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697084946/Portfolio/projects/mind-check/test-intro_cpurbs.png",
+    ],
+  },
+  {
+    type: "web development",
     title: "Shiryoku (Resources)",
     description:
       "Shiryoku (Resources) is an initiative to reduce the resistance between students and the resources that they require to up-skill themselves.",
