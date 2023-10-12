@@ -42,6 +42,31 @@ type Projects = Project[];
 const PROJECTS: Projects = [
   {
     type: "web development",
+    title: "Mind-Check",
+    description:
+      "Mind Check is a free and open-source web application designed to assess and track your mental well-being. Take a variety of mental health tests, receive personalized feedback, and track your progress over time. Improve your mental well-being with Mind Check's resources.",
+    github: "https://github.com/kunalkeshan/Mind-Check",
+    website: "https://mind-check.vercel.app/",
+    logo: "https://raw.githubusercontent.com/kunalkeshan/Mind-Check/main/public/mind-check-logo.png",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697084423/Portfolio/projects/undraw_community_re_cyrm_lcs2qp.svg",
+    color: "#ffc8c8",
+    feature: true,
+    slug: "mind-check",
+    technologies: ["Next.js", "Firebase", "Tailwind CSS", "TypeScript"],
+    motivation:
+      'The motivation behind "Mind Check" is to offer individuals a free and accessible resource for assessing and tracking their mental well-being. In a time where mental health is of paramount importance, I believe that these tests should be readily available to anyone without any paywall restrictions or the need to sign up. The aim is to empower users with a test that evaluate various aspects of their mental health, providing them with personalized feedback and insights, ultimately promoting a holistic approach to mental well-being.',
+    images: [
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697084947/Portfolio/projects/mind-check/landing_p7q1j9.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697084947/Portfolio/projects/mind-check/score-history_q5wu2k.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697084947/Portfolio/projects/mind-check/profile_kug3yj.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697084947/Portfolio/projects/mind-check/resources_pj1eaw.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697084947/Portfolio/projects/mind-check/test_gxrse3.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697084946/Portfolio/projects/mind-check/test-intro_cpurbs.png",
+    ],
+  },
+  {
+    type: "web development",
     title: "Shiryoku (Resources)",
     description:
       "Shiryoku (Resources) is an initiative to reduce the resistance between students and the resources that they require to up-skill themselves.",
@@ -91,6 +116,48 @@ const PROJECTS: Projects = [
   },
   {
     type: "web development",
+    title: "Social Sphere",
+    description:
+      "Web app that allows users to create their own personal page to share their social media links and other personalized links. Built using MERN Stack.",
+    github: "https://github.com/kunalkeshan/Social-Sphere",
+    website: "https://social-sphere-jet.vercel.app/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1697082697/Portfolio/art-pic-kunal-keshan_square.jpg",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697083915/Portfolio/projects/undraw_social_growth_re_tjy9_pt1wib.svg",
+    color: "#80808040",
+    feature: false,
+    slug: "social-sphere",
+  },
+  {
+    type: "web development",
+    title: "Token Tribe",
+    description:
+      'Token Tribe is a cutting-edge web3-based communities app designed for social media communities. With this app, community heads can create their own communities on our website and users can make decisions about the content and activities within these communities by voting using a token called "CommuniCoin."',
+    github: "https://github.com/kunalkeshan/Token-Tribe",
+    website: "https://tokentribe.vercel.app/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1697082697/Portfolio/art-pic-kunal-keshan_square.jpg",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697083062/Portfolio/projects/undraw_community_re_cyrm_fhvobz.svg",
+    color: "#80808040",
+    feature: false,
+    slug: "token-tribe",
+  },
+  {
+    type: "web development",
+    title: "Altruize",
+    description:
+      "A web3-based NGO donations app has several advantages over a web2-based app. Web3 technology, which is built on blockchain, enables secure and transparent transactions, with no need for intermediaries like banks or payment processors. This means that donors can have complete control over their donations, without worrying about fraud or misuse of funds.",
+    github: "https://github.com/kunalkeshan/Altruize",
+    website: "https://altruize.vercel.app/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1697082697/Portfolio/art-pic-kunal-keshan_square.jpg",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697082596/Portfolio/projects/undraw_showing_support_re_5f2v_pibzp7.svg",
+    color: "#536DFE40",
+    feature: false,
+    slug: "altruize",
+  },
+  {
+    type: "web development",
     title: "Atom",
     description:
       "Atom is a platform enabling the Think-Digital community to share information and resources, keep tabs on happenings, and streamline their processes through automation tools.",
@@ -99,7 +166,7 @@ const PROJECTS: Projects = [
     logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675428847/Portfolio/experience/think_digital_logo_txo2sk.png",
     coverImage:
       "https://res.cloudinary.com/kunalkeshan/image/upload/v1675499797/Portfolio/projects/group_chat_re_frmo_zazi34.svg",
-    color: "#1A6885",
+    color: "#1A688580",
     feature: false,
     slug: "td-atom",
   },
@@ -113,9 +180,36 @@ const PROJECTS: Projects = [
     logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675501377/Portfolio/projects/nexus-logo.29958d16f2b5d7665c64_lvu8ms.png",
     coverImage:
       "https://res.cloudinary.com/kunalkeshan/image/upload/v1675501196/Portfolio/projects/circuit_sdmr_grloza.svg",
-    color: "#FF39FF",
+    color: "#FF39FF40",
     feature: false,
     slug: "bcd-web-ui",
+  },
+  {
+    type: "video",
+    title: "Keeping it - Sou",
+    description:
+      "Created captivating lyric video using DaVinci Resolve and After Effects, adding visual depth to music through seamless transitions and animated text.",
+    website: "https://youtu.be/WAHlfYMGgFo?si=W7Pl9GOk9yLOrzlP",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1697082243/Portfolio/projects/sou-logo.jpg",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697082143/Portfolio/projects/undraw_music_re_a2jk_tvqbt4.svg",
+    color: "#00B0FF40",
+    feature: false,
+    slug: "keeping-it-sou",
+  },
+  {
+    type: "web development",
+    title: "Spotify Vanilla Clone",
+    description:
+      "Designed and built a Spotify Vanilla Clone in HTML, CSS, and JavaScript, instructing workshop attendees in web development, audio streaming, and UI/UX principles.",
+    github: "https://github.com/kunalkeshan/spotify-vanilla-clone",
+    website: "https://spotify-vanilla-clone.netlify.app/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1697082697/Portfolio/art-pic-kunal-keshan_square.jpg",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697083224/Portfolio/projects/undraw_mello_otq1_nf7vay.svg",
+    color: "#1DB95440",
+    feature: false,
+    slug: "spotify-vanilla-clone",
   },
 ];
 

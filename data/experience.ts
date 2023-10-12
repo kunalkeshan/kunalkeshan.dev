@@ -36,15 +36,15 @@ const EXPERIENCE: Experiences = [
     },
   },
   {
-    company: "IEEE SRM SB",
-    position: "Chairperson, Computer Society",
+    company: "Sundar Clinic",
+    position: "Full-Stack Developer, Part time",
     description:
-      "Conducted events, trained members in various aspects of computer science (basics, Web and App development, AI/ML, & blockchain). Managed in-house and external projects.",
-    website: "https://www.ieeesrmist.in/",
-    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675429201/Portfolio/experience/IEEElogo_fa3bhb.png",
+      "Designed and launched a responsive website for Sundar Clinic, strengthening its online presence and user-friendliness. Integrated Sanity CMS, enabling efficient content management by clinic staff and reducing developer dependency. Optimized performance for faster page loads, enhancing the patient experience on sundarclinic.com.",
+    website: "https://sundarclinic.com",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1696013861/Portfolio/experience/sundar-clinic.png",
     date: {
-      start: "Oct 2021",
-      end: "Sept 2023",
+      start: "Apr 2023",
+      end: "Sep 2023",
     },
   },
   {
@@ -57,6 +57,30 @@ const EXPERIENCE: Experiences = [
     date: {
       start: "Feb 2021",
       end: "March 2023",
+    },
+  },
+  {
+    company: "SRM Institute of Science & Technology",
+    position: "Project Assistant",
+    description:
+      "Crafted a custom UI using React, TypeScript, and Axios to enhance interaction with a neural network model on PYNQ Z-Series hardware. Collaborated with cross-functional teams, including hardware engineers and medical professionals, and established secure traffic tunneling via Ngrok for seamless UI operation.",
+    website: "https://srmist.edu.in/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1676359360/Portfolio/experience/srmist_n5dnqj.png",
+    date: {
+      start: "Nov 2022",
+      end: "March 2023",
+    },
+  },
+  {
+    company: "IEEE SRM SB",
+    position: "Chairperson, Computer Society",
+    description:
+      "Conducted events, trained members in various aspects of computer science (basics, Web and App development, AI/ML, & blockchain). Managed in-house and external projects.",
+    website: "https://www.ieeesrmist.in/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675429201/Portfolio/experience/IEEElogo_fa3bhb.png",
+    date: {
+      start: "Oct 2021",
+      end: "Sept 2023",
     },
   },
   {
