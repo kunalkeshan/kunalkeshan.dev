@@ -24,7 +24,7 @@ const ProjectCard: React.FC<Project> = ({
 }) => {
   return (
     <div className="group flex min-h-[400px] w-full flex-col overflow-hidden rounded-xl border-3 border-black transition-all duration-300 hover:-translate-y-2 hover:shadow-3d md:flex-row">
-      <div className="w-full p-14 md:w-1/2">
+      <div className="w-full p-4 md:p-14 md:w-1/2">
         <div className="flex items-center gap-4">
           <div className="h-10 w-10">
             <Image
