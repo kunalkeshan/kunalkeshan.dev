@@ -91,6 +91,20 @@ const PROJECTS: Projects = [
   },
   {
     type: "web development",
+    title: "Social Sphere",
+    description:
+      "Web app that allows users to create their own personal page to share their social media links and other personalized links. Built using MERN Stack.",
+    github: "https://github.com/kunalkeshan/Social-Sphere",
+    website: "https://social-sphere-jet.vercel.app/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1697082697/Portfolio/art-pic-kunal-keshan_square.jpg",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697083915/Portfolio/projects/undraw_social_growth_re_tjy9_pt1wib.svg",
+    color: "#80808040",
+    feature: false,
+    slug: "social-sphere",
+  },
+  {
+    type: "web development",
     title: "Token Tribe",
     description:
       'Token Tribe is a cutting-edge web3-based communities app designed for social media communities. With this app, community heads can create their own communities on our website and users can make decisions about the content and activities within these communities by voting using a token called "CommuniCoin."',
