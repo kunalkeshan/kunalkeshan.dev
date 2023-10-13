@@ -116,6 +116,20 @@ const PROJECTS: Projects = [
   },
   {
     type: "web development",
+    title: "Sundar Clinic",
+    description:
+      "Official website of Sundar Clinic located in Pappanchatiram, Chennai.",
+    github: "https://github.com/Sundar-Clinic/Main-Website",
+    website: "https://sundarclinic.com/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1696013861/Portfolio/experience/sundar-clinic.png",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1697172173/Portfolio/projects/undraw_medicine_b-1-ol_h4iik0.svg",
+    color: "#d9000040",
+    feature: false,
+    slug: "sundar-clinic",
+  },
+  {
+    type: "web development",
     title: "Social Sphere",
     description:
       "Web app that allows users to create their own personal page to share their social media links and other personalized links. Built using MERN Stack.",
