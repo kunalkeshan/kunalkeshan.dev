@@ -249,7 +249,7 @@ const Footer = () => {
       </div>
       <hr className="mx-10 my-10 border border-t-themes-txt_secondary bg-themes-txt_secondary md:mx-40" />
       <p className="mx-auto max-w-7xl text-center font-semibold">
-        Copyright &copy; Kunal Keshan - {new Date().getFullYear()} | Inspired by{" "}
+        Copyright &copy; Kunal Keshan - 2023 | Inspired by{" "}
         <Link
           href={"https://paperfolio.webflow.io/"}
           target="_blank"
