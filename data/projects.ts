@@ -172,6 +172,20 @@ const PROJECTS: Projects = [
   },
   {
     type: "web development",
+    title: "Xilinx Homepage",
+    description:
+      "Static website developed to showcase the progress and events conducted for the Xilinx SRM Research flow and updates. Developed using React, Typescript and Tailwind CSS.",
+    github: "https://github.com/kunalkeshan/Xilinx-Homepage",
+    website: "https://xilinxsrm.netlify.app/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1675501377/Portfolio/projects/nexus-logo.29958d16f2b5d7665c64_lvu8ms.png",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1675501196/Portfolio/projects/circuit_sdmr_grloza.svg",
+    color: "#FF39FF40",
+    feature: false,
+    slug: "xilinx-homepage",
+  },
+  {
+    type: "web development",
     title: "Hardware Web UI",
     description:
       "A graphical user interface (GUI) that is built on the Web and used to communicate with the Breast Cancer Detection Neural Network.",
