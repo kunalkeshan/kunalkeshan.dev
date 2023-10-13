@@ -13,7 +13,7 @@ import { IMAGE_SOURCE } from "../../config";
 import LINKS from "../../data/external";
 
 const typewriterOptions: Options = {
-  strings: ["Developer", "Writer", "Creator"],
+  strings: ["Developer", "Writer", "Creator", "Freelancer"],
   loop: true,
   autoStart: true,
   skipAddStyles: true,
