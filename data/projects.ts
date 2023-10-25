@@ -42,6 +42,37 @@ type Projects = Project[];
 const PROJECTS: Projects = [
   {
     type: "web development",
+    title: "DeWorks",
+    description:
+      "DeWorks is a dynamic platform that bridges the gap between freelancers and clients in the digital landscape. It streamlines collaboration, saving time and resources. Leveraging blockchain, it ensures secure and transparent payments, addressing a major pain point in freelancing.",
+    github: "https://github.com/Jayanth-Srinivasan/DeWorks",
+    website: "https://de-works.vercel.app/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1697082697/Portfolio/art-pic-kunal-keshan_square.jpg",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1698248603/Portfolio/projects/undraw_digital_nomad_re_w8uy_bg5jpv.svg",
+    color: "#2c56fe40",
+    feature: true,
+    slug: "deworks",
+    technologies: [
+      "Next.js",
+      "Wagmi",
+      "Blockchain",
+      "Tailwind CSS",
+      "TypeScript",
+    ],
+    motivation:
+      "DeWorks was conceived during Unfold'23 Hackathon. As a freelancer, I faced the recurring issue of delayed or uncertain payments for my work. DeWorks emerged from the motivation to create a streamlined ecosystem that ensures fair and timely compensation for freelancers. This hackathon project aims to address one of the most significant challenges in the freelance world.",
+    images: [
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1698248668/Portfolio/projects/deworks/find-a-job_eaffbl.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1698248670/Portfolio/projects/deworks/post-a-job_fahr07.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1698248670/Portfolio/projects/deworks/onboard_lws0d2.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1698248671/Portfolio/projects/deworks/landing_e9uhi4.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1698248670/Portfolio/projects/deworks/client-dashboard_r1z8xo.png",
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1698248671/Portfolio/projects/deworks/job_posting_hgnhqq.png",
+    ],
+  },
+  {
+    type: "web development",
     title: "Mind-Check",
     description:
       "Mind Check is a free and open-source web application designed to assess and track your mental well-being. Take a variety of mental health tests, receive personalized feedback, and track your progress over time. Improve your mental well-being with Mind Check's resources.",
