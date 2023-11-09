@@ -41,6 +41,7 @@ export const getStaticProps: GetStaticProps<{ faqs: Faq[] }> = async () => {
     props: {
       faqs,
     },
+    revalidate: 60,
   };
 };
 
