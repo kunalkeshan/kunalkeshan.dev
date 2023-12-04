@@ -77,7 +77,7 @@ const ProjectsPage: NextPage<
             <Link
               href={website ? website : "#"}
               target="_blank"
-              className="absolute right-12 top-12 max-h-[40px] max-w-[40px] rotate-6 rounded-full border-3 border-black shadow-3d-small transition-all duration-300 hover:shadow-3d"
+              className="absolute overflow-hidden right-12 top-12 max-h-[40px] max-w-[40px] rotate-6 rounded-full border-3 border-black shadow-3d-small transition-all duration-300 hover:shadow-3d hover:-translate-y-1"
             >
               <Image
                 src={logo}
@@ -109,7 +109,7 @@ const ProjectsPage: NextPage<
                     {images.map((image, index) => (
                       <div
                         key={index}
-                        className="w-full overflow-hidden rounded-xl border-2 border-black shadow-3d-small transition-all duration-300 hover:shadow-3d"
+                        className="w-full overflow-hidden hover:-translate-y-1 rounded-xl border-2 border-black shadow-3d-small transition-all duration-300 hover:shadow-3d"
                       >
                         <Image
                           src={image}
