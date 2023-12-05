@@ -40,6 +40,7 @@ const About = () => {
             width={100}
             height={100}
             className="h-auto w-full object-cover"
+            unoptimized
           />
         </div>
       </div>
