@@ -59,7 +59,7 @@ const About = () => {
         </h2>
         <p className="mt-4 font-montserrat font-semibold text-themes-txt_secondary">
           I am an Electronics and Communication Engineering Student at SRMIST,
-          presently in my third year. I&apos;ve been pursuing full-stack web
+          presently in my final year. I&apos;ve been pursuing full-stack web
           development since my first year and have a big interest in developing
           products, improving services and delivering value. My core ideals are
           of consistency, hard work, discipline, and grit.
