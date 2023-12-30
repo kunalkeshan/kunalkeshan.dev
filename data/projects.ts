@@ -147,6 +147,34 @@ const PROJECTS: Projects = [
   },
   {
     type: "web development",
+    title: "Bellania",
+    description:
+      "A stylish lingerie showcase website coded in Next.js, designed with Tailwind CSS, and employing Sanity CMS for streamlined content management.",
+    github: "https://github.com/kunalkeshan/Bellania",
+    website: "https://bellania.vercel.app/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1697082697/Portfolio/art-pic-kunal-keshan_square.jpg",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1703912131/Portfolio/projects/egiapszpkqeigphr9kpf.svg",
+    color: "#cf2d7140",
+    feature: false,
+    slug: "bellania",
+  },
+  {
+    type: "web development",
+    title: "Peace NGO",
+    description:
+      "Peace NGO is a non-profit organization that works to empower local communities by educating them about climate change, promoting environmental stewardship, and providing affordable healthcare services.",
+    github: "https://github.com/kunalkeshan/Peace-NGO",
+    website: "https://projectpeace.in/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1697082697/Portfolio/art-pic-kunal-keshan_square.jpg",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1703912131/Portfolio/projects/zfdskw0dlooj5uoqgvbs.svg",
+    color: "#3b82f640",
+    feature: false,
+    slug: "peace-ngo",
+  },
+  {
+    type: "web development",
     title: "Sundar Clinic",
     description:
       "Official website of Sundar Clinic located in Pappanchatiram, Chennai.",
