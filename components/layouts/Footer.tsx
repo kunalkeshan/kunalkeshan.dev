@@ -215,6 +215,7 @@ const Footer = () => {
             <li
               onClick={toggleRickRollPlay}
               className="mt-4 w-fit cursor-pointer font-semibold transition-all duration-300 hover:translate-x-1 hover:text-portfolio-accent"
+              suppressHydrationWarning
             >
               {RickRollAudio.current?.paused
                 ? "~(˘▽˘)~"
