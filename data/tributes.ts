@@ -259,6 +259,21 @@ const TRIBUTES: Tributes = [
     slug: "surendar-pd",
   },
   {
+    name: "Vaibhav Mandhana",
+    website: "https://bharatstats.com/",
+    image:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1706620333/Portfolio/tributes/vaibhav_mandhana.jpg",
+    testimonial: `I had the pleasure of working with Kunal, and I can confidently say that he is a standout professional. Kunal possesses extensive knowledge in technology, and his expertise has proven invaluable to our team. He played a crucial role in streamlining and automating our operations, showcasing not only his technical prowess but also his dedication to driving efficiency. I highly recommend Kunal for anyone seeking a tech-savvy professional who brings not only technical excellence but also a proactive and collaborative spirit to the table. Kunal is undoubtedly an asset to any team or project he is involved in.`,
+    company: {
+      name: "Flookup Advisors",
+      description: "",
+      position: "Founder Partner",
+      website: "https://bharatstats.com/",
+      logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1706620660/Portfolio/experience/flookup.jpg",
+    },
+    slug: "vaibhav-mandhana",
+  },
+  {
     name: "Diveakssh Schae",
     website: "https://diveaksshschae.com/",
     image:
