@@ -31,7 +31,7 @@ const SOCIALS: Socials = [
   { name: "blog", url: "https://blog.kunalkeshan.dev", Icon: FaBlog },
   {
     name: "instagram",
-    url: "https://instagram.com/kunalkeshan",
+    url: "https://instagram.com/kunalkeshan.dev",
     Icon: FaInstagram,
   },
   {
