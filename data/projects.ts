@@ -147,6 +147,20 @@ const PROJECTS: Projects = [
   },
   {
     type: "web development",
+    title: "Shri Rajayoham Construction Company",
+    description:
+      "Crafted a static website for Shri Rajayoham Construction Company, integrating Sanity CMS for dynamic content. Built with Next.js, TypeScript, Tailwind CSS, and secure contact forms with rate limiting for phishing protection.",
+    github: "https://github.com/kunalkeshan/Shri-Rajayoham-Construction",
+    website: "https://shrirajayohamcc.com/",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1708836305/Portfolio/projects/srcc-logo.png",
+    coverImage:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1708836215/Portfolio/projects/amc6j23l7l0sfwvxfskv.svg",
+    color: "#560a0a40",
+    feature: false,
+    slug: "srcc",
+  },
+  {
+    type: "web development",
     title: "Bellania",
     description:
       "A stylish lingerie showcase website coded in Next.js, designed with Tailwind CSS, and employing Sanity CMS for streamlined content management.",
