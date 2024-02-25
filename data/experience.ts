@@ -36,6 +36,18 @@ const EXPERIENCE: Experiences = [
     },
   },
   {
+    company: "LingoScriptAI",
+    position: "Product Development Engineer, Internship",
+    description:
+      "Led development at LingoScriptAI for a content creation tool, leveraging Agile methodologies. Utilized TypeScript, Next.js, Tailwind CSS, Auth0, Node.js, and Express.js. Hands-on with AWS services for successful deployment. Collaborated efficiently for seamless development.",
+    website: "#",
+    logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1708837070/Portfolio/experience/lingoscriptai-reelsnshorts.png",
+    date: {
+      start: "July 2023",
+      end: "Mar 2024",
+    },
+  },
+  {
     company: "Sundar Clinic",
     position: "Full-Stack Developer, Part time",
     description:
