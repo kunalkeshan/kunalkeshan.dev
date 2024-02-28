@@ -274,6 +274,21 @@ const TRIBUTES: Tributes = [
     slug: "vaibhav-mandhana",
   },
   {
+    name: "Rajarajan K",
+    website: "https://shrirajayohamcc.com/",
+    image:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1709121117/Portfolio/tributes/rajarajank.jpg",
+    testimonial: `Compared to the other companies we have used in the past, Kunal's work has been far better in every area. While building our new web site, the pages has been prompt and straightforward and the actual services are well documented and logical to our needs. Me and my team are very grateful and happy to have worked with professionals from web designing field (Kunal & Surendar) . Over just a short period of time I can tell that we are going to be doing business with them for a long time and will gladly recommend them to anyone… except our competition ;).`,
+    company: {
+      name: "Shri Rajayoham Construction Company",
+      description: "",
+      position: "Managing Director",
+      website: "https://shrirajayohamcc.com/",
+      logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1708836305/Portfolio/projects/srcc-logo.png",
+    },
+    slug: "rajarajan-k",
+  },
+  {
     name: "Diveakssh Schae",
     website: "https://diveaksshschae.com/",
     image:
