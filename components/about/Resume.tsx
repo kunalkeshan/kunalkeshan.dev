@@ -72,7 +72,7 @@ const Resume: React.FC<ResumePageProps> = (props) => {
         Take a look at my{" "}
         <span className="leading-ti bg-portfolio-main px-1">resume</span>
       </h2>
-      <ul className="mx-auto mt-8 flex w-full flex-col items-center justify-center gap-8">
+      <ul className="mx-auto mt-8 mb-8 flex w-full flex-col items-center justify-center gap-8">
         {EXPERIENCE.map((experience, index) => (
           <ResumeCard key={index} {...experience} />
         ))}
