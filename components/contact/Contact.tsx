@@ -132,6 +132,10 @@ const Contact = () => {
                 </p>
               </motion.div>
             )}
+            <p className="font-montserrat text-sm">
+              Form is temporarily disabled. Please feel free to contact me at my
+              email or any of my socials directly. Thanks!
+            </p>
             <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
               <div>
                 <label htmlFor="name" className=" font-bold">
@@ -145,6 +149,7 @@ const Contact = () => {
                   required
                   value={input.name}
                   onChange={handleInput("name")}
+                  disabled={true}
                 />
               </div>
               <div>
@@ -159,6 +164,7 @@ const Contact = () => {
                   required
                   value={input.email}
                   onChange={handleInput("email")}
+                  disabled={true}
                 />
               </div>
             </div>
@@ -174,6 +180,7 @@ const Contact = () => {
                   className="mt-2 w-full rounded-xl border-2  border-black p-4 outline-none transition-all duration-300 hover:shadow-3d focus:shadow-3d"
                   value={input.phone}
                   onChange={handleInput("phone")}
+                  disabled={true}
                 />
               </div>
               <div>
@@ -187,6 +194,7 @@ const Contact = () => {
                   className="mt-2 w-full rounded-xl border-2 border-black p-4 outline-none transition-all duration-300 hover:shadow-3d focus:shadow-3d"
                   value={input.subject}
                   onChange={handleInput("subject")}
+                  disabled={true}
                   required
                 />
               </div>
@@ -205,10 +213,12 @@ const Contact = () => {
                 placeholder="Got any message for me?"
                 value={input.message}
                 onChange={handleInput("message")}
+                disabled={true}
               ></textarea>
             </div>
             <button
               type="submit"
+              disabled={true}
               className="rounded-xl bg-themes-txt_primary px-8 py-4 text-lg text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:border-portfolio-accent hover:bg-portfolio-accent md:w-fit"
             >
               {!loading ? "Send message" : "Please wait..."}
