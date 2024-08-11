@@ -41,7 +41,7 @@ const ServicesSection = () => {
       id="services"
     >
       <h2 className="group relative min-h-fit text-center text-5xl font-semibold">
-        Modern problems, requires{" "}
+        Modern problems, require{" "}
         <span className="bg-portfolio-main px-1 leading-tight">
           modern services
         </span>
