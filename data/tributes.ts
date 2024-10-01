@@ -305,6 +305,21 @@ const TRIBUTES: Tributes = [
     slug: "diveakssh-schae",
   },
   {
+    name: "Diveakssh Schae",
+    website: "https://diveaksshschae.com/",
+    image:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1696239051/Portfolio/tributes/diveakssh-schae.jpg",
+    testimonial: `I worked with Kunal & Surender on creating a video testimonial widget. I had some custom requirements like only one video being played at a time, mobile optimising, etc. They got the job done, and even built a sweet front-end system that allows a tech noob like me to manage future video testimonials. Thanks for doing a fantastic job - big fan and can recommend to anyone needing web/tech/code firepower!`,
+    company: {
+      name: "diveaksshschae.com",
+      description: "",
+      position: "Audio Nomad",
+      website: "https://diveaksshschae.com/",
+      logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1696550912/Portfolio/tributes/diveakssh-schae-logo.png",
+    },
+    slug: "diveakssh-schae",
+  },
+  {
     name: "Raman Shekhawat",
     website: "https://www.linkedin.com/in/raman-shekhawat-1013381ba/",
     image:
