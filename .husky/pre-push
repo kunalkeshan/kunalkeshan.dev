@@ -1,0 +1,4 @@
+echo "Running pre-push hook"
+
+echo "Running code build"
+npm run build

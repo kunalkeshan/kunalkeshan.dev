@@ -1,0 +1,4 @@
+echo "Running pre-commit hook"
+
+echo "Running linting"
+npm run lint
