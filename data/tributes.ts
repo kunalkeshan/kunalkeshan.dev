@@ -292,7 +292,7 @@ const TRIBUTES: Tributes = [
     name: "Arnav Shukla",
     website: "https://bento.me/zeus",
     image:
-      "https://res.cloudinary.com/kunalkeshan/image/upload/v1727781936/Portfolio/tributes/arnav_shukla.png,
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1727781936/Portfolio/tributes/arnav_shukla.png",
     testimonial: `I’ve had the pleasure of working with Kunal, a highly skilled full-stack developer who consistently delivers quality results. His focus and dedication to his work set him apart in the field. Kunal has a strong grasp of both front-end and back-end technologies, allowing him to approach complex problems with a comprehensive perspective. Kunal is not only technically proficient but also possesses an excellent work ethic. He ensures that projects are completed on time without sacrificing attention to detail. His ability to stay focused and deliver polished, high-quality work makes him an invaluable asset to any team. I highly recommend Kunal for any development role where precision, efficiency, and expertise are required. He is a professional who can be relied upon to exceed expectations.`,
     company: {
       name: "Kuddle",
