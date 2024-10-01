@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "yarn prettier --write ."
+    "format": "yarn prettier --write .",
+    "prepare": "husky"
   },
   "dependencies": {
     "@next/font": "^13.2.3",
@@ -33,6 +34,7 @@
     "@types/gtag.js": "^0.0.12",
     "autoprefixer": "^10.4.13",
     "eslint-config-prettier": "^8.5.0",
+    "husky": "^9.1.6",
     "postcss": "^8.4.19",
     "prettier": "^2.8.0",
     "prettier-plugin-tailwindcss": "^0.2.0",
