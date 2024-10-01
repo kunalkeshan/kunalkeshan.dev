@@ -289,12 +289,42 @@ const TRIBUTES: Tributes = [
     slug: "rajarajan-k",
   },
   {
+    name: "Arnav Shukla",
+    website: "https://bento.me/zeus",
+    image:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1727781936/Portfolio/tributes/arnav_shukla.png",
+    testimonial: `I’ve had the pleasure of working with Kunal, a highly skilled full-stack developer who consistently delivers quality results. His focus and dedication to his work set him apart in the field. Kunal has a strong grasp of both front-end and back-end technologies, allowing him to approach complex problems with a comprehensive perspective. Kunal is not only technically proficient but also possesses an excellent work ethic. He ensures that projects are completed on time without sacrificing attention to detail. His ability to stay focused and deliver polished, high-quality work makes him an invaluable asset to any team. I highly recommend Kunal for any development role where precision, efficiency, and expertise are required. He is a professional who can be relied upon to exceed expectations.`,
+    company: {
+      name: "Kuddle",
+      description: "",
+      position: "Product Engineering Intern",
+      website: "https://kuddle.pet/",
+      logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1727782407/Portfolio/tributes/kuddle_logo.png",
+    },
+    slug: "arnav-shukla",
+  },
+  {
     name: "Diveakssh Schae",
     website: "https://diveaksshschae.com/",
     image:
       "https://res.cloudinary.com/kunalkeshan/image/upload/v1696239051/Portfolio/tributes/diveakssh-schae.jpg",
     testimonial: `I engaged Kunal's services to help me build a custom accordion with video embeds for my website. He did a fantastic job with understanding each of my needs, and keenly working to smoothen out the customer experience. You can see the results of his work here: 
     https://diveaksshschae.com/moments-of-clarity. Keep up the great work mate!`,
+    company: {
+      name: "diveaksshschae.com",
+      description: "",
+      position: "Audio Nomad",
+      website: "https://diveaksshschae.com/",
+      logo: "https://res.cloudinary.com/kunalkeshan/image/upload/v1696550912/Portfolio/tributes/diveakssh-schae-logo.png",
+    },
+    slug: "diveakssh-schae",
+  },
+  {
+    name: "Diveakssh Schae",
+    website: "https://diveaksshschae.com/",
+    image:
+      "https://res.cloudinary.com/kunalkeshan/image/upload/v1696239051/Portfolio/tributes/diveakssh-schae.jpg",
+    testimonial: `I worked with Kunal & Surender on creating a video testimonial widget. I had some custom requirements like only one video being played at a time, mobile optimising, etc. They got the job done, and even built a sweet front-end system that allows a tech noob like me to manage future video testimonials. Thanks for doing a fantastic job - big fan and can recommend to anyone needing web/tech/code firepower!`,
     company: {
       name: "diveaksshschae.com",
       description: "",
