@@ -3,10 +3,15 @@
  */
 
 import React from "react";
-import Lottie from "react-lottie-player";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import CodingAnimationData from "../../assets/lottie/coding.json";
 import { FaEnvelope } from "react-icons/fa";
+
+// Dynamically import Lottie to avoid SSR issues
+const Lottie = dynamic(() => import("react-lottie-player"), {
+  ssr: false,
+});
 
 const AboutStory = () => {
   return (
