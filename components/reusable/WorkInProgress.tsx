@@ -3,11 +3,16 @@
  */
 
 import React from "react";
-import Lottie from "react-lottie-player";
+import dynamic from "next/dynamic";
 import WorkInProgressAnimationData from "../../assets/lottie/work-in-progress.json";
 import { motion } from "framer-motion";
 import { FaSuitcase } from "react-icons/fa";
 import Link from "next/link";
+
+// Dynamically import Lottie to avoid SSR issues
+const Lottie = dynamic(() => import("react-lottie-player"), {
+  ssr: false,
+});
 
 const WordInProgress = () => {
   return (
