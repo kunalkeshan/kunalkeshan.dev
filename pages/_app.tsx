@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { pageview } from "../utils/gtag";
 import { useEffect } from "react";
-import { Montserrat, Nunito_Sans } from "@next/font/google";
+import { Montserrat, Nunito_Sans } from "next/font/google";
 
 const montserrat = Montserrat({
   style: ["italic", "normal"],
