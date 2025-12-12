@@ -1,4 +1,9 @@
 echo "Running pre-push hook"
 
+if [ "$CI" = "true" ]; then
+  echo "Skipping build in CI environment"
+  exit 0
+fi
+
 echo "Running code build"
 npm run build
