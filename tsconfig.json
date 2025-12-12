@@ -17,5 +17,6 @@
     "typeRoots": ["./node_modules/@types", "./@types"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  // Exclude the studio directory as it's a separate Sanity CMS project with its own tsconfig
   "exclude": ["node_modules", "studio"]
 }
