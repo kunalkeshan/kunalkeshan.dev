@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { pageview } from "../utils/gtag";
 import { useEffect } from "react";
 import { Montserrat, Nunito_Sans } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 const montserrat = Montserrat({
   style: ["italic", "normal"],
@@ -42,6 +43,22 @@ export default function App({ Component, pageProps }: AppProps) {
       <main
         className={`${montserrat.variable} ${nunitoSans.variable} font-nunitoSans`}
       >
+        <Toaster
+          position="bottom-center"
+          toastOptions={{
+            duration: 2600,
+            className:
+              "rounded-xl border-2 border-black bg-themes-txt_primary px-4 py-3 text-sm font-semibold text-themes-bg_primary shadow-3d",
+            success: {
+              className:
+                "rounded-xl border-2 border-black bg-themes-txt_primary px-4 py-3 text-sm font-semibold text-themes-bg_primary shadow-3d",
+            },
+            error: {
+              className:
+                "rounded-xl border-2 border-black bg-red-500 px-4 py-3 text-sm font-semibold text-white shadow-3d",
+            },
+          }}
+        />
         <Component {...pageProps} />
       </main>
     </>

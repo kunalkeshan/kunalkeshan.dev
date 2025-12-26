@@ -10,6 +10,7 @@ import { BsExclamationTriangle, BsCheckCircle } from "react-icons/bs";
 import SOCIALS from "../../data/socials";
 import { motion } from "framer-motion";
 import { sendContactMail } from "../../utils/mail";
+import { toast } from "react-hot-toast";
 
 type InputType = "name" | "email" | "phone" | "subject" | "message";
 
@@ -35,7 +36,14 @@ const Contact = () => {
       setError(null);
     };
 
-  
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText("hey@kunalkeshan.dev");
+      toast.success("Email copied to clipboard");
+    } catch (error) {
+      toast.error("Unable to copy email");
+    }
+  };
 
   const handleContact = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -71,16 +79,18 @@ const Contact = () => {
           Feel free to connect with me through email, my socials or simply drop
           me a message and I&apos;ll get back to you soon.
         </p>
-        <div className="mt-8 w-fit rounded-xl text-left border-2 border-black bg-white py-6 px-12">
-          <Link
-            href="mailto:hey@kunalkeshan.dev"
+        <div className="mt-8 w-fit rounded-xl border-2 border-black bg-white py-6 px-12 text-left">
+          <button
+            type="button"
+            onClick={handleCopyEmail}
             className="group flex items-center gap-2 font-montserrat text-lg font-semibold transition-all duration-300 hover:text-portfolio-main"
+            aria-label="Copy email address"
           >
             <span className="rounded-full bg-white py-2 pr-2 text-xl text-black transition-all duration-300 group-hover:text-portfolio-main">
               <FaEnvelope />
             </span>{" "}
             hey@kunalkeshan.dev
-          </Link>
+          </button>
           {/* <Link
             href="https://goo.gl/maps/KuyuYdWZikyja5xv8"
             className="group flex gap-2 text-sm font-semibold transition-all duration-300 hover:text-portfolio-main"

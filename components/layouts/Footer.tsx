@@ -11,6 +11,7 @@ import SOCIALS from "../../data/socials";
 import Image from "next/image";
 import Link from "next/link";
 import { FaEnvelope } from "react-icons/fa";
+import { toast } from "react-hot-toast";
 
 const Footer = () => {
   const [currentTime, setCurrentTime] = useState(0);
@@ -116,6 +117,15 @@ const Footer = () => {
       // @ts-ignore
     }
   }, [RickRollAudio]);
+
+  const handleCopyEmail = useCallback(async () => {
+    try {
+      await navigator.clipboard.writeText("hey@kunalkeshan.dev");
+      toast.success("Email copied to clipboard");
+    } catch (error) {
+      toast.error("Unable to copy email");
+    }
+  }, []);
 
   useEffect(() => {
     const currentAduio = RickRollAudio?.current;
@@ -227,15 +237,17 @@ const Footer = () => {
         </div>
         <div>
           <p className="text-xl font-semibold">Contact me</p>
-          <Link
-            href="mailto:hey@kunalkeshan.dev"
+          <button
+            type="button"
+            onClick={handleCopyEmail}
             className="group mt-8 flex items-center gap-2 text-lg font-semibold transition-all duration-300 hover:text-portfolio-main"
+            aria-label="Copy email address"
           >
             <span className="rounded-full bg-white p-2 text-xl text-black transition-all duration-300 group-hover:text-portfolio-main">
               <FaEnvelope />
             </span>{" "}
             hey@kunalkeshan.dev
-          </Link>
+          </button>
           {/* <Link
             href="https://goo.gl/maps/KuyuYdWZikyja5xv8"
             className="group mt-8 flex gap-2 text-sm font-semibold transition-all duration-300 hover:text-portfolio-main"
