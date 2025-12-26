@@ -35,9 +35,15 @@ const Contact = () => {
       setError(null);
     };
 
+  
+
   const handleContact = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (loading || success) {
+      return;
+    }
     try {
+      setError(null);
       setLoading(true);
       await sendContactMail(input);
       setSuccess(true);
@@ -48,7 +54,6 @@ const Contact = () => {
       setSuccess(false);
     } finally {
       setLoading(false);
-      setError(null);
       window.scrollTo({ top: 80, behavior: "smooth" });
     }
   };
@@ -132,10 +137,6 @@ const Contact = () => {
                 </p>
               </motion.div>
             )}
-            <p className="font-montserrat text-sm">
-              Form is temporarily disabled. Please feel free to contact me at my
-              email or any of my socials directly. Thanks!
-            </p>
             <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
               <div>
                 <label htmlFor="name" className=" font-bold">
@@ -149,7 +150,7 @@ const Contact = () => {
                   required
                   value={input.name}
                   onChange={handleInput("name")}
-                  disabled={true}
+                  disabled={loading}
                 />
               </div>
               <div>
@@ -164,7 +165,7 @@ const Contact = () => {
                   required
                   value={input.email}
                   onChange={handleInput("email")}
-                  disabled={true}
+                  disabled={loading}
                 />
               </div>
             </div>
@@ -180,7 +181,7 @@ const Contact = () => {
                   className="mt-2 w-full rounded-xl border-2  border-black p-4 outline-none transition-all duration-300 hover:shadow-3d focus:shadow-3d"
                   value={input.phone}
                   onChange={handleInput("phone")}
-                  disabled={true}
+                  disabled={loading}
                 />
               </div>
               <div>
@@ -194,7 +195,7 @@ const Contact = () => {
                   className="mt-2 w-full rounded-xl border-2 border-black p-4 outline-none transition-all duration-300 hover:shadow-3d focus:shadow-3d"
                   value={input.subject}
                   onChange={handleInput("subject")}
-                  disabled={true}
+                  disabled={loading}
                   required
                 />
               </div>
@@ -213,15 +214,21 @@ const Contact = () => {
                 placeholder="Got any message for me?"
                 value={input.message}
                 onChange={handleInput("message")}
-                disabled={true}
+                disabled={loading}
               ></textarea>
             </div>
             <button
               type="submit"
-              disabled={true}
-              className="rounded-xl bg-themes-txt_primary px-8 py-4 text-lg text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:border-portfolio-accent hover:bg-portfolio-accent md:w-fit"
+              disabled={loading}
+              className="flex items-center justify-center gap-2 rounded-xl bg-themes-txt_primary px-8 py-4 text-lg text-themes-bg_primary transition-all duration-300 hover:-translate-y-1 hover:border-portfolio-accent hover:bg-portfolio-accent disabled:cursor-not-allowed disabled:opacity-70 md:w-fit"
             >
-              {!loading ? "Send message" : "Please wait..."}
+              {loading && (
+                <span
+                  className="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent"
+                  aria-hidden="true"
+                />
+              )}
+              {!loading ? "Send message" : "Sending..."}
             </button>
           </form>
         )}
