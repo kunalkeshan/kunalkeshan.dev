@@ -274,8 +274,11 @@ const ProjectsPage: NextPage<
           >
             <button
               type="button"
-              className="absolute right-6 top-6 rounded-full border-2 border-white bg-black/60 px-3 py-1 text-sm font-semibold text-white transition hover:bg-black"
-              onClick={() => setActiveImage(null)}
+              className="absolute right-6 top-6 z-10 rounded-full border-2 border-white bg-black/60 px-3 py-1 text-sm font-semibold text-white transition hover:bg-black"
+              onClick={(event) => {
+                event.stopPropagation();
+                setActiveImage(null);
+              }}
             >
               Close
             </button>
