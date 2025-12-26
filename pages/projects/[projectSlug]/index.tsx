@@ -34,6 +34,16 @@ const ProjectsPage: NextPage<
     images,
     logo,
   } = project;
+  const featuredProjects = PROJECTS.filter((proj) => proj.feature);
+  const currentIndex = featuredProjects.findIndex(
+    (proj) => proj.slug === project.slug
+  );
+  const previousProject =
+    currentIndex > 0 ? featuredProjects[currentIndex - 1] : null;
+  const nextProject =
+    currentIndex >= 0 && currentIndex < featuredProjects.length - 1
+      ? featuredProjects[currentIndex + 1]
+      : null;
   return (
     <>
       <Head>
@@ -167,6 +177,72 @@ const ProjectsPage: NextPage<
               </div>
             </div>
           </div>
+          {(previousProject || nextProject) && (
+            <div className="mt-16">
+              <h2 className="text-center text-2xl font-bold lg:text-4xl">
+                Next Project
+              </h2>
+              <p className="mt-2 text-center text-themes-txt_secondary">
+                Explore more from the portfolio
+              </p>
+              <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
+                {previousProject && (
+                  <Link
+                    href={`/projects/${previousProject.slug}`}
+                    className="group flex w-full items-center gap-4 rounded-xl border-3 border-black p-4 shadow-3d-small transition-all duration-300 hover:-translate-y-1 hover:shadow-3d"
+                  >
+                    <div
+                      className="flex h-20 w-20 items-center justify-center rounded-xl border-2 border-black"
+                      style={{ backgroundColor: previousProject.color }}
+                    >
+                      <Image
+                        src={previousProject.coverImage}
+                        alt={previousProject.title}
+                        width={80}
+                        height={80}
+                        className="h-auto w-14 object-contain transition-all duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-themes-txt_secondary">
+                        Previous Project
+                      </p>
+                      <p className="text-xl font-bold">
+                        {previousProject.title}
+                      </p>
+                    </div>
+                  </Link>
+                )}
+                {nextProject && (
+                  <Link
+                    href={`/projects/${nextProject.slug}`}
+                    className="group flex w-full items-center gap-4 rounded-xl border-3 border-black p-4 shadow-3d-small transition-all duration-300 hover:-translate-y-1 hover:shadow-3d"
+                  >
+                    <div
+                      className="flex h-20 w-20 items-center justify-center rounded-xl border-2 border-black"
+                      style={{ backgroundColor: nextProject.color }}
+                    >
+                      <Image
+                        src={nextProject.coverImage}
+                        alt={nextProject.title}
+                        width={80}
+                        height={80}
+                        className="h-auto w-14 object-contain transition-all duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-themes-txt_secondary">
+                        Next Project
+                      </p>
+                      <p className="text-xl font-bold">
+                        {nextProject.title}
+                      </p>
+                    </div>
+                  </Link>
+                )}
+              </div>
+            </div>
+          )}
         </motion.section>
       </PublicLayout>
     </>
