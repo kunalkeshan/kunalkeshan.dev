@@ -3,7 +3,7 @@
  */
 
 // Dependencies
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import PublicLayout from "../../../layouts/PublicLayout";
 import { motion } from "framer-motion";
@@ -21,6 +21,7 @@ import Link from "next/link";
 const ProjectsPage: NextPage<
   InferGetStaticPropsType<typeof getStaticProps>
 > = ({ project }) => {
+  const [activeImage, setActiveImage] = useState<string | null>(null);
   const {
     title,
     coverImage,
@@ -44,6 +45,23 @@ const ProjectsPage: NextPage<
     currentIndex >= 0 && currentIndex < featuredProjects.length - 1
       ? featuredProjects[currentIndex + 1]
       : null;
+
+  useEffect(() => {
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setActiveImage(null);
+      }
+    };
+
+    if (activeImage) {
+      document.addEventListener("keydown", handleEscape);
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleEscape);
+    };
+  }, [activeImage]);
+
   return (
     <>
       <Head>
@@ -117,19 +135,21 @@ const ProjectsPage: NextPage<
                   </h2>
                   <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                     {images.map((image, index) => (
-                      <div
+                      <button
                         key={index}
+                        type="button"
+                        onClick={() => setActiveImage(image)}
                         className="w-full overflow-hidden hover:-translate-y-1 rounded-xl border-2 border-black shadow-3d-small transition-all duration-300 hover:shadow-3d"
                       >
                         <Image
                           src={image}
-                          alt={title}
+                          alt={`${title} preview ${index + 1}`}
                           width={100}
                           height={100}
                           className="h-auto w-full object-contain"
                           unoptimized={true}
                         />
-                      </div>
+                      </button>
                     ))}
                   </div>
                 </>
@@ -244,6 +264,39 @@ const ProjectsPage: NextPage<
             </div>
           )}
         </motion.section>
+        {activeImage && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-6 py-10"
+            role="dialog"
+            aria-modal="true"
+            aria-label={`${title} image preview`}
+            onClick={() => setActiveImage(null)}
+          >
+            <button
+              type="button"
+              className="absolute right-6 top-6 z-10 rounded-full border-2 border-white bg-black/60 px-3 py-1 text-sm font-semibold text-white transition hover:bg-black"
+              onClick={(event) => {
+                event.stopPropagation();
+                setActiveImage(null);
+              }}
+            >
+              Close
+            </button>
+            <div
+              className="relative max-h-full w-full max-w-5xl"
+              onClick={(event) => event.stopPropagation()}
+            >
+              <Image
+                src={activeImage}
+                alt={`${title} enlarged preview`}
+                width={1200}
+                height={800}
+                className="h-auto w-full rounded-xl object-contain"
+                unoptimized={true}
+              />
+            </div>
+          </div>
+        )}
       </PublicLayout>
     </>
   );
