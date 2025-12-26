@@ -35,6 +35,8 @@ const Contact = () => {
       setError(null);
     };
 
+  
+
   const handleContact = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (loading || success) {
