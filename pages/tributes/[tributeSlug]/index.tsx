@@ -40,6 +40,17 @@ const IndividualTributePage: NextPage<
     lessonsLearnt,
   } = tribute;
 
+  const featuredTributes = TRIBUTES.filter((item) => item.feature);
+  const currentIndex = featuredTributes.findIndex(
+    (item) => item.slug === tribute.slug
+  );
+  const previousTribute =
+    currentIndex > 0 ? featuredTributes[currentIndex - 1] : null;
+  const nextTribute =
+    currentIndex < featuredTributes.length - 1
+      ? featuredTributes[currentIndex + 1]
+      : null;
+
   const connectedDate = new Date(connected!);
 
   const socialsInfo = [
@@ -183,6 +194,79 @@ const IndividualTributePage: NextPage<
             </div>
           </div>
         </motion.section>
+        {(previousTribute || nextTribute) && (
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, type: "spring" }}
+            viewport={{ once: true }}
+            className="mx-auto mb-20 max-w-7xl px-5"
+          >
+            <h2 className="text-2xl font-bold md:text-3xl">
+              More Tributes to Explore
+            </h2>
+            <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+              {previousTribute && (
+                <Link
+                  href={`/tributes/${previousTribute.slug}`}
+                  className="group flex h-full items-center gap-4 rounded-xl border-3 border-black bg-white p-4 shadow-3d transition-all duration-300 hover:-translate-y-1 hover:shadow-3d-reverse"
+                >
+                  <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-full border-2 border-black bg-white shadow-3d-small-reverse">
+                    <Image
+                      src={previousTribute.image}
+                      alt={previousTribute.name}
+                      width={100}
+                      height={100}
+                      className="h-auto w-full object-contain"
+                      unoptimized={true}
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-semibold text-themes-txt_secondary">
+                      ← Previous Tribute
+                    </p>
+                    <p className="text-lg font-bold md:text-xl">
+                      {previousTribute.name}
+                    </p>
+                    <p className="text-sm font-semibold text-themes-txt_secondary">
+                      {previousTribute.company.position} @{" "}
+                      {previousTribute.company.name}
+                    </p>
+                  </div>
+                </Link>
+              )}
+              {nextTribute && (
+                <Link
+                  href={`/tributes/${nextTribute.slug}`}
+                  className="group flex h-full items-center gap-4 rounded-xl border-3 border-black bg-white p-4 shadow-3d transition-all duration-300 hover:-translate-y-1 hover:shadow-3d-reverse"
+                >
+                  <div className="flex-1 text-right">
+                    <p className="text-sm font-semibold text-themes-txt_secondary">
+                      Next Tribute →
+                    </p>
+                    <p className="text-lg font-bold md:text-xl">
+                      {nextTribute.name}
+                    </p>
+                    <p className="text-sm font-semibold text-themes-txt_secondary">
+                      {nextTribute.company.position} @{" "}
+                      {nextTribute.company.name}
+                    </p>
+                  </div>
+                  <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-full border-2 border-black bg-white shadow-3d-small-reverse">
+                    <Image
+                      src={nextTribute.image}
+                      alt={nextTribute.name}
+                      width={100}
+                      height={100}
+                      className="h-auto w-full object-contain"
+                      unoptimized={true}
+                    />
+                  </div>
+                </Link>
+              )}
+            </div>
+          </motion.section>
+        )}
       </PublicLayout>
     </>
   );
