@@ -73,7 +73,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="z-50 w-full py-6 px-3 fixed"
+      className="z-[60] w-full py-6 px-3 fixed"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4, type: "spring" }}
@@ -161,7 +161,7 @@ const Navbar = () => {
             type: "spring",
           }}
           exit={{ opacity: 0, y: -20 }}
-          className="absolute top-36 left-1/2 w-full max-w-sm rounded-xl border-2 border-black bg-white py-4 px-5 text-base font-semibold sm:max-w-lg md:hidden"
+          className="absolute top-36 left-1/2 z-[60] w-full max-w-sm rounded-xl border-2 border-black bg-white py-4 px-5 text-base font-semibold sm:max-w-lg md:hidden"
         >
           <ul className="flex w-full flex-col gap-4">
             {navOptions.map((option, index) => (
