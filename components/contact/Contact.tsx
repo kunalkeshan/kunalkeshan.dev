@@ -109,6 +109,7 @@ const Contact = () => {
               href={social.url}
               target="_blank"
               title={social.name}
+              aria-label={social.name}
               className="flex items-center justify-center rounded-full bg-themes-txt_secondary p-2 text-xl text-themes-bg_primary shadow-3d-small transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-portfolio-accent hover:shadow-3d"
             >
               <social.Icon />

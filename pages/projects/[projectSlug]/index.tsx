@@ -139,6 +139,7 @@ const ProjectsPage: NextPage<
                         key={index}
                         type="button"
                         onClick={() => setActiveImage(image)}
+                        aria-label={`${title} preview ${index + 1}`}
                         className="w-full overflow-hidden hover:-translate-y-1 rounded-xl border-2 border-black shadow-3d-small transition-all duration-300 hover:shadow-3d"
                       >
                         <Image
