@@ -143,13 +143,17 @@ const Testimonials = () => {
       <TestimonialCard {...currentTestimonial} contactRef={contentRef} />
       <div className="mt-8 flex gap-8">
         <button
+          type="button"
           onClick={handleChangeTestimonial(1)}
+          aria-label="Previous testimonial"
           className="rounded-lg bg-themes-bg_secondary p-5 text-3xl text-themes-txt_primary transition-all duration-300 hover:scale-95 hover:rounded-xl hover:bg-themes-txt_primary hover:text-themes-bg_primary"
         >
           <FaArrowLeft />
         </button>
         <button
+          type="button"
           onClick={handleChangeTestimonial(-1)}
+          aria-label="Next testimonial"
           className="rounded-lg bg-themes-bg_secondary p-5 text-3xl text-themes-txt_primary transition-all duration-300 hover:scale-95 hover:rounded-xl hover:bg-themes-txt_primary hover:text-themes-bg_primary"
         >
           <FaArrowRight />

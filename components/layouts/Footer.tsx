@@ -116,6 +116,9 @@ const Footer = () => {
       // @ts-ignore
     }
   }, [RickRollAudio]);
+  const isRickRollPlaying = RickRollAudio.current
+    ? !RickRollAudio.current.paused
+    : false;
 
   useEffect(() => {
     const currentAduio = RickRollAudio?.current;
@@ -165,6 +168,7 @@ const Footer = () => {
               <Link
                 key={index}
                 title={social.name}
+                aria-label={social.name}
                 href={social.url}
                 target="_blank"
                 rel="noreferrer"
@@ -212,16 +216,20 @@ const Footer = () => {
                 </Link>
               </li>
             ))}
-            <li
-              onClick={toggleRickRollPlay}
-              className="mt-4 w-fit cursor-pointer font-semibold transition-all duration-300 hover:translate-x-1 hover:text-portfolio-accent"
-              suppressHydrationWarning
-            >
-              {RickRollAudio.current?.paused
-                ? "~(˘▽˘)~"
-                : currentTime % 2
-                ? "↜(˘▽˘)↦"
-                : "↤(˘▽˘)↝"}
+            <li className="mt-4 w-fit" suppressHydrationWarning>
+              <button
+                type="button"
+                onClick={toggleRickRollPlay}
+                aria-pressed={isRickRollPlaying}
+                aria-label="Toggle Rickroll audio"
+                className="w-fit font-semibold transition-all duration-300 hover:translate-x-1 hover:text-portfolio-accent"
+              >
+                {RickRollAudio.current?.paused
+                  ? "~(˘▽˘)~"
+                  : currentTime % 2
+                  ? "↜(˘▽˘)↦"
+                  : "↤(˘▽˘)↝"}
+              </button>
             </li>
           </ul>
         </div>

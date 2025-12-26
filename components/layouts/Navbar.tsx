@@ -3,7 +3,7 @@
  */
 
 // Dependencies
-import React, { useState } from "react";
+import React, { useId, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -70,6 +70,9 @@ const moreNavOptions = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [moreIsOpen, setMoreIsOpen] = useState(false);
+  const desktopMoreMenuId = useId();
+  const mobileMoreMenuId = useId();
+  const mobileMenuId = useId();
 
   return (
     <motion.nav
@@ -83,6 +86,7 @@ const Navbar = () => {
         <Link
           href="/"
           className="h-12 w-12 overflow-hidden rounded-full transition-all duration-300 hover:scale-95"
+          aria-label="Home"
         >
           <Image
             src={IMAGE_SOURCE.ART_IMAGE}
@@ -104,9 +108,12 @@ const Navbar = () => {
             </li>
           ))}
           <li className="relative hidden md:block">
-            <div
+            <button
+              type="button"
               onClick={() => setMoreIsOpen(!moreIsOpen)}
-              className="flex cursor-pointer items-center gap-2 transition-all duration-300 hover:scale-95 hover:text-portfolio-accent active:scale-105"
+              aria-expanded={moreIsOpen}
+              aria-controls={desktopMoreMenuId}
+              className="flex items-center gap-2 transition-all duration-300 hover:scale-95 hover:text-portfolio-accent active:scale-105"
             >
               More{" "}
               <FaCaretDown
@@ -114,8 +121,9 @@ const Navbar = () => {
                   moreIsOpen ? "rotate-0" : ""
                 }-rotate-90 transition-all`}
               />
-            </div>
+            </button>
             <ul
+              id={desktopMoreMenuId}
               className={`${
                 moreIsOpen ? "h-fit border-2 border-black p-4" : "h-0"
               } absolute top-10 grid w-60 grid-cols-2 items-center justify-center gap-2 overflow-hidden rounded-xl bg-white transition-all duration-500`}
@@ -137,12 +145,17 @@ const Navbar = () => {
           <Link
             href="/contact"
             className="flex h-12 w-12 items-center justify-center rounded-xl bg-black text-xl text-white transition-all duration-300 hover:-translate-y-1 hover:bg-portfolio-main"
+            aria-label="Contact"
           >
             <HiOutlineEnvelope />
           </Link>
           <button
+            type="button"
             className="flex h-12 w-12 items-center justify-center text-xl md:hidden"
             onClick={() => setIsOpen(!isOpen)}
+            aria-expanded={isOpen}
+            aria-controls={mobileMenuId}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             {isOpen ? <RxCross2 /> : <GiHamburgerMenu />}
           </button>
@@ -161,6 +174,7 @@ const Navbar = () => {
             type: "spring",
           }}
           exit={{ opacity: 0, y: -20 }}
+          id={mobileMenuId}
           className="absolute top-36 left-1/2 z-[60] w-full max-w-sm rounded-xl border-2 border-black bg-white py-4 px-5 text-base font-semibold sm:max-w-lg md:hidden"
         >
           <ul className="flex w-full flex-col gap-4">
@@ -173,9 +187,12 @@ const Navbar = () => {
             ))}
           </ul>
           <li className="mt-4 block md:hidden">
-            <div
+            <button
+              type="button"
               onClick={() => setMoreIsOpen(!moreIsOpen)}
-              className="flex cursor-pointer items-center gap-2 transition-all duration-300 hover:scale-95 hover:text-portfolio-accent active:scale-105"
+              aria-expanded={moreIsOpen}
+              aria-controls={mobileMoreMenuId}
+              className="flex items-center gap-2 transition-all duration-300 hover:scale-95 hover:text-portfolio-accent active:scale-105"
             >
               More{" "}
               <FaCaretDown
@@ -183,8 +200,9 @@ const Navbar = () => {
                   moreIsOpen ? "rotate-0" : ""
                 }-rotate-90 transition-all`}
               />
-            </div>
+            </button>
             <ul
+              id={mobileMoreMenuId}
               className={`${
                 moreIsOpen ? "h-fit pt-4 pl-8" : "h-0"
               } grid grid-cols-2 gap-2 overflow-hidden bg-white transition-all duration-500`}

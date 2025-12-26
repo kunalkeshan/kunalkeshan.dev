@@ -183,6 +183,7 @@ const IndividualTributePage: NextPage<
                           href={social.url}
                           key={index}
                           target="_blank"
+                          aria-label={social.name}
                           className="rounded-full border-2 border-portfolio-accent bg-portfolio-accent bg-opacity-80 p-2 text-xl text-white shadow-3d-small transition-all duration-300 hover:-translate-y-1 hover:bg-opacity-100 hover:shadow-3d"
                         >
                           <social.Icon />
