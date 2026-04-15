@@ -35,7 +35,6 @@ const getStaticPages = (): SitemapUrl[] => {
     buildUrl("/contact"),
     buildUrl("/resume"),
     buildUrl("/certifications"),
-    buildUrl("/school"),
     buildUrl("/links"),
     buildUrl("/feed"),
     buildUrl("/events"),
