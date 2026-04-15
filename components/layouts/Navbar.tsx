@@ -61,10 +61,6 @@ const moreNavOptions = [
     name: "Links",
     url: "/links",
   },
-  {
-    name: "School",
-    url: "/school",
-  },
 ];
 
 const Navbar = () => {

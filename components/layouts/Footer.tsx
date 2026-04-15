@@ -58,10 +58,6 @@ const Footer = () => {
       url: "/contact#faqs",
     },
     {
-      name: "School",
-      url: "/school",
-    },
-    {
       name: "Privacy Policy",
       url: "/privacy-policy",
     },
