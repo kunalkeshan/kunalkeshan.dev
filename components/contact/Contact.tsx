@@ -11,6 +11,7 @@ import SOCIALS from "../../data/socials";
 import { motion } from "framer-motion";
 import { sendContactMail } from "../../utils/mail";
 import { toast } from "react-hot-toast";
+import { IS_CONTACT_FORM_ENABLED } from "../../config";
 
 type InputType = "name" | "email" | "phone" | "subject" | "message";
 
@@ -118,7 +119,18 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex items-center justify-center font-montserrat">
-        {success ? (
+        {!IS_CONTACT_FORM_ENABLED ? (
+          <div className="flex w-full max-w-lg flex-col items-center gap-2 rounded-xl border-2 border-black p-8 text-center font-semibold shadow-3d">
+            <div className="text-7xl">
+              <FaEnvelope />
+            </div>
+            <p className="mt-4 font-bold">Let&apos;s connect</p>
+            <p>
+              Please reach out via email or my social links to get in touch
+              &mdash; I&apos;ll get back to you soon.
+            </p>
+          </div>
+        ) : success ? (
           <div className="flex w-full max-w-lg flex-col items-center gap-2 rounded-xl border-2 border-black p-8 text-center font-semibold shadow-3d">
             <div className="text-7xl">
               <BsCheckCircle />
