@@ -7,6 +7,8 @@ import { IronSessionOptions } from "iron-session";
 
 export const isProduction = process.env.NODE_ENV === "production";
 
+export const IS_CONTACT_FORM_ENABLED = false;
+
 export const IMAGE_SOURCE = {
   PROFILE_IMAGE:
     "https://res.cloudinary.com/kunalkeshan/image/upload/v1674944977/Portfolio/profile-pic-kunal-keshan.png",
