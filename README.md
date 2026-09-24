@@ -1,5 +1,7 @@
 # kunalkeshan.dev Portfolio
 
+> **Status:** This repo now serves [v1.kunalkeshan.dev](https://v1.kunalkeshan.dev). Active development has moved to [github.com/kunalkeshan/v2.kunalkeshan.dev](https://github.com/kunalkeshan/v2.kunalkeshan.dev), which is now the live portfolio at [kunalkeshan.dev](https://kunalkeshan.dev).
+
 <p align="center">
     <img src="./public/thumbnail.png" width="60%%">
 </p>
@@ -108,4 +110,4 @@ So, feel free to fork this repo. If you do, please just give us proper credit by
 
 ## License
 
-This project is licensed under the [Mozilla Public License](./LI).
+This project is licensed under the [Mozilla Public License](./LICENSE).

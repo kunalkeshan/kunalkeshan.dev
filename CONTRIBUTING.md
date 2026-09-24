@@ -1,5 +1,7 @@
 # Contributing Guide
 
+> **Note:** This repo is superseded for active development. New work happens at [github.com/kunalkeshan/v2.kunalkeshan.dev](https://github.com/kunalkeshan/v2.kunalkeshan.dev). The steps below still apply if you're contributing to or forking this v1 codebase specifically.
+
 ## Introduction
 
 Thank you for considering to contribute to my portfolio project! Your contributions are greatly appreciated and help make the project better for everyone. This guide will outline the process for making contributions, whether it's through changes in GitHub or by forking the project and submitting a pull request.
