@@ -5,7 +5,8 @@ import { GA_TRACKING_ID } from "../utils/gtag";
 const metaDescription =
   "Full-stack dev with a passion for delivering value & helping others thrive. As a 3rd-year Electronics & Communication Engineering student at SRMIST, I offer top-notch full-stack web dev services with a focus on consistency, discipline, grit & hard work. Codelance Devs, my web design co., helps SMEs establish a web presence. I aim to be a knowledgeable software dev & assist startups & enterprises. Passionate about tech education, open-source, productivity & building openly. Improving my skills & sharing my expertise in full-stack dev.";
 const metaImage = "/thumbnail.png";
-const metaWebsite = `https://kunalkeshan.dev`;
+const metaWebsite =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://v1.kunalkeshan.dev";
 
 export default function Document() {
   return (
@@ -48,7 +49,7 @@ export default function Document() {
         <meta property="twitter:title" content="Kunal Keshan" />
         <meta property="twitter:description" content={metaDescription} />
         <meta property="twitter:image" content={metaImage} />
-        <meta name="robots" content="all" />
+        <meta name="robots" content="noindex, nofollow" />
         <Script
           async
           strategy="afterInteractive"

@@ -2,7 +2,8 @@ import type { GetServerSideProps } from "next";
 import PROJECTS from "../data/projects";
 import TRIBUTES from "../data/tributes";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://kunalkeshan.dev";
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://v1.kunalkeshan.dev";
 
 type SitemapUrl = {
   loc: string;
